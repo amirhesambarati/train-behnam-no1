@@ -1,0 +1,8 @@
+Record=DiagramHierarchy|SourceDocument=MultiBoardSchematic1.MbsDoc|Kind=Multi-board Schematic Module|Designator=4|Source=..\..\4-Power\4-Power\4-Power.PrjPcb
+Record=SubProject|SourceDocument=MultiBoardSchematic1.MbsDoc|ProjectPath=..\..\4-Power\4-Power\4-Power.PrjPcb
+Record=DiagramHierarchy|SourceDocument=MultiBoardSchematic1.MbsDoc|Kind=Multi-board Schematic Module|Designator=3|Source=..\..\3-MainBoard\3-MainBoard\3-MainBoard.PrjPcb
+Record=SubProject|SourceDocument=MultiBoardSchematic1.MbsDoc|ProjectPath=..\..\3-MainBoard\3-MainBoard\3-MainBoard.PrjPcb
+Record=DiagramHierarchy|SourceDocument=MultiBoardSchematic1.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\..\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch.PrjPcb
+Record=SubProject|SourceDocument=MultiBoardSchematic1.MbsDoc|ProjectPath=..\..\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch.PrjPcb
+Record=DiagramHierarchy|SourceDocument=MultiBoardSchematic1.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\..\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PrjPcb
+Record=SubProject|SourceDocument=MultiBoardSchematic1.MbsDoc|ProjectPath=..\..\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PrjPcb
