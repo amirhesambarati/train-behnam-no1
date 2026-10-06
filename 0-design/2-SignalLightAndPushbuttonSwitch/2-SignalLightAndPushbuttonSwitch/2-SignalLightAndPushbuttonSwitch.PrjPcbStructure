@@ -1,2 +1,4 @@
 Record=TopLevelDocument|FileName=MCU2.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=MCU2.SchDoc|FileName=Sheet2.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=MCU2.SchDoc|FileName=push-button-switch.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=MCU2.SchDoc|FileName=RS485.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=MCU2.SchDoc|FileName=signal-light.SchDoc|SheetNumber=1
