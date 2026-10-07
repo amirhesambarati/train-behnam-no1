@@ -86,6 +86,8 @@ VaultGUID=
 ManagedProjectGUID=
 RevisionGUID=
 ProjectName=1-LightingAndSolenoidValve.PrjPcb
+VaultURL=
+VaultName=
 
 [Document3]
 DocumentPath=..\..\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch.PrjPcb
@@ -107,6 +109,8 @@ VaultGUID=
 ManagedProjectGUID=
 RevisionGUID=
 ProjectName=2-SignalLightAndPushbuttonSwitch.PrjPcb
+VaultURL=
+VaultName=
 
 [Document4]
 DocumentPath=..\..\3-MainBoard\3-MainBoard\3-MainBoard.PrjPcb
@@ -128,6 +132,8 @@ VaultGUID=
 ManagedProjectGUID=
 RevisionGUID=
 ProjectName=3-MainBoard.PrjPcb
+VaultURL=
+VaultName=
 
 [Document5]
 DocumentPath=..\..\4-Power\4-Power\4-Power.PrjPcb
@@ -149,6 +155,25 @@ VaultGUID=
 ManagedProjectGUID=
 RevisionGUID=
 ProjectName=4-Power.PrjPcb
+VaultURL=
+VaultName=
+
+[Document6]
+DocumentPath=Assembly1.MbaDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=94f49f00-fe8b-4635-be70-7e149542af3a
 
 [OutputGroup1]
 Name=Netlist Outputs
