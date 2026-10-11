@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=GND Pin=LO1-1
+Removed Pin From Net: NetName=NetD1_4 Pin=LO1-2
+Removed Pin From Net: NetName=GND Pin=LO1-3
+Removed Pin From Net: NetName=NetD1_4 Pin=LO1-4
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Added Pin To Net: NetName=NetD1_4 Pin=LO1-1
+Added Pin To Net: NetName=GND Pin=LO1-2
+Added Pin To Net: NetName=NetD1_4 Pin=LO1-3
+Added Pin To Net: NetName=GND Pin=LO1-4
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G

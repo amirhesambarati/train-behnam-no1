@@ -1,0 +1,262 @@
+Added Component: Designator=B1(CAIS2062A)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://e.chipanalog.com/Public/Uploads/uploadfile/files/20250325/CAIS2062AdatasheetVersion1.01en20250325.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "1.09mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "ChipAnalog"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CA-IS2062A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Add component: Footprint Not Found C1206
+Added Component: Designator=D1(DPAK229P990X238-3N)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/MBRD835L/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "MBRD835L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-252-3 MICROSS/On Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/MBRD835L/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D2(DPAK229P990X238-3N)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/MBRD835L/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "MBRD835L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-252-3 MICROSS/On Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/MBRD835L/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component: Footprint Not Found XH_4
+Added Component: Designator=J6(ATXPWR_4)
+Add component (AddParameter): Name = "MANF"; Value = "TE, Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "4-1775099-0, 39281043"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-4pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_4"; VariantName = "[No Variations]"
+Added Component: Designator=J7(ATXPWR_2)
+Add component (AddParameter): Name = "MANF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "39281023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-2pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_2"; VariantName = "[No Variations]"
+Add component: Footprint Not Found JPH_3
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Added Component: Designator=LO1(ATXPWR_4)
+Add component (AddParameter): Name = "MANF"; Value = "TE, Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "4-1775099-0, 39281043"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-4pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_4"; VariantName = "[No Variations]"
+Added Component: Designator=N1(ATXPWR_2)
+Add component (AddParameter): Name = "MANF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "39281023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-2pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_2"; VariantName = "[No Variations]"
+Added Component: Designator=OP1(SOIC254P1030X460-4N)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/EL817S/Everlight+Electronics+Co+Ltd/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Everlight Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "EL817S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Everlight Electronics Co Ltd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/EL817S/Everlight+Electronics+Co+Ltd/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P1(ATXPWR_2)
+Add component (AddParameter): Name = "MANF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "39281023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-2pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_2"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(TO254P1528X508-4_3N-V1)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Infineon Technologies"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Order NumberManufacturer Order Number"; Value = "IRF9530NS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PG-TO263-3-901"; VariantName = "[No Variations]"
+Add component: Footprint Not Found SOT95P240X111-3N
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Add component: Footprint Not Found R1206
+Added Component: Designator=U1(SOIC127P600X175-8N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'Allegro MicroSystems'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ACS712ELCTR-05B-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component: Footprint Not Found STM-LQFP100_N
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Add component: Footprint Not Found XTL_2_11X5
+Added Pin To Net: NetName=MCUGND Pin=B1-5
+Added Pin To Net: NetName=MCUGND Pin=B1-8
+Add Pin To Net: Unknown Pin: Pin C1-2
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C4-1
+Add Pin To Net: Unknown Pin: Pin C5-1
+Add Pin To Net: Unknown Pin: Pin C6-1
+Add Pin To Net: Unknown Pin: Pin C7-1
+Add Pin To Net: Unknown Pin: Pin C8-1
+Add Pin To Net: Unknown Pin: Pin C9-1
+Add Pin To Net: Unknown Pin: Pin C10-1
+Add Pin To Net: Unknown Pin: Pin C11-1
+Add Pin To Net: Unknown Pin: Pin C12-1
+Add Pin To Net: Unknown Pin: Pin C13-1
+Add Pin To Net: Unknown Pin: Pin C14-1
+Add Pin To Net: Unknown Pin: Pin C15-1
+Add Pin To Net: Unknown Pin: Pin C17-1
+Add Pin To Net: Unknown Pin: Pin C18-1
+Add Pin To Net: Unknown Pin: Pin C19-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=GND Pin=D1-3
+Added Pin To Net: NetName=GND Pin=D2-1
+Added Pin To Net: NetName=GND Pin=D2-3
+Add Pin To Net: Unknown Pin: Pin J5-4
+Added Pin To Net: NetName=MCUGND Pin=J6-1
+Added Pin To Net: NetName=MCUGND Pin=J6-2
+Added Pin To Net: NetName=GND Pin=LO1-1
+Added Pin To Net: NetName=GND Pin=LO1-2
+Added Pin To Net: NetName=GND Pin=N1-1
+Added Pin To Net: NetName=GND Pin=N1-2
+Add Pin To Net: Unknown Pin: Pin Q2-2
+Add Pin To Net: Unknown Pin: Pin R5-2
+Add Pin To Net: Unknown Pin: Pin R6-2
+Add Pin To Net: Unknown Pin: Pin R7-2
+Add Pin To Net: Unknown Pin: Pin R8-2
+Add Pin To Net: Unknown Pin: Pin R11-2
+Added Pin To Net: NetName=MCUGND Pin=U1-5
+Add Pin To Net: Unknown Pin: Pin U2-10
+Add Pin To Net: Unknown Pin: Pin U2-20
+Add Pin To Net: Unknown Pin: Pin U2-27
+Add Pin To Net: Unknown Pin: Pin U2-74
+Add Pin To Net: Unknown Pin: Pin U2-99
+Added Pin To Net: NetName=3v3MCU Pin=B1-7
+Added Pin To Net: NetName=3v3MCU Pin=J6-3
+Added Net: Name=3v3MCU
+Added Pin To Net: NetName=5vMCU Pin=B1-6
+Added Pin To Net: NetName=5vMCU Pin=J6-4
+Added Pin To Net: NetName=5vMCU Pin=U1-8
+Added Net: Name=5vMCU
+Added Net: Name=Boot0
+Added Net: Name=CAN1_N
+Added Net: Name=CAN1_P
+Added Pin To Net: NetName=MGND Pin=B1-9
+Added Pin To Net: NetName=MGND Pin=B1-12
+Added Net: Name=MGND
+Added Pin To Net: NetName=NetB1_10 Pin=B1-10
+Added Pin To Net: NetName=NetB1_10 Pin=B1-11
+Added Net: Name=NetB1_10
+Added Pin To Net: NetName=NetB1_14 Pin=B1-14
+Added Pin To Net: NetName=NetB1_14 Pin=J7-1
+Added Net: Name=NetB1_14
+Added Pin To Net: NetName=NetB1_15 Pin=B1-15
+Added Pin To Net: NetName=NetB1_15 Pin=J7-2
+Added Net: Name=NetB1_15
+Added Pin To Net: NetName=NetC1_1 Pin=U1-6
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC3_1 Pin=U1-7
+Added Net: Name=NetC3_1
+Added Net: Name=NetC4_2
+Added Net: Name=NetC5_2
+Added Net: Name=NetC8_2
+Added Net: Name=NetC9_2
+Added Net: Name=NetC16_1
+Added Pin To Net: NetName=NetD1_4 Pin=D1-4
+Added Pin To Net: NetName=NetD1_4 Pin=D2-4
+Added Pin To Net: NetName=NetD1_4 Pin=LO1-3
+Added Pin To Net: NetName=NetD1_4 Pin=LO1-4
+Added Pin To Net: NetName=NetD1_4 Pin=U1-1
+Added Pin To Net: NetName=NetD1_4 Pin=U1-2
+Added Net: Name=NetD1_4
+Added Net: Name=NetJP1_1
+Added Net: Name=NetJP1_3
+Added Net: Name=NetL1_1
+Added Net: Name=NetL1_2
+Added Pin To Net: NetName=NetOP1_1 Pin=OP1-1
+Added Net: Name=NetOP1_1
+Added Pin To Net: NetName=NetOP1_2 Pin=OP1-2
+Added Net: Name=NetOP1_2
+Added Pin To Net: NetName=NetOP1_3 Pin=OP1-3
+Added Pin To Net: NetName=NetOP1_3 Pin=Q1-1
+Added Net: Name=NetOP1_3
+Added Pin To Net: NetName=NetOP1_4 Pin=OP1-4
+Added Net: Name=NetOP1_4
+Added Pin To Net: NetName=NetP1_1 Pin=P1-1
+Added Pin To Net: NetName=NetP1_1 Pin=P1-2
+Added Pin To Net: NetName=NetP1_1 Pin=Q1-3
+Added Net: Name=NetP1_1
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_2 Pin=U1-3
+Added Pin To Net: NetName=NetQ1_2 Pin=U1-4
+Added Net: Name=NetQ1_2
+Added Net: Name=NetQ2_1
+Added Net: Name=NetR8_1
+Added Net: Name=RESET
+Added Net: Name=SWD_CLK
+Added Net: Name=SWD_IO
+Added Class: Name=CAN
+Added Class: Name=MCU
+Added Differential Pair: Name=CAN1
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Add Class Member: Failed to add class member : Component C1 CAP1206 1nf 50V
+Add Class Member: Failed to add class member : Component C2 CAP1206 100nf 50V
+Add Class Member: Failed to add class member : Component C3 CAP1206 1nf 50V
+Added Member To Class: ClassName=Sheet1 Member=Component D1 SDT20B100D1
+Added Member To Class: ClassName=Sheet1 Member=Component D2 SDT20B100D1
+Added Member To Class: ClassName=Sheet1 Member=Component LO1 CONN_ATXPWR_4
+Added Member To Class: ClassName=Sheet1 Member=Component N1 CONN_ATXPWR_2
+Added Member To Class: ClassName=Sheet1 Member=Component OP1 EL817S
+Added Member To Class: ClassName=Sheet1 Member=Component P1 CONN_ATXPWR_2
+Added Member To Class: ClassName=Sheet1 Member=Component Q1 IRF9530NS
+Add Class Member: Failed to add class member : Component Q2 2N7002
+Add Class Member: Failed to add class member : Component R1 RES1206 12K 1%
+Add Class Member: Failed to add class member : Component R2 RES1206 12K 1%
+Add Class Member: Failed to add class member : Component R3 RES1206 470 1%
+Add Class Member: Failed to add class member : Component R4 RES1206 470 1%
+Add Class Member: Failed to add class member : Component R5 RES1206 12K 1%
+Add Class Member: Failed to add class member : Component R6 RES1206 12K 1%
+Add Class Member: Failed to add class member : Component R7 RES1206 12K 1%
+Added Member To Class: ClassName=Sheet1 Member=Component U1 MT9223-20BR5
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2

@@ -1,0 +1,33 @@
+Add component: Footprint Not Found XH_4
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Added Component: Designator=Q2(SOT23_3)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "NXP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "2N7002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "0.3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "60v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.3t@Javan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "2N7002"; VariantName = "[No Variations]"
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Add Pin To Net: Unknown Pin: Pin J5-1
+Add Pin To Net: Unknown Pin: Pin J5-2
+Add Pin To Net: Unknown Pin: Pin J5-3
+Add Pin To Net: Unknown Pin: Pin J5-4
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=MCUGND Pin=Q2-2
+Added Pin To Net: NetName=NetOP1_2 Pin=Q2-3
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Add Class Member: Failed to add class member : Component J5 XH_4
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Added Member To Class: ClassName=Sheet1 Member=Component Q2 2N7002
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G
