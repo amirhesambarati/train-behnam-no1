@@ -1,0 +1,43 @@
+Removed Pin From Net: NetName=GND Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=D1-3
+Removed Pin From Net: NetName=GND Pin=D2-1
+Removed Pin From Net: NetName=GND Pin=D2-3
+Removed Pin From Net: NetName=GND Pin=LO1-2
+Removed Pin From Net: NetName=GND Pin=LO1-4
+Removed Pin From Net: NetName=NetP1_1 Pin=P1-1
+Removed Pin From Net: NetName=NetP1_1 Pin=P1-2
+Removed Pin From Net: NetName=NetP1_1 Pin=Q1-3
+Removed Pin From Net: NetName=NetP1_1 Pin=R1-1
+Removed Pin From Net: NetName=NetP1_1 Pin=R2-1
+Removed Pin From Net: NetName=GND Pin=R5-2
+Removed Pin From Net: NetName=GND Pin=R6-2
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Change Net Name : Old Net Name=NetP1_1 New Net Name=NetP2_1
+Added Pin To Net: NetName=1GND Pin=D1-1
+Added Pin To Net: NetName=1GND Pin=D1-3
+Added Pin To Net: NetName=1GND Pin=D2-1
+Added Pin To Net: NetName=1GND Pin=D2-3
+Added Pin To Net: NetName=1GND Pin=LO1-2
+Added Pin To Net: NetName=1GND Pin=LO1-4
+Added Pin To Net: NetName=1GND Pin=R5-2
+Added Pin To Net: NetName=1GND Pin=R6-2
+Added Net: Name=1GND
+Added Pin To Net: NetName=NetP1_1 Pin=P1-1
+Added Pin To Net: NetName=NetP1_1 Pin=P1-2
+Added Pin To Net: NetName=NetP1_1 Pin=Q1-3
+Added Pin To Net: NetName=NetP1_1 Pin=R1-1
+Added Pin To Net: NetName=NetP1_1 Pin=R2-1
+Added Net: Name=NetP1_1
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G
+Added Rule: Name=Schematic Supply Nets_3
