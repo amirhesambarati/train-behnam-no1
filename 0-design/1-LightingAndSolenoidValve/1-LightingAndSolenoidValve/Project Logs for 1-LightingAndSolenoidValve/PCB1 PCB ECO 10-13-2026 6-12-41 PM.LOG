@@ -1,0 +1,60 @@
+Removed Pin From Net: NetName=MCUGND Pin=C6-1
+Removed Pin From Net: NetName=MCUGND Pin=J5-4
+Removed Pin From Net: NetName=3v3MCU Pin=R12-2
+Change Component Footprint: Designator=J5 Old Footprint=TENSILITY_54-00005 New Footprint=USBC_SMD_16_DX07S016JA1
+Change Component Comment : Designator=J5 Old Comment=AF 180°ZJB13.7 New Comment=DX07S016JA1
+Change Component Designator: OldDesignator=C4 NewDesignator=C5
+Change Component Designator: OldDesignator=C5 NewDesignator=C6
+Change component parameters: Designator = "J5" ("J5"); Footprint = "TENSILITY_54-00005"; UniqueID = "\VGSJPVYL" ("\VGSJPVYL")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "JAE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "DX07S016JA1R1500"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "5A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "1.5$"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "DX07S016JA1"; VariantName = "[No Variations]"
+Added Component: Designator=C4(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Added Pin To Net: NetName=MCUGND Pin=C4-1
+Added Pin To Net: NetName=MCUGND Pin=J5-A1B12
+Added Pin To Net: NetName=MCUGND Pin=J5-B1A12
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Added Pin To Net: NetName=3v3MCU Pin=R12-1
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Change Net Name : Old Net Name=NetC4_2 New Net Name=NetC5_2
+Change Net Name : Old Net Name=NetC5_2 New Net Name=NetC6_2
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=FUSE_SMD1-2
+Added Pin To Net: NetName=NetC4_2 Pin=J5-A4B9
+Added Pin To Net: NetName=NetC4_2 Pin=J5-B4A9
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetJ5_A6 Pin=J5-A6
+Added Pin To Net: NetName=NetJ5_A6 Pin=J5-B6
+Added Pin To Net: NetName=NetJ5_A6 Pin=R12-2
+Added Pin To Net: NetName=NetJ5_A6 Pin=U2-71
+Added Net: Name=NetJ5_A6
+Added Pin To Net: NetName=NetJ5_A7 Pin=J5-A7
+Added Pin To Net: NetName=NetJ5_A7 Pin=J5-B7
+Added Pin To Net: NetName=NetJ5_A7 Pin=U2-70
+Added Net: Name=NetJ5_A7
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G

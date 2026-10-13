@@ -1,0 +1,89 @@
+Removed Member From Class: ClassName=CAN Member=U6
+Removed Member From Class: ClassName=Load2 Member=U6
+Removed Member From Class: ClassName=Load4 Member=U8
+Removed Member From Class: ClassName=Load6 Member=U10
+Removed Member From Class: ClassName=Load8 Member=U12
+Removed Member From Class: ClassName=Load10 Member=U14
+Removed Member From Class: ClassName=Load12 Member=U17
+Added Component: Designator=C?(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R?(R1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "1%, 0.25W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R?(R1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "1%, 0.25W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U?(FP-DDA0008J-IPC_C)
+Add component (AddParameter): Name = "Max Input Voltage"; Value = "36V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Output Voltage"; Value = "24V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Input Voltage"; Value = "3.8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Output Voltage"; Value = "1V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Outputs"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Configuration"; Value = "Positive"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "Adjustable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switching Frequency"; Value = "400kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Synchronous Rectifier"; Value = "Yes"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=MCUGND Pin=C?-2
+Added Pin To Net: NetName=DCin Pin=R?-1
+Added Pin To Net: NetName=MCUGND Pin=R?-2
+Added Pin To Net: NetName=MCUGND Pin=U?-1
+Added Pin To Net: NetName=DCin Pin=U?-2
+Added Pin To Net: NetName=feedback Pin=U?-5
+Added Pin To Net: NetName=NetC69_2 Pin=U?-8
+Added Pin To Net: NetName=MCUGND Pin=U?-9
+Change Net Name : Old Net Name=NetC69_2 New Net Name=SW
+Added Pin To Net: NetName=Boot Pin=C69-1
+Added Pin To Net: NetName=Boot Pin=U16-7
+Added Pin To Net: NetName=Boot Pin=U?-7
+Added Net: Name=Boot
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=R?-2
+Added Pin To Net: NetName=NetR?_1 Pin=U?-3
+Added Net: Name=NetR?_1
+Added Pin To Net: NetName=VCC Pin=C65-1
+Added Pin To Net: NetName=VCC Pin=C?-1
+Added Pin To Net: NetName=VCC Pin=U16-6
+Added Pin To Net: NetName=VCC Pin=U?-6
+Added Net: Name=VCC
+Added Member To Class: ClassName=power Member=Component C? CAP1206 1uf 50V
+Added Member To Class: ClassName=power Member=Component R? RES1206 10K 1%
+Added Member To Class: ClassName=power Member=Component R? RES1206 100K 1%
+Added Member To Class: ClassName=CAN Member=Component U4 NUP2105LT1G
+Added Member To Class: ClassName=Load2 Member=Component U5 MT9223-20BR5
+Added Member To Class: ClassName=Load4 Member=Component U7 MT9223-20BR5
+Added Member To Class: ClassName=Load6 Member=Component U9 MT9223-20BR5
+Added Member To Class: ClassName=Load8 Member=Component U11 MT9223-20BR5
+Added Member To Class: ClassName=Load10 Member=Component U13 MT9223-20BR5
+Added Member To Class: ClassName=Load12 Member=Component U15 MT9223-20BR5
+Added Member To Class: ClassName=power Member=Component U16 LMR33630ADDA
+Added Member To Class: ClassName=power Member=Component U? LMR33630ADDAR
+Added Room: Name=CAN

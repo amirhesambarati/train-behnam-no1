@@ -1,0 +1,339 @@
+Added Component: Designator=C57(C_EL_10X16)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "MANF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "35v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "10= -$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "470uF"; VariantName = "[No Variations]"
+Added Component: Designator=C58(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C59(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C60(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C61(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C62(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C63(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C64(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C65(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C66(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C67(C_EL_8X12)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "MANF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "50v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "10= -$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "100uF"; VariantName = "[No Variations]"
+Added Component: Designator=C68(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C69(C_TN_3528)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "VISHAY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "T55A106M6R3C0300"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "20%, 300mOhm, -55~105oC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "6.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.46$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "47uF"; VariantName = "[No Variations]"
+Added Component: Designator=C70(C1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D37(D_SMB)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "VISHAY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "PRICE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "SS34"; VariantName = "[No Variations]"
+Added Component: Designator=D38(D_SMB)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "VISHAY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "SS34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "PRICE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "SS34"; VariantName = "[No Variations]"
+Added Component: Designator=D39(D_SMB)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "VISHAY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "SS34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "PRICE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "SMBJ24CA"; VariantName = "[No Variations]"
+Added Component: Designator=D40(D_SMA)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "DIODES"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "B345AE-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "3A, -50~150oC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "45Vrrm, 0.45Vf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.35$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "ss14"; VariantName = "[No Variations]"
+Added Component: Designator=FH13(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Added Component: Designator=L2(IND_AMPLA7050S-100MT)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/AMPLA7050S-100MT/Abracon/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Abracon Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "AMPLA7050S-100MT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/AMPLA7050S-100MT/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/AMPLA7050S-100MT/Abracon/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component: Footprint Not Found DGRC_3P81_02_ASSY
+Added Component: Designator=R116(R1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "1%, 0.25W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R117(R1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "1%, 0.25W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R118(R1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "1%, 0.25W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R119(R1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "1%, 0.25W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Added Component: Designator=U15(VREG_LM5017MR/NOPB)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LMR33630ADDA/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LMR33630ADDA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "HSOIC-8 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LMR33630ADDA/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U16(VREG_TLV76133DCYR)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/TLV76133DCYR/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TLV76133DCYR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT-223-4 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/TLV76133DCYR/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Added Pin To Net: NetName=3V3 Pin=C69-1
+Added Pin To Net: NetName=3V3 Pin=C70-1
+Added Pin To Net: NetName=3V3 Pin=D40-1
+Added Pin To Net: NetName=3V3 Pin=U16-2
+Added Pin To Net: NetName=3V3 Pin=U16-4
+Added Net: Name=3V3
+Added Pin To Net: NetName=5V Pin=C63-1
+Added Pin To Net: NetName=5V Pin=C64-1
+Added Pin To Net: NetName=5V Pin=C65-1
+Added Pin To Net: NetName=5V Pin=C66-1
+Added Pin To Net: NetName=5V Pin=C67-1
+Added Pin To Net: NetName=5V Pin=C68-1
+Added Pin To Net: NetName=5V Pin=D40-2
+Added Pin To Net: NetName=5V Pin=L2-1
+Added Pin To Net: NetName=5V Pin=R118-2
+Added Pin To Net: NetName=5V Pin=U16-3
+Added Net: Name=5V
+Added Pin To Net: NetName=DCin Pin=D39-2
+Added Pin To Net: NetName=DCin Pin=FH13-2
+Added Net: Name=DCin
+Added Pin To Net: NetName=feedback Pin=R118-1
+Added Pin To Net: NetName=feedback Pin=R119-2
+Added Pin To Net: NetName=feedback Pin=U15-5
+Added Net: Name=feedback
+Added Pin To Net: NetName=GND Pin=C57-2
+Added Pin To Net: NetName=GND Pin=C58-2
+Added Pin To Net: NetName=GND Pin=C59-2
+Added Pin To Net: NetName=GND Pin=C60-2
+Added Pin To Net: NetName=GND Pin=C61-2
+Added Pin To Net: NetName=GND Pin=C63-2
+Added Pin To Net: NetName=GND Pin=C64-2
+Added Pin To Net: NetName=GND Pin=C65-2
+Added Pin To Net: NetName=GND Pin=C66-2
+Added Pin To Net: NetName=GND Pin=C67-2
+Added Pin To Net: NetName=GND Pin=C68-2
+Added Pin To Net: NetName=GND Pin=C69-2
+Added Pin To Net: NetName=GND Pin=C70-2
+Added Pin To Net: NetName=GND Pin=D38-1
+Added Pin To Net: NetName=GND Pin=D39-1
+Added Pin To Net: NetName=GND Pin=R116-2
+Added Pin To Net: NetName=GND Pin=R119-1
+Added Pin To Net: NetName=GND Pin=U15-1
+Added Pin To Net: NetName=GND Pin=U15-9
+Added Pin To Net: NetName=GND Pin=U16-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC57_1 Pin=C57-1
+Added Pin To Net: NetName=NetC57_1 Pin=D37-2
+Added Pin To Net: NetName=NetC57_1 Pin=D38-2
+Added Pin To Net: NetName=NetC57_1 Pin=FH13-1
+Added Net: Name=NetC57_1
+Added Pin To Net: NetName=NetC58_1 Pin=C58-1
+Added Pin To Net: NetName=NetC58_1 Pin=U15-6
+Added Net: Name=NetC58_1
+Added Pin To Net: NetName=NetC59_1 Pin=C59-1
+Added Pin To Net: NetName=NetC59_1 Pin=C60-1
+Added Pin To Net: NetName=NetC59_1 Pin=C61-1
+Added Pin To Net: NetName=NetC59_1 Pin=R117-1
+Added Pin To Net: NetName=NetC59_1 Pin=U15-2
+Added Net: Name=NetC59_1
+Added Pin To Net: NetName=NetC62_1 Pin=C62-1
+Added Pin To Net: NetName=NetC62_1 Pin=U15-7
+Added Net: Name=NetC62_1
+Added Pin To Net: NetName=NetC62_2 Pin=C62-2
+Added Pin To Net: NetName=NetC62_2 Pin=L2-2
+Added Pin To Net: NetName=NetC62_2 Pin=U15-8
+Added Net: Name=NetC62_2
+Added Pin To Net: NetName=NetD37_1 Pin=D37-1
+Added Net: Name=NetD37_1
+Added Pin To Net: NetName=NetR116_1 Pin=R116-1
+Added Pin To Net: NetName=NetR116_1 Pin=R117-2
+Added Pin To Net: NetName=NetR116_1 Pin=U15-3
+Added Net: Name=NetR116_1
+Added Class: Name=power
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Added Member To Class: ClassName=MCU Member=Component C4 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component C6 CAP1206 22pf 50V
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G
+Added Rule: Name=Schematic Supply Nets_2

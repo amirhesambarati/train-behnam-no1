@@ -1,0 +1,31 @@
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Added Pin To Net: NetName=NetB1_1 Pin=B1-1
+Added Pin To Net: NetName=NetB1_1 Pin=U2-81
+Added Net: Name=NetB1_1
+Added Pin To Net: NetName=NetB1_4 Pin=B1-4
+Added Pin To Net: NetName=NetB1_4 Pin=U2-82
+Added Net: Name=NetB1_4
+Added Pin To Net: NetName=NetB2_1 Pin=B2-1
+Added Pin To Net: NetName=NetB2_1 Pin=U2-51
+Added Net: Name=NetB2_1
+Added Pin To Net: NetName=NetB2_4 Pin=B2-4
+Added Pin To Net: NetName=NetB2_4 Pin=U2-52
+Added Net: Name=NetB2_4
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Added Member To Class: ClassName=power Member=Component D38 XL-2012UGC-A
+Added Member To Class: ClassName=power Member=Component D39 XL-2012UGC-A
+Added Member To Class: ClassName=power Member=Component D40 SS34
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Added Member To Class: ClassName=power Member=Component R118 RES1206 2.2K 1%
+Added Member To Class: ClassName=power Member=Component R119 RES1206 560R 1%
+Added Member To Class: ClassName=power Member=Component R120 RES1206 180R 1%
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G

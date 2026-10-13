@@ -1,0 +1,100 @@
+Removed Pin From Net: NetName=NetB1_14 Pin=J5-1
+Removed Pin From Net: NetName=NetB1_15 Pin=J5-2
+Removed Pin From Net: NetName=NetB2_14 Pin=J6-1
+Removed Pin From Net: NetName=NetB2_15 Pin=J6-2
+Change Component Designator: OldDesignator=L2 NewDesignator=L3
+Added Component: Designator=L1(FP-ACM2520-2P-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "1008"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Resistance (DCR)"; Value = "900mR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "2.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.051inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance"; Value = "1kR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "0.098inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max DC Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Lines"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "ACM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Frequency"; Value = "100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.079inch"; VariantName = "[No Variations]"
+Added Component: Designator=L2(FP-ACM2520-2P-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "1008"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Resistance (DCR)"; Value = "900mR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "2.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.051inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance"; Value = "1kR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "0.098inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max DC Current"; Value = "200mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Lines"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "ACM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Frequency"; Value = "100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.079inch"; VariantName = "[No Variations]"
+Added Component: Designator=U3(PRKT-SOT23-3_V)
+Add component (AddParameter): Name = "Capacitance"; Value = "75pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case\/Package"; Value = "SOT-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Clamping Voltage"; Value = "17V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "20uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "www.protekdevices.com/xyz/documents/datasheets/psm712.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "10/2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Direction"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Dual"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "20uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.04mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Protek Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.protekdevices.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Breakdown Voltage"; Value = "7.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.94 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "TapeandReel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "600W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "12V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "7V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetB1_15 Pin=L1-1
+Added Pin To Net: NetName=NetB1_14 Pin=L1-2
+Added Pin To Net: NetName=NetB2_15 Pin=L2-1
+Added Pin To Net: NetName=NetB2_14 Pin=L2-2
+Added Pin To Net: NetName=MGND Pin=U3-3
+Added Pin To Net: NetName=NetJ5_1 Pin=J5-1
+Added Pin To Net: NetName=NetJ5_1 Pin=L1-3
+Added Net: Name=NetJ5_1
+Added Pin To Net: NetName=NetJ5_2 Pin=J5-2
+Added Pin To Net: NetName=NetJ5_2 Pin=L1-4
+Added Net: Name=NetJ5_2
+Added Pin To Net: NetName=NetJ6_1 Pin=J6-1
+Added Pin To Net: NetName=NetJ6_1 Pin=L2-3
+Added Net: Name=NetJ6_1
+Added Pin To Net: NetName=NetJ6_2 Pin=J6-2
+Added Pin To Net: NetName=NetJ6_2 Pin=L2-4
+Added Net: Name=NetJ6_2
+Add Differential Pair: Number of nets in differential pair NetU3_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetU3_2 is 1 instead of 2
+Added Member To Class: ClassName=CAN Member=Component L1 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component L2 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component U3 NUP2105LT1G
+Added Room: Name=CAN

@@ -1,0 +1,51 @@
+Change Component Footprint: Designator=D38 Old Footprint=LED0805GRN New Footprint=LED1206GRN
+Change Component Footprint: Designator=D39 Old Footprint=LED0805GRN New Footprint=LED1206GRN
+Change Component Footprint: Designator=D42 Old Footprint=LED0805GRN New Footprint=LED1206GRN
+Change Component Comment : Designator=D38 Old Comment=XL-2012UGC-A New Comment=LED1206GRN
+Change Component Comment : Designator=D39 Old Comment=XL-2012UGC-A New Comment=LED1206GRN
+Change Component Comment : Designator=D42 Old Comment=XL-2012UGC-A New Comment=LED1206GRN
+Change component parameters: Designator = "D38" ("D38"); Footprint = "LED0805GRN"; UniqueID = "\VYOHMRYX" ("\VYOHMRYX")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#3"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#4"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MountType"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "2.2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartType"; Value = "LED"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "36t@Javan"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "LED1206GRN"; VariantName = "[No Variations]"
+Change component parameters: Designator = "D39" ("D39"); Footprint = "LED0805GRN"; UniqueID = "\MPDGZXUN" ("\MPDGZXUN")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#3"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#4"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MountType"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "2.2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartType"; Value = "LED"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "36t@Javan"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "LED1206GRN"; VariantName = "[No Variations]"
+Change component parameters: Designator = "D42" ("D42"); Footprint = "LED0805GRN"; UniqueID = "\QVQFVDBE" ("\QVQFVDBE")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#3"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#4"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MountType"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "20mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "2.2V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartType"; Value = "LED"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "36t@Javan"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "LED1206GRN"; VariantName = "[No Variations]"

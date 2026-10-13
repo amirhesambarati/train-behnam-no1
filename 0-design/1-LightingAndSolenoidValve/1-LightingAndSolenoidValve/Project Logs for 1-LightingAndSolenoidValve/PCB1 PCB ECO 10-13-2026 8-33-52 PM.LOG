@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=MCUGND Pin=R118-1
+Added Pin To Net: NetName=MCUGND Pin=R119-1
+Added Pin To Net: NetName=MCUGND Pin=R120-1
+Added Member To Class: ClassName=power Member=Component U16 LMR33630ADDAR
+Added Room: Name=CAN

@@ -1,0 +1,47 @@
+Removed Pin From Net: NetName=DCin Pin=C66-1
+Removed Pin From Net: NetName=MCUGND Pin=C66-2
+Removed Pin From Net: NetName=MCUGND Pin=C?-2
+Removed Pin From Net: NetName=5V Pin=L3-1
+Removed Pin From Net: NetName=MCUGND Pin=R121-2
+Removed Pin From Net: NetName=feedback Pin=R123-1
+Removed Pin From Net: NetName=5V Pin=R123-2
+Removed Pin From Net: NetName=MCUGND Pin=R124-1
+Removed Pin From Net: NetName=feedback Pin=R124-2
+Removed Pin From Net: NetName=DCin Pin=R?-1
+Remove Pin from Net: Failed to remove Pin
+Removed Pin From Net: NetName=MCUGND Pin=U16-1
+Removed Pin From Net: NetName=DCin Pin=U16-2
+Removed Pin From Net: NetName=feedback Pin=U16-5
+Removed Pin From Net: NetName=MCUGND Pin=U16-9
+Removed Member From Class: ClassName=power Member=C?
+Removed Member From Class: ClassName=power Member=R?
+Removed Member From Class: ClassName=power Member=U?
+Change Component Comment : Designator=C66 Old Comment=CAP1206 10uf 50V New Comment=CAP1206 100nf 50V
+Change Component Comment : Designator=C69 Old Comment=CAP1206 100nf 50V New Comment=CAP1206 220nf 50V
+Change Component Comment : Designator=C68 Old Comment=CAP1206 220nf 50V New Comment=CAP1206 10uf 50V
+Change Component Comment : Designator=R121 Old Comment=RES1206 10K 1% New Comment=RES1206 100k 1%
+Change Component Comment : Designator=R124 Old Comment=RES1206 24.9k 1% New Comment=RES1206 10K 1%
+Change Component Comment : Designator=R123 Old Comment=RES1206 100k 1% New Comment=RES1206 24.9k 1%
+Change Component Designator: OldDesignator=U? NewDesignator=U16
+Added Pin To Net: NetName=DCin Pin=C69-1
+Added Pin To Net: NetName=MCUGND Pin=C69-2
+Added Pin To Net: NetName=5V Pin=L3-2
+Added Pin To Net: NetName=feedback Pin=R121-1
+Added Pin To Net: NetName=5V Pin=R121-2
+Added Pin To Net: NetName=MCUGND Pin=R123-1
+Added Pin To Net: NetName=feedback Pin=R123-2
+Added Pin To Net: NetName=MCUGND Pin=R124-2
+Added Pin To Net: NetName=NetC65_1 Pin=C65-1
+Added Pin To Net: NetName=NetC65_1 Pin=U16-6
+Added Net: Name=NetC65_1
+Added Pin To Net: NetName=NetC66_1 Pin=C66-1
+Added Pin To Net: NetName=NetC66_1 Pin=U16-7
+Added Net: Name=NetC66_1
+Added Pin To Net: NetName=NetC66_2 Pin=C66-2
+Added Pin To Net: NetName=NetC66_2 Pin=L3-1
+Added Pin To Net: NetName=NetC66_2 Pin=U16-8
+Added Net: Name=NetC66_2
+Added Pin To Net: NetName=NetR122_2 Pin=R122-2
+Added Pin To Net: NetName=NetR122_2 Pin=R124-1
+Added Pin To Net: NetName=NetR122_2 Pin=U16-3
+Added Net: Name=NetR122_2

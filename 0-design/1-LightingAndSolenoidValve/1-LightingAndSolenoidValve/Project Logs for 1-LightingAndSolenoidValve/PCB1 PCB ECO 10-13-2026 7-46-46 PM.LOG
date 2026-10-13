@@ -1,0 +1,50 @@
+Removed Member From Class: ClassName=CAN Member=L3
+Change Component Designator: OldDesignator=U4 NewDesignator=U5
+Change Component Designator: OldDesignator=U5 NewDesignator=U6
+Change Component Designator: OldDesignator=U6 NewDesignator=U7
+Change Component Designator: OldDesignator=U7 NewDesignator=U8
+Change Component Designator: OldDesignator=U8 NewDesignator=U9
+Change Component Designator: OldDesignator=U9 NewDesignator=U10
+Change Component Designator: OldDesignator=U10 NewDesignator=U11
+Change Component Designator: OldDesignator=U11 NewDesignator=U12
+Change Component Designator: OldDesignator=U12 NewDesignator=U13
+Change Component Designator: OldDesignator=U13 NewDesignator=U14
+Change Component Designator: OldDesignator=U14 NewDesignator=U15
+Change Component Designator: OldDesignator=U15 NewDesignator=U16
+Change Component Designator: OldDesignator=U16 NewDesignator=U17
+Added Component: Designator=U4(PRKT-SOT23-3_V)
+Add component (AddParameter): Name = "Capacitance"; Value = "75pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case\/Package"; Value = "SOT-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Clamping Voltage"; Value = "17V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "20uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "www.protekdevices.com/xyz/documents/datasheets/psm712.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "10/2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Direction"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Dual"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "20uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.04mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Protek Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.protekdevices.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Breakdown Voltage"; Value = "7.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "3-Pin Small Outline Transistor, Body 2.92 x 1.3 mm, Pitch 0.94 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SOT23-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "TapeandReel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "600W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "12V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "7V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetB1_15 Pin=U3-1
+Added Pin To Net: NetName=NetB1_14 Pin=U3-2
+Added Pin To Net: NetName=NetB2_15 Pin=U4-1
+Added Pin To Net: NetName=NetB2_14 Pin=U4-2
+Added Pin To Net: NetName=MGND Pin=U4-3
+Added Member To Class: ClassName=CAN Member=Component L2 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component U4 NUP2105LT1G
+Added Room: Name=CAN

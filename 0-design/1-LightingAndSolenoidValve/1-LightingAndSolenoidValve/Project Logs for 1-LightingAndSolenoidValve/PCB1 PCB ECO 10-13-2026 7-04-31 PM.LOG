@@ -1,0 +1,215 @@
+Removed Pin From Net: NetName=3v3MCU Pin=B1-7
+Removed Pin From Net: NetName=3v3MCU Pin=B2-7
+Removed Pin From Net: NetName=3v3MCU Pin=C20-1
+Removed Pin From Net: NetName=3v3MCU Pin=C27-1
+Removed Pin From Net: NetName=MCUGND Pin=J4-1
+Removed Pin From Net: NetName=MCUGND Pin=J4-2
+Removed Pin From Net: NetName=3v3MCU Pin=J4-3
+Removed Pin From Net: NetName=5vMCU Pin=J4-4
+Removed Pin From Net: NetName=3v3MCU Pin=R12-1
+Removed Member From Class: ClassName=CAN Member=C31
+Removed Member From Class: ClassName=CAN Member=C33
+Removed Member From Class: ClassName=CAN Member=C35
+Removed Member From Class: ClassName=CAN Member=C37
+Removed Member From Class: ClassName=CAN Member=C39
+Removed Member From Class: ClassName=Load2 Member=C39
+Removed Member From Class: ClassName=CAN Member=C41
+Removed Member From Class: ClassName=Load3 Member=C41
+Removed Member From Class: ClassName=CAN Member=C43
+Removed Member From Class: ClassName=Load3 Member=C43
+Removed Member From Class: ClassName=Load4 Member=C45
+Removed Member From Class: ClassName=Load5 Member=C47
+Removed Member From Class: ClassName=Load5 Member=C49
+Removed Member From Class: ClassName=Load6 Member=C51
+Removed Member From Class: ClassName=Load7 Member=C53
+Removed Member From Class: ClassName=Load7 Member=C55
+Removed Member From Class: ClassName=Load9 Member=C59
+Removed Member From Class: ClassName=Load9 Member=C61
+Removed Member From Class: ClassName=Load8 Member=C71
+Removed Member From Class: ClassName=Load10 Member=C71
+Removed Member From Class: ClassName=Load11 Member=C72
+Removed Member From Class: ClassName=Load11 Member=C74
+Removed Member From Class: ClassName=Load12 Member=C76
+Removed Member From Class: ClassName=Load10 Member=C77
+Removed Member From Class: ClassName=Load12 Member=C77
+Removed Member From Class: ClassName=MCU Member=J5
+Removed Member From Class: ClassName=CAN Member=R27
+Removed Member From Class: ClassName=CAN Member=R34
+Removed Member From Class: ClassName=Load2 Member=R34
+Removed Member From Class: ClassName=Load3 Member=R45
+Removed Member From Class: ClassName=Load3 Member=R52
+Removed Member From Class: ClassName=Load4 Member=R52
+Removed Member From Class: ClassName=Load5 Member=R63
+Removed Member From Class: ClassName=Load5 Member=R70
+Removed Member From Class: ClassName=Load6 Member=R70
+Removed Member From Class: ClassName=Load7 Member=R81
+Removed Member From Class: ClassName=Load7 Member=R88
+Removed Member From Class: ClassName=Load8 Member=R88
+Removed Member From Class: ClassName=Load9 Member=R99
+Removed Member From Class: ClassName=Load9 Member=R106
+Removed Member From Class: ClassName=Load10 Member=R106
+Removed Member From Class: ClassName=Load11 Member=R117
+Removed Member From Class: ClassName=Load11 Member=R120
+Removed Member From Class: ClassName=Load12 Member=R120
+Change Component Designator: OldDesignator=J5 NewDesignator=J4
+Change Component Designator: OldDesignator=J6 NewDesignator=J5
+Change Component Designator: OldDesignator=J7 NewDesignator=J6
+Added Component: Designator=J7(ATXPWR_4)
+Add component (AddParameter): Name = "MANF"; Value = "TE, Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "4-1775099-0, 39281043"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-4pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_4"; VariantName = "[No Variations]"
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Added Pin To Net: NetName=MCUGND Pin=J7-1
+Added Pin To Net: NetName=MCUGND Pin=J7-2
+Added Pin To Net: NetName=NetD37_1 Pin=J7-3
+Added Pin To Net: NetName=NetD37_1 Pin=J7-4
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Change Net Name : Old Net Name=5vMCU New Net Name=NetB1_6
+Change Net Name : Old Net Name=NetJ5_A6 New Net Name=NetJ4_A6
+Change Net Name : Old Net Name=NetJ5_A7 New Net Name=NetJ4_A7
+Added Pin To Net: NetName=NetB1_7 Pin=B1-7
+Added Pin To Net: NetName=NetB1_7 Pin=B2-7
+Added Pin To Net: NetName=NetB1_7 Pin=C20-1
+Added Pin To Net: NetName=NetB1_7 Pin=C27-1
+Added Pin To Net: NetName=NetB1_7 Pin=R12-1
+Added Net: Name=NetB1_7
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Added Member To Class: ClassName=CAN Member=Component C24 CAP1206 4.7nf 50V
+Added Member To Class: ClassName=CAN Member=Component C25 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C26 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C27 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C28 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C29 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C30 CAP1206 100nf 50V
+Added Member To Class: ClassName=Load2 Member=Component C32 CAP1206 100nf 50V
+Added Member To Class: ClassName=Load3 Member=Component C34 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load3 Member=Component C36 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load4 Member=Component C38 CAP1206 100nf 50V
+Added Member To Class: ClassName=Load5 Member=Component C40 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load5 Member=Component C42 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load6 Member=Component C44 CAP1206 100nf 50V
+Added Member To Class: ClassName=Load7 Member=Component C46 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load7 Member=Component C48 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load8 Member=Component C50 CAP1206 100nf 50V
+Added Member To Class: ClassName=Load9 Member=Component C52 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load9 Member=Component C54 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load10 Member=Component C56 CAP1206 100nf 50V
+Added Member To Class: ClassName=Load10 Member=Component C57 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load11 Member=Component C58 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load11 Member=Component C60 CAP1206 1nf 50V
+Added Member To Class: ClassName=Load12 Member=Component C62 CAP1206 100nf 50V
+Added Member To Class: ClassName=Load12 Member=Component C63 CAP1206 1nf 50V
+Added Member To Class: ClassName=power Member=Component C64 HT1V477M1012PC
+Added Member To Class: ClassName=power Member=Component C65 CAP1206 1uf 50V
+Added Member To Class: ClassName=power Member=Component C66 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C67 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C68 CAP1206 220nf 50V
+Added Member To Class: ClassName=power Member=Component C69 CAP1206 100nf 50V
+Added Member To Class: ClassName=power Member=Component C70 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component J7 CONN_ATXPWR_4
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component R17 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R18 RES1206 60 1%
+Added Member To Class: ClassName=Load2 Member=Component R19 RES1206 12K 1%
+Added Member To Class: ClassName=Load2 Member=Component R20 RES1206 12K 1%
+Added Member To Class: ClassName=Load2 Member=Component R21 RES1206 470 1%
+Added Member To Class: ClassName=Load2 Member=Component R22 RES1206 470 1%
+Added Member To Class: ClassName=Load2 Member=Component R23 RES1206 12K 1%
+Added Member To Class: ClassName=Load2 Member=Component R24 RES1206 12K 1%
+Added Member To Class: ClassName=Load2 Member=Component R25 RES1206 100R 1%
+Added Member To Class: ClassName=Load2 Member=Component R26 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R28 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R29 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R30 RES1206 470 1%
+Added Member To Class: ClassName=Load3 Member=Component R31 RES1206 470 1%
+Added Member To Class: ClassName=Load3 Member=Component R32 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R33 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R35 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R36 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R37 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R38 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R39 RES1206 470 1%
+Added Member To Class: ClassName=Load4 Member=Component R40 RES1206 470 1%
+Added Member To Class: ClassName=Load4 Member=Component R41 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R42 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R43 RES1206 100R 1%
+Added Member To Class: ClassName=Load4 Member=Component R44 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R46 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R47 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R48 RES1206 470 1%
+Added Member To Class: ClassName=Load5 Member=Component R49 RES1206 470 1%
+Added Member To Class: ClassName=Load5 Member=Component R50 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R51 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R53 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R54 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R55 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R56 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R57 RES1206 470 1%
+Added Member To Class: ClassName=Load6 Member=Component R58 RES1206 470 1%
+Added Member To Class: ClassName=Load6 Member=Component R59 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R60 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R61 RES1206 100R 1%
+Added Member To Class: ClassName=Load6 Member=Component R62 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R64 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R65 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R66 RES1206 470 1%
+Added Member To Class: ClassName=Load7 Member=Component R67 RES1206 470 1%
+Added Member To Class: ClassName=Load7 Member=Component R68 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R69 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R71 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R72 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R73 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R74 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R75 RES1206 470 1%
+Added Member To Class: ClassName=Load8 Member=Component R76 RES1206 470 1%
+Added Member To Class: ClassName=Load8 Member=Component R77 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R78 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R79 RES1206 100R 1%
+Added Member To Class: ClassName=Load8 Member=Component R80 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R82 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R83 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R84 RES1206 470 1%
+Added Member To Class: ClassName=Load9 Member=Component R85 RES1206 470 1%
+Added Member To Class: ClassName=Load9 Member=Component R86 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R87 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R89 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R90 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R91 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R92 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R93 RES1206 470 1%
+Added Member To Class: ClassName=Load10 Member=Component R94 RES1206 470 1%
+Added Member To Class: ClassName=Load10 Member=Component R95 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R96 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R97 RES1206 100R 1%
+Added Member To Class: ClassName=Load10 Member=Component R98 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R100 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R101 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R102 RES1206 470 1%
+Added Member To Class: ClassName=Load11 Member=Component R103 RES1206 470 1%
+Added Member To Class: ClassName=Load11 Member=Component R104 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R105 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R107 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R108 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R109 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R110 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R111 RES1206 470 1%
+Added Member To Class: ClassName=Load12 Member=Component R112 RES1206 470 1%
+Added Member To Class: ClassName=Load12 Member=Component R113 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R114 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R115 RES1206 100R 1%
+Added Member To Class: ClassName=Load12 Member=Component R116 RES1206 12K 1%
+Added Member To Class: ClassName=power Member=Component R118 RES1206 60 1%
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G
