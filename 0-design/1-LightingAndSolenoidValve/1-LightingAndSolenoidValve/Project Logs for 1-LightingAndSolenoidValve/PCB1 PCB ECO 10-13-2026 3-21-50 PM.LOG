@@ -1,0 +1,45 @@
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Added Pin To Net: NetName=NetC3_1 Pin=U2-15
+Added Pin To Net: NetName=NetC25_1 Pin=U2-16
+Added Pin To Net: NetName=NetC28_1 Pin=U2-17
+Added Pin To Net: NetName=NetC55_1 Pin=U2-18
+Added Pin To Net: NetName=NetC31_1 Pin=U2-23
+Added Pin To Net: NetName=NetC34_1 Pin=U2-24
+Added Pin To Net: NetName=NetC37_1 Pin=U2-25
+Added Pin To Net: NetName=NetC40_1 Pin=U2-26
+Added Pin To Net: NetName=NetC43_1 Pin=U2-29
+Added Pin To Net: NetName=NetC46_1 Pin=U2-30
+Added Pin To Net: NetName=NetC49_1 Pin=U2-31
+Added Pin To Net: NetName=NetC52_1 Pin=U2-32
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Added Pin To Net: NetName=NetU2_51 Pin=U2-51
+Added Pin To Net: NetName=NetU2_51 Pin=U2-81
+Added Net: Name=NetU2_51
+Added Pin To Net: NetName=NetU2_52 Pin=U2-52
+Added Pin To Net: NetName=NetU2_52 Pin=U2-82
+Added Net: Name=NetU2_52
+Added Pin To Net: NetName=NetU2_68 Pin=U2-68
+Added Net: Name=NetU2_68
+Added Pin To Net: NetName=NetU2_69 Pin=U2-69
+Added Net: Name=NetU2_69
+Added Pin To Net: NetName=NetU2_70 Pin=U2-70
+Added Net: Name=NetU2_70
+Added Pin To Net: NetName=NetU2_71 Pin=U2-71
+Added Net: Name=NetU2_71
+Added Pin To Net: NetName=NetU2_89 Pin=U2-89
+Added Net: Name=NetU2_89
+Added Pin To Net: NetName=NetU2_90 Pin=U2-90
+Added Net: Name=NetU2_90
+Added Pin To Net: NetName=NetU2_91 Pin=U2-91
+Added Net: Name=NetU2_91
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G

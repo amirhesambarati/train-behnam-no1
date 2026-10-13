@@ -1,0 +1,213 @@
+Removed Pin From Net: NetName=NetD4_4 Pin=U4-1
+Removed Pin From Net: NetName=NetD4_4 Pin=U4-2
+Removed Pin From Net: NetName=NetD7_4 Pin=U5-1
+Removed Pin From Net: NetName=NetD7_4 Pin=U5-2
+Removed Pin From Net: NetName=NetD10_4 Pin=U6-1
+Removed Pin From Net: NetName=NetD10_4 Pin=U6-2
+Removed Pin From Net: NetName=NetD13_4 Pin=U7-1
+Removed Pin From Net: NetName=NetD13_4 Pin=U7-2
+Removed Pin From Net: NetName=NetD16_4 Pin=U8-1
+Removed Pin From Net: NetName=NetD16_4 Pin=U8-2
+Removed Pin From Net: NetName=NetD19_4 Pin=U9-1
+Removed Pin From Net: NetName=NetD19_4 Pin=U9-2
+Removed Pin From Net: NetName=NetD22_4 Pin=U10-1
+Removed Pin From Net: NetName=NetD22_4 Pin=U10-2
+Removed Pin From Net: NetName=NetD25_4 Pin=U11-1
+Removed Pin From Net: NetName=NetD25_4 Pin=U11-2
+Removed Pin From Net: NetName=NetD28_4 Pin=U12-1
+Removed Pin From Net: NetName=NetD28_4 Pin=U12-2
+Removed Pin From Net: NetName=NetD31_4 Pin=U13-1
+Removed Pin From Net: NetName=NetD31_4 Pin=U13-2
+Removed Pin From Net: NetName=NetD34_4 Pin=U14-1
+Removed Pin From Net: NetName=NetD34_4 Pin=U14-2
+Change Component Designator: OldDesignator=FH? NewDesignator=FH1
+Added Component: Designator=FH2(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH3(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH4(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH5(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH6(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH7(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH8(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH9(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH10(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH11(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Added Component: Designator=FH12(FH_24101812)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Added Pin To Net: NetName=NetD4_4 Pin=FH2-1
+Added Pin To Net: NetName=NetD7_4 Pin=FH3-1
+Added Pin To Net: NetName=NetD10_4 Pin=FH4-1
+Added Pin To Net: NetName=NetD13_4 Pin=FH5-1
+Added Pin To Net: NetName=NetD16_4 Pin=FH6-1
+Added Pin To Net: NetName=NetD19_4 Pin=FH7-1
+Added Pin To Net: NetName=NetD22_4 Pin=FH8-1
+Added Pin To Net: NetName=NetD25_4 Pin=FH9-1
+Added Pin To Net: NetName=NetD28_4 Pin=FH10-1
+Added Pin To Net: NetName=NetD31_4 Pin=FH11-1
+Added Pin To Net: NetName=NetD34_4 Pin=FH12-1
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Change Net Name : Old Net Name=NetFH?_2 New Net Name=NetFH1_2
+Added Pin To Net: NetName=NetFH2_2 Pin=FH2-2
+Added Pin To Net: NetName=NetFH2_2 Pin=U4-1
+Added Pin To Net: NetName=NetFH2_2 Pin=U4-2
+Added Net: Name=NetFH2_2
+Added Pin To Net: NetName=NetFH3_2 Pin=FH3-2
+Added Pin To Net: NetName=NetFH3_2 Pin=U5-1
+Added Pin To Net: NetName=NetFH3_2 Pin=U5-2
+Added Net: Name=NetFH3_2
+Added Pin To Net: NetName=NetFH4_2 Pin=FH4-2
+Added Pin To Net: NetName=NetFH4_2 Pin=U6-1
+Added Pin To Net: NetName=NetFH4_2 Pin=U6-2
+Added Net: Name=NetFH4_2
+Added Pin To Net: NetName=NetFH5_2 Pin=FH5-2
+Added Pin To Net: NetName=NetFH5_2 Pin=U7-1
+Added Pin To Net: NetName=NetFH5_2 Pin=U7-2
+Added Net: Name=NetFH5_2
+Added Pin To Net: NetName=NetFH6_2 Pin=FH6-2
+Added Pin To Net: NetName=NetFH6_2 Pin=U8-1
+Added Pin To Net: NetName=NetFH6_2 Pin=U8-2
+Added Net: Name=NetFH6_2
+Added Pin To Net: NetName=NetFH7_2 Pin=FH7-2
+Added Pin To Net: NetName=NetFH7_2 Pin=U9-1
+Added Pin To Net: NetName=NetFH7_2 Pin=U9-2
+Added Net: Name=NetFH7_2
+Added Pin To Net: NetName=NetFH8_2 Pin=FH8-2
+Added Pin To Net: NetName=NetFH8_2 Pin=U10-1
+Added Pin To Net: NetName=NetFH8_2 Pin=U10-2
+Added Net: Name=NetFH8_2
+Added Pin To Net: NetName=NetFH9_2 Pin=FH9-2
+Added Pin To Net: NetName=NetFH9_2 Pin=U11-1
+Added Pin To Net: NetName=NetFH9_2 Pin=U11-2
+Added Net: Name=NetFH9_2
+Added Pin To Net: NetName=NetFH10_2 Pin=FH10-2
+Added Pin To Net: NetName=NetFH10_2 Pin=U12-1
+Added Pin To Net: NetName=NetFH10_2 Pin=U12-2
+Added Net: Name=NetFH10_2
+Added Pin To Net: NetName=NetFH11_2 Pin=FH11-2
+Added Pin To Net: NetName=NetFH11_2 Pin=U13-1
+Added Pin To Net: NetName=NetFH11_2 Pin=U13-2
+Added Net: Name=NetFH11_2
+Added Pin To Net: NetName=NetFH12_2 Pin=FH12-2
+Added Pin To Net: NetName=NetFH12_2 Pin=U14-1
+Added Pin To Net: NetName=NetFH12_2 Pin=U14-2
+Added Net: Name=NetFH12_2
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Added Member To Class: ClassName=Load2 Member=Component FH2 Fuse Holder
+Added Member To Class: ClassName=Load3 Member=Component FH3 Fuse Holder
+Added Member To Class: ClassName=Load4 Member=Component FH4 Fuse Holder
+Added Member To Class: ClassName=Load5 Member=Component FH5 Fuse Holder
+Added Member To Class: ClassName=Load6 Member=Component FH6 Fuse Holder
+Added Member To Class: ClassName=Load7 Member=Component FH7 Fuse Holder
+Added Member To Class: ClassName=Load8 Member=Component FH8 Fuse Holder
+Added Member To Class: ClassName=Load9 Member=Component FH9 Fuse Holder
+Added Member To Class: ClassName=Load10 Member=Component FH10 Fuse Holder
+Added Member To Class: ClassName=Load11 Member=Component FH11 Fuse Holder
+Added Member To Class: ClassName=Load12 Member=Component FH12 Fuse Holder
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G

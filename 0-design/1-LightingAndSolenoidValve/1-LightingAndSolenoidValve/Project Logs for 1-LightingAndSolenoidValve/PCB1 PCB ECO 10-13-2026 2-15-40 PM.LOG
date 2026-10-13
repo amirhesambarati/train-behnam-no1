@@ -1,0 +1,25 @@
+Change Component Footprint: Designator=FH? Old Footprint=FH_BLADE_KS35572 New Footprint=FH_24101812
+Change component parameters: Designator = "FH?" ("FH?"); Footprint = "FH_BLADE_KS35572"; UniqueID = "\VGEMVRZX" ("\VGEMVRZX")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "Littelfuse"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "01550900M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PACKAGE"; Value = "SMD,5.0x9.7mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "max. 10A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "125v"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "0.2$"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "Fuse Holder"; VariantName = "[No Variations]"
+Add component: Footprint Not Found FP-ACM2520-2P-MFG
+Add component: Footprint Not Found PRKT-SOT23-3_V
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin L1-3
+Add Pin To Net: Unknown Pin: Pin L1-4
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Add Differential Pair: Number of nets in differential pair NetL1_1 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetL1_2 is 1 instead of 2
+Added Member To Class: ClassName=Load1 Member=Component FH? Fuse Holder
+Add Class Member: Failed to add class member : Component L1 ACM2520-102-2P-T002
+Add Class Member: Failed to add class member : Component U3 NUP2105LT1G
