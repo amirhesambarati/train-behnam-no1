@@ -1,0 +1,49 @@
+Removed Pin From Net: NetName=MCUGND Pin=J7-1
+Removed Pin From Net: NetName=MCUGND Pin=J7-2
+Removed Pin From Net: NetName=NetD37_1 Pin=J7-3
+Removed Pin From Net: NetName=NetD37_1 Pin=J7-4
+Removed Member From Class: ClassName=power Member=J7
+Change Component Footprint: Designator=J5 Old Footprint=ATXPWR_2 New Footprint=ATXPWR_4
+Change Component Footprint: Designator=J6 Old Footprint=ATXPWR_2 New Footprint=ATXPWR_4
+Change Component Comment : Designator=J5 Old Comment=CONN_ATXPWR_2 New Comment=CONN_ATXPWR_4
+Change Component Comment : Designator=J6 Old Comment=CONN_ATXPWR_2 New Comment=CONN_ATXPWR_4
+Change component parameters: Designator = "J5" ("J5"); Footprint = "ATXPWR_2"; UniqueID = "\PMSLEAUD" ("\PMSLEAUD")
+Change component parameters (AddParameter): Name = "MANF"; Value = "TE, Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "4-1775099-0, 39281043"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-4pin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J6" ("J6"); Footprint = "ATXPWR_2"; UniqueID = "\SMLDDANG" ("\SMLDDANG")
+Change component parameters (AddParameter): Name = "MANF"; Value = "TE, Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "4-1775099-0, 39281043"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-4pin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_4"; VariantName = "[No Variations]"
+Added Component: Designator=POWER1(ATXPWR_2)
+Add component (AddParameter): Name = "MANF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "39281023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-2pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_2"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJ5_1 Pin=J5-2
+Added Pin To Net: NetName=NetJ6_1 Pin=J6-2
+Added Pin To Net: NetName=NetD37_1 Pin=POWER1-1
+Added Pin To Net: NetName=MCUGND Pin=POWER1-2
+Added Pin To Net: NetName=NetJ5_3 Pin=J5-3
+Added Pin To Net: NetName=NetJ5_3 Pin=J5-4
+Added Pin To Net: NetName=NetJ5_3 Pin=L1-4
+Added Net: Name=NetJ5_3
+Added Pin To Net: NetName=NetJ6_3 Pin=J6-3
+Added Pin To Net: NetName=NetJ6_3 Pin=J6-4
+Added Pin To Net: NetName=NetJ6_3 Pin=L2-4
+Added Net: Name=NetJ6_3
+Added Member To Class: ClassName=power Member=Component POWER1 CONN_ATXPWR_2

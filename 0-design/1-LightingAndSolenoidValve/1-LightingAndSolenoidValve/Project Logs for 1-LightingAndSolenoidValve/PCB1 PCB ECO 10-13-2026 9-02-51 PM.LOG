@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetD37_1 Pin=POWER1-1
+Removed Pin From Net: NetName=MCUGND Pin=POWER1-2
+Added Pin To Net: NetName=MCUGND Pin=POWER1-1
+Added Pin To Net: NetName=NetD37_1 Pin=POWER1-2
+Added Room: Name=CAN

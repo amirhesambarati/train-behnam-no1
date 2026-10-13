@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetC64_1 Pin=C64-1
+Change Net Name : Old Net Name=NetC64_1 New Net Name=NetD37_2
+Added Pin To Net: NetName=NetC64_1 Pin=C64-1
+Added Pin To Net: NetName=NetC64_1 Pin=D37-1
+Added Pin To Net: NetName=NetC64_1 Pin=POWER1-2
+Added Net: Name=NetC64_1
