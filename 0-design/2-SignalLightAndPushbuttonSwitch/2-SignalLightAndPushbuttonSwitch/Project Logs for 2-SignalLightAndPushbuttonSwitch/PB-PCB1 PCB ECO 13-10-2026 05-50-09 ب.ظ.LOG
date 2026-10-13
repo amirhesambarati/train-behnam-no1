@@ -1,0 +1,53 @@
+Change Net Name : Old Net Name=com1 New Net Name=com7
+Added Pin To Net: NetName=com1 Pin=J4-4
+Added Pin To Net: NetName=com1 Pin=R14-2
+Added Pin To Net: NetName=com1 Pin=R15-2
+Added Net: Name=com1
+Added Pin To Net: NetName=com2 Pin=J7-4
+Added Pin To Net: NetName=com2 Pin=R27-2
+Added Pin To Net: NetName=com2 Pin=R28-2
+Added Net: Name=com2
+Added Pin To Net: NetName=com3 Pin=J10-4
+Added Pin To Net: NetName=com3 Pin=R40-2
+Added Pin To Net: NetName=com3 Pin=R41-2
+Added Net: Name=com3
+Added Pin To Net: NetName=com4 Pin=J13-4
+Added Pin To Net: NetName=com4 Pin=R53-2
+Added Pin To Net: NetName=com4 Pin=R54-2
+Added Net: Name=com4
+Added Pin To Net: NetName=com5 Pin=J16-4
+Added Pin To Net: NetName=com5 Pin=R66-2
+Added Pin To Net: NetName=com5 Pin=R67-2
+Added Net: Name=com5
+Added Pin To Net: NetName=com6 Pin=J19-4
+Added Pin To Net: NetName=com6 Pin=R79-2
+Added Pin To Net: NetName=com6 Pin=R80-2
+Added Net: Name=com6
+Added Pin To Net: NetName=com8 Pin=J25-4
+Added Pin To Net: NetName=com8 Pin=R105-2
+Added Pin To Net: NetName=com8 Pin=R106-2
+Added Net: Name=com8
+Added Pin To Net: NetName=com9 Pin=J28-4
+Added Pin To Net: NetName=com9 Pin=R118-2
+Added Pin To Net: NetName=com9 Pin=R119-2
+Added Net: Name=com9
+Added Pin To Net: NetName=com10 Pin=J31-4
+Added Pin To Net: NetName=com10 Pin=R131-2
+Added Pin To Net: NetName=com10 Pin=R132-2
+Added Net: Name=com10
+Added Pin To Net: NetName=com11 Pin=J34-4
+Added Pin To Net: NetName=com11 Pin=R144-2
+Added Pin To Net: NetName=com11 Pin=R145-2
+Added Net: Name=com11
+Added Pin To Net: NetName=com12 Pin=J37-4
+Added Pin To Net: NetName=com12 Pin=R157-2
+Added Pin To Net: NetName=com12 Pin=R158-2
+Added Net: Name=com12
+Added Pin To Net: NetName=com13 Pin=J40-4
+Added Pin To Net: NetName=com13 Pin=R170-2
+Added Pin To Net: NetName=com13 Pin=R171-2
+Added Net: Name=com13
+Added Pin To Net: NetName=com14 Pin=J43-4
+Added Pin To Net: NetName=com14 Pin=R183-2
+Added Pin To Net: NetName=com14 Pin=R184-2
+Added Net: Name=com14
