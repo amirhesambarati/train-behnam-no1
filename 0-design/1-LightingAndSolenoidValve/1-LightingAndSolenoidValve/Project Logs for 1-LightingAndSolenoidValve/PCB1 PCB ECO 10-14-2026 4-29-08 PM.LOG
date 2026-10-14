@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=NetB1_1 Pin=B2_1-1
+Removed Pin From Net: NetName=NetB1_4 Pin=B2_1-4
+Removed Pin From Net: NetName=MCUGND Pin=B2_1-5
+Removed Pin From Net: NetName=5V Pin=B2_1-6
+Removed Pin From Net: NetName=3V3 Pin=B2_1-7
+Removed Pin From Net: NetName=MCUGND Pin=B2_1-8
+Removed Pin From Net: NetName=MGND Pin=B2_1-9
+Removed Pin From Net: NetName=NetB1_10 Pin=B2_1-10
+Removed Pin From Net: NetName=NetB1_10 Pin=B2_1-11
+Removed Pin From Net: NetName=MGND Pin=B2_1-12
+Removed Pin From Net: NetName=NetB1_14 Pin=B2_1-14
+Removed Pin From Net: NetName=NetB1_15 Pin=B2_1-15
+Removed Pin From Net: NetName=NetB1_15 Pin=L2_1-1
+Removed Pin From Net: NetName=NetB1_14 Pin=L2_1-2
+Removed Pin From Net: NetName=NetJ5_2 Pin=L2_1-3
+Removed Pin From Net: NetName=NetJ5_1 Pin=L2_1-4

@@ -1,0 +1,112 @@
+Removed Member From Class: ClassName=MCU Member=R18
+Removed Member From Class: ClassName=MCU Member=R19
+Removed Member From Class: ClassName=CAN Member=R30
+Removed Member From Class: ClassName=Load2 Member=R30
+Removed Member From Class: ClassName=Load3 Member=R46
+Removed Member From Class: ClassName=Load4 Member=R55
+Removed Member From Class: ClassName=Load5 Member=R64
+Removed Member From Class: ClassName=Load6 Member=R73
+Removed Member From Class: ClassName=Load7 Member=R82
+Removed Member From Class: ClassName=Load8 Member=R91
+Removed Member From Class: ClassName=Load9 Member=R100
+Removed Member From Class: ClassName=Load10 Member=R103
+Removed Member From Class: ClassName=Load11 Member=R125
+Removed Member From Class: ClassName=Load12 Member=R125
+Removed Member From Class: ClassName=Load11 Member=R126
+Removed Member From Class: ClassName=Load12 Member=R126
+Change Net Name : Old Net Name=3V3 New Net Name=NetB1_7
+Added Member To Class: ClassName=MCU Member=Component JP1 JMPHDR3PIN
+Added Member To Class: ClassName=MCU Member=Component R11 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R12 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R14 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R15 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R16 RES1206 4.7K 1%
+Added Member To Class: ClassName=CAN Member=Component R17 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R20 RES1206 60 1%
+Added Member To Class: ClassName=Load2 Member=Component R21 RES1206 12K 1%
+Added Member To Class: ClassName=Load2 Member=Component R22 RES1206 12K 1%
+Added Member To Class: ClassName=Load2 Member=Component R23 RES1206 470 1%
+Added Member To Class: ClassName=Load2 Member=Component R24 RES1206 470 1%
+Added Member To Class: ClassName=Load2 Member=Component R25 RES1206 12K 1%
+Added Member To Class: ClassName=Load2 Member=Component R26 RES1206 12K 1%
+Added Member To Class: ClassName=Load2 Member=Component R28 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R31 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R32 RES1206 470 1%
+Added Member To Class: ClassName=Load3 Member=Component R33 RES1206 470 1%
+Added Member To Class: ClassName=Load3 Member=Component R34 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R35 RES1206 12K 1%
+Added Member To Class: ClassName=Load3 Member=Component R38 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R39 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R40 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R41 RES1206 470 1%
+Added Member To Class: ClassName=Load4 Member=Component R42 RES1206 470 1%
+Added Member To Class: ClassName=Load4 Member=Component R43 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R44 RES1206 12K 1%
+Added Member To Class: ClassName=Load4 Member=Component R45 RES1206 100R 1%
+Added Member To Class: ClassName=Load4 Member=Component R47 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R48 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R49 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R50 RES1206 470 1%
+Added Member To Class: ClassName=Load5 Member=Component R51 RES1206 470 1%
+Added Member To Class: ClassName=Load5 Member=Component R52 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R53 RES1206 12K 1%
+Added Member To Class: ClassName=Load5 Member=Component R56 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R57 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R58 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R59 RES1206 470 1%
+Added Member To Class: ClassName=Load6 Member=Component R60 RES1206 470 1%
+Added Member To Class: ClassName=Load6 Member=Component R61 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R62 RES1206 12K 1%
+Added Member To Class: ClassName=Load6 Member=Component R63 RES1206 100R 1%
+Added Member To Class: ClassName=Load6 Member=Component R65 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R66 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R67 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R68 RES1206 470 1%
+Added Member To Class: ClassName=Load7 Member=Component R69 RES1206 470 1%
+Added Member To Class: ClassName=Load7 Member=Component R70 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R71 RES1206 12K 1%
+Added Member To Class: ClassName=Load7 Member=Component R74 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R75 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R76 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R77 RES1206 470 1%
+Added Member To Class: ClassName=Load8 Member=Component R78 RES1206 470 1%
+Added Member To Class: ClassName=Load8 Member=Component R79 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R80 RES1206 12K 1%
+Added Member To Class: ClassName=Load8 Member=Component R81 RES1206 100R 1%
+Added Member To Class: ClassName=Load8 Member=Component R83 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R84 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R85 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R86 RES1206 470 1%
+Added Member To Class: ClassName=Load9 Member=Component R87 RES1206 470 1%
+Added Member To Class: ClassName=Load9 Member=Component R88 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R89 RES1206 12K 1%
+Added Member To Class: ClassName=Load9 Member=Component R92 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R93 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R94 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R95 RES1206 470 1%
+Added Member To Class: ClassName=Load10 Member=Component R96 RES1206 470 1%
+Added Member To Class: ClassName=Load10 Member=Component R97 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R98 RES1206 12K 1%
+Added Member To Class: ClassName=Load10 Member=Component R99 RES1206 100R 1%
+Added Member To Class: ClassName=Load10 Member=Component R101 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R102 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R104 RES1206 470 1%
+Added Member To Class: ClassName=Load11 Member=Component R105 RES1206 470 1%
+Added Member To Class: ClassName=Load11 Member=Component R106 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R107 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R109 RES1206 12K 1%
+Added Member To Class: ClassName=Load11 Member=Component R110 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R111 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R112 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R113 RES1206 470 1%
+Added Member To Class: ClassName=Load12 Member=Component R114 RES1206 470 1%
+Added Member To Class: ClassName=Load12 Member=Component R115 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R116 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R117 RES1206 100R 1%
+Added Member To Class: ClassName=Load12 Member=Component R118 RES1206 12K 1%
+Added Member To Class: ClassName=Load12 Member=Component R119 RES1206 12K 1%
+Added Member To Class: ClassName=power Member=Component R120 RES1206 2.2K 1%
+Added Member To Class: ClassName=power Member=Component R121 RES1206 560R 1%
+Added Member To Class: ClassName=power Member=Component R122 RES1206 180R 1%
+Added Member To Class: ClassName=power Member=Component R123 RES1206 100k 1%
+Added Member To Class: ClassName=power Member=Component R124 RES1206 100K 1%
