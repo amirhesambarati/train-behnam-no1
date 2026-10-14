@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=com1 Pin=J4-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J4-5
+Added Pin To Net: NetName=24vMCU2 Pin=J4-4
+Added Pin To Net: NetName=com1 Pin=J4-5
+Added Room: Name=push-button-switch-1
+Added Room: Name=push-button-switch-2
+Added Room: Name=push-button-switch-3
+Added Room: Name=push-button-switch-4
+Added Room: Name=push-button-switch-5
+Added Room: Name=push-button-switch-6
+Added Room: Name=push-button-switch-7

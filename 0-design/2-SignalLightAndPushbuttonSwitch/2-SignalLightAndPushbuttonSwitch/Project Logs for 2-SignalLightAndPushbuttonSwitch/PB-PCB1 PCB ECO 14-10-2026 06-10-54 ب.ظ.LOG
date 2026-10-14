@@ -1,0 +1,55 @@
+Removed Pin From Net: NetName=com2 Pin=J7-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J7-5
+Removed Pin From Net: NetName=com3 Pin=J10-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J10-5
+Removed Pin From Net: NetName=com4 Pin=J13-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J13-5
+Removed Pin From Net: NetName=com5 Pin=J16-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J16-5
+Removed Pin From Net: NetName=com6 Pin=J19-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J19-5
+Removed Pin From Net: NetName=com8 Pin=J25-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J25-5
+Removed Pin From Net: NetName=com9 Pin=J28-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J28-5
+Removed Pin From Net: NetName=com10 Pin=J31-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J31-5
+Removed Pin From Net: NetName=com11 Pin=J34-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J34-5
+Removed Pin From Net: NetName=com12 Pin=J37-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J37-5
+Removed Pin From Net: NetName=com13 Pin=J40-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J40-5
+Removed Pin From Net: NetName=com14 Pin=J43-4
+Removed Pin From Net: NetName=24vMCU2 Pin=J43-5
+Added Pin To Net: NetName=24vMCU2 Pin=J7-4
+Added Pin To Net: NetName=com2 Pin=J7-5
+Added Pin To Net: NetName=24vMCU2 Pin=J10-4
+Added Pin To Net: NetName=com3 Pin=J10-5
+Added Pin To Net: NetName=24vMCU2 Pin=J13-4
+Added Pin To Net: NetName=com4 Pin=J13-5
+Added Pin To Net: NetName=24vMCU2 Pin=J16-4
+Added Pin To Net: NetName=com5 Pin=J16-5
+Added Pin To Net: NetName=24vMCU2 Pin=J19-4
+Added Pin To Net: NetName=com6 Pin=J19-5
+Added Pin To Net: NetName=24vMCU2 Pin=J25-4
+Added Pin To Net: NetName=com8 Pin=J25-5
+Added Pin To Net: NetName=24vMCU2 Pin=J28-4
+Added Pin To Net: NetName=com9 Pin=J28-5
+Added Pin To Net: NetName=24vMCU2 Pin=J31-4
+Added Pin To Net: NetName=com10 Pin=J31-5
+Added Pin To Net: NetName=24vMCU2 Pin=J34-4
+Added Pin To Net: NetName=com11 Pin=J34-5
+Added Pin To Net: NetName=24vMCU2 Pin=J37-4
+Added Pin To Net: NetName=com12 Pin=J37-5
+Added Pin To Net: NetName=24vMCU2 Pin=J40-4
+Added Pin To Net: NetName=com13 Pin=J40-5
+Added Pin To Net: NetName=24vMCU2 Pin=J43-4
+Added Pin To Net: NetName=com14 Pin=J43-5
+Added Room: Name=push-button-switch-1
+Added Room: Name=push-button-switch-2
+Added Room: Name=push-button-switch-3
+Added Room: Name=push-button-switch-4
+Added Room: Name=push-button-switch-5
+Added Room: Name=push-button-switch-6
+Added Room: Name=push-button-switch-7
