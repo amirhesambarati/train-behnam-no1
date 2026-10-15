@@ -1,0 +1,81 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\PCB1.PcbDoc
+Date     : 10/15/2026
+Time     : 4:58:59 PM
+
+Processing Rule : Clearance Constraint (Gap=0.25mm) (InPolygon),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+   Violation between Clearance Constraint: (0.27mm < 0.3mm) Between Hole of Pad J4-(-104.2mm,-36.8mm) on Multi-Layer And Pad J4-B1A12(-104.09mm,-35.68mm) on Top Layer 
+   Violation between Clearance Constraint: (0.27mm < 0.3mm) Between Hole of Pad J4-(-110.18mm,-36.8mm) on Multi-Layer And Pad J4-A1B12(-110.29mm,-35.68mm) on Top Layer 
+Rule Violations :2
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (IsStitchingVia and InNet('GND')),((IsVia and (Not IsStitchingVia)) Or IsPad)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.2mm) (Max=10mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=0.4mm) (MaxHoleWidth=2mm) (PreferredHoleWidth=0.5mm) (MinWidth=0.8mm) (MaxWidth=3mm) (PreferedWidth=0.9mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (All)
+   Violation between Minimum Annular Ring: (No Ring) Pad Free-1(130.5mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad Free-2(130.5mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad Free-3(-130.5mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad Free-4(-130.5mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)
+Rule Violations :4
+
+Processing Rule : Acute Angle Constraint (Minimum=75.000) (All)
+   Violation between Acute Angle Constraint: (69.999 < 75.000) Between Pad Q1-1(-59.158mm,28.046mm) on Top Layer And Track (-60.5mm,28mm)(-59.204mm,28mm) on Top Layer (Angle = 69.999)
+   Violation between Acute Angle Constraint: (70.695 < 75.000) Between Pad Q1-1(-59.158mm,28.046mm) on Top Layer And Track (-60.5mm,28mm)(-59.204mm,28mm) on Top Layer (Angle = 70.695)
+   Violation between Acute Angle Constraint: (69.997 < 75.000) Between Pad Q19-1(88.442mm,28.046mm) on Top Layer And Track (87.1mm,28mm)(88.396mm,28mm) on Top Layer (Angle = 69.997)
+   Violation between Acute Angle Constraint: (70.689 < 75.000) Between Pad Q19-1(88.442mm,28.046mm) on Top Layer And Track (87.1mm,28mm)(88.396mm,28mm) on Top Layer (Angle = 70.689)
+   Violation between Acute Angle Constraint: (69.997 < 75.000) Between Pad Q21-1(104.842mm,28.046mm) on Top Layer And Track (103.5mm,28mm)(104.796mm,28mm) on Top Layer (Angle = 69.997)
+   Violation between Acute Angle Constraint: (70.689 < 75.000) Between Pad Q21-1(104.842mm,28.046mm) on Top Layer And Track (103.5mm,28mm)(104.796mm,28mm) on Top Layer (Angle = 70.689)
+   Violation between Acute Angle Constraint: (69.997 < 75.000) Between Pad Q23-1(121.242mm,28.046mm) on Top Layer And Track (119.9mm,28mm)(121.196mm,28mm) on Top Layer (Angle = 69.997)
+   Violation between Acute Angle Constraint: (70.688 < 75.000) Between Pad Q23-1(121.242mm,28.046mm) on Top Layer And Track (119.9mm,28mm)(121.196mm,28mm) on Top Layer (Angle = 70.688)
+   Violation between Acute Angle Constraint: (69.998 < 75.000) Between Pad Q3-1(-42.758mm,28.046mm) on Top Layer And Track (-44.1mm,28mm)(-42.804mm,28mm) on Top Layer (Angle = 69.998)
+   Violation between Acute Angle Constraint: (70.695 < 75.000) Between Pad Q3-1(-42.758mm,28.046mm) on Top Layer And Track (-44.1mm,28mm)(-42.804mm,28mm) on Top Layer (Angle = 70.695)
+   Violation between Acute Angle Constraint: (69.998 < 75.000) Between Pad Q5-1(-26.358mm,28.046mm) on Top Layer And Track (-27.7mm,28mm)(-26.404mm,28mm) on Top Layer (Angle = 69.998)
+   Violation between Acute Angle Constraint: (70.694 < 75.000) Between Pad Q5-1(-26.358mm,28.046mm) on Top Layer And Track (-27.7mm,28mm)(-26.404mm,28mm) on Top Layer (Angle = 70.694)
+   Violation between Acute Angle Constraint: (69.998 < 75.000) Between Pad Q7-1(-9.958mm,28.046mm) on Top Layer And Track (-11.3mm,28mm)(-10.004mm,28mm) on Top Layer (Angle = 69.998)
+   Violation between Acute Angle Constraint: (70.693 < 75.000) Between Pad Q7-1(-9.958mm,28.046mm) on Top Layer And Track (-11.3mm,28mm)(-10.004mm,28mm) on Top Layer (Angle = 70.693)
+   Violation between Acute Angle Constraint: (69.998 < 75.000) Between Pad Q9-1(6.442mm,28.046mm) on Top Layer And Track (5.1mm,28mm)(6.396mm,28mm) on Top Layer (Angle = 69.998)
+   Violation between Acute Angle Constraint: (70.693 < 75.000) Between Pad Q9-1(6.442mm,28.046mm) on Top Layer And Track (5.1mm,28mm)(6.396mm,28mm) on Top Layer (Angle = 70.693)
+   Violation between Acute Angle Constraint: (69.998 < 75.000) Between Pad Q11-1(22.842mm,28.046mm) on Top Layer And Track (21.5mm,28mm)(22.796mm,28mm) on Top Layer (Angle = 69.998)
+   Violation between Acute Angle Constraint: (70.692 < 75.000) Between Pad Q11-1(22.842mm,28.046mm) on Top Layer And Track (21.5mm,28mm)(22.796mm,28mm) on Top Layer (Angle = 70.692)
+   Violation between Acute Angle Constraint: (69.998 < 75.000) Between Pad Q13-1(39.242mm,28.046mm) on Top Layer And Track (37.9mm,28mm)(39.196mm,28mm) on Top Layer (Angle = 69.998)
+   Violation between Acute Angle Constraint: (70.691 < 75.000) Between Pad Q13-1(39.242mm,28.046mm) on Top Layer And Track (37.9mm,28mm)(39.196mm,28mm) on Top Layer (Angle = 70.691)
+   Violation between Acute Angle Constraint: (69.997 < 75.000) Between Pad Q15-1(55.642mm,28.046mm) on Top Layer And Track (54.3mm,28mm)(55.596mm,28mm) on Top Layer (Angle = 69.997)
+   Violation between Acute Angle Constraint: (70.691 < 75.000) Between Pad Q15-1(55.642mm,28.046mm) on Top Layer And Track (54.3mm,28mm)(55.596mm,28mm) on Top Layer (Angle = 70.691)
+   Violation between Acute Angle Constraint: (69.997 < 75.000) Between Pad Q17-1(72.042mm,28.046mm) on Top Layer And Track (70.7mm,28mm)(71.996mm,28mm) on Top Layer (Angle = 69.997)
+   Violation between Acute Angle Constraint: (70.690 < 75.000) Between Pad Q17-1(72.042mm,28.046mm) on Top Layer And Track (70.7mm,28mm)(71.996mm,28mm) on Top Layer (Angle = 70.690)
+Rule Violations :24
+
+Processing Rule : Hole Size Constraint (Min=0.4mm) (Max=50mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.3mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.2mm) Between Pad C74-1(-116.3mm,9mm) on Multi-Layer And Track (-113.925mm,8.725mm)(-113.925mm,9.275mm) on Bottom Solder [Bottom Solder] Mask Sliver [0.098mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J4-(-104.2mm,-36.8mm) on Multi-Layer And Track (-104.09mm,-35.93mm)(-104.09mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J4-(-110.18mm,-36.8mm) on Multi-Layer And Track (-110.29mm,-35.93mm)(-110.29mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]
+Rule Violations :3
+
+
+Violations Detected : 33
+Waived Violations : 0
+Time Elapsed        : 00:00:00
