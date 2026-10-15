@@ -1,0 +1,20 @@
+Added Pin To Net: NetName=3v3MCU2 Pin=C13-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C16-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C19-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C22-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C25-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C28-2
+Added Pin To Net: NetName=3v3MCU2 Pin=U3-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U5-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U7-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U9-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U11-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U13-5
+Change Net Name : Old Net Name=NetC30_1 New Net Name=digital_in_6
+Added Room: Name=push-button-switch-1
+Added Room: Name=push-button-switch-2
+Added Room: Name=push-button-switch-3
+Added Room: Name=push-button-switch-4
+Added Room: Name=push-button-switch-5
+Added Room: Name=push-button-switch-6
+Added Room: Name=push-button-switch-7
