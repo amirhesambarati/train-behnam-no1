@@ -1,0 +1,110 @@
+Change Component Comment : Designator=C61 Old Comment=CAP1206 10uf 50V New Comment=CAP1206 220nf 50V
+Change Component Comment : Designator=C59 Old Comment=CAP1206 220nf 50V New Comment=CAP1206 10uf 50V
+Added Pin To Net: NetName=Pin Pin=C56-1
+Added Pin To Net: NetName=MCUGND Pin=C56-2
+Added Pin To Net: NetName=NetC57_1 Pin=C57-1
+Added Pin To Net: NetName=MCUGND Pin=C57-2
+Added Pin To Net: NetName=NetC58_1 Pin=C58-1
+Added Pin To Net: NetName=NetC58_2 Pin=C58-2
+Added Pin To Net: NetName=DCin Pin=C59-1
+Added Pin To Net: NetName=MCUGND Pin=C59-2
+Added Pin To Net: NetName=DCin Pin=C60-1
+Added Pin To Net: NetName=MCUGND Pin=C60-2
+Added Pin To Net: NetName=DCin Pin=C61-1
+Added Pin To Net: NetName=MCUGND Pin=C61-2
+Added Pin To Net: NetName=5vMCU Pin=C62-1
+Added Pin To Net: NetName=MCUGND Pin=C62-2
+Added Pin To Net: NetName=5vMCU Pin=C63-1
+Added Pin To Net: NetName=MCUGND Pin=C63-2
+Added Pin To Net: NetName=5vMCU Pin=C64-1
+Added Pin To Net: NetName=MCUGND Pin=C64-2
+Added Pin To Net: NetName=5vMCU Pin=C65-1
+Added Pin To Net: NetName=MCUGND Pin=C65-2
+Added Pin To Net: NetName=5vMCU Pin=C66-1
+Added Pin To Net: NetName=MCUGND Pin=C66-2
+Added Pin To Net: NetName=5vMCU Pin=C67-1
+Added Pin To Net: NetName=MCUGND Pin=C67-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C68-1
+Added Pin To Net: NetName=MCUGND Pin=C68-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C69-1
+Added Pin To Net: NetName=MCUGND Pin=C69-2
+Added Pin To Net: NetName=Pin Pin=D43-1
+Added Pin To Net: NetName=NetD43_2 Pin=D43-2
+Added Pin To Net: NetName=MCUGND Pin=D44-1
+Added Pin To Net: NetName=NetD43_2 Pin=D44-2
+Added Pin To Net: NetName=MCUGND Pin=D45-1
+Added Pin To Net: NetName=DCin Pin=D45-2
+Added Pin To Net: NetName=Pin Pin=D46-1
+Added Pin To Net: NetName=NetD46_2 Pin=D46-2
+Added Pin To Net: NetName=5vMCU Pin=D47-1
+Added Pin To Net: NetName=NetD47_2 Pin=D47-2
+Added Pin To Net: NetName=3v3MCU2 Pin=D48-1
+Added Pin To Net: NetName=NetD48_2 Pin=D48-2
+Added Pin To Net: NetName=3v3MCU2 Pin=D49-1
+Added Pin To Net: NetName=5vMCU Pin=D49-2
+Added Pin To Net: NetName=NetD43_2 Pin=FH1-1
+Added Pin To Net: NetName=DCin Pin=FH1-2
+Added Pin To Net: NetName=NetC58_2 Pin=L1-1
+Added Pin To Net: NetName=5vMCU Pin=L1-2
+Added Pin To Net: NetName=MCUGND Pin=POWER1-1
+Added Pin To Net: NetName=Pin Pin=POWER1-2
+Added Pin To Net: NetName=MCUGND Pin=R217-1
+Added Pin To Net: NetName=NetD46_2 Pin=R217-2
+Added Pin To Net: NetName=MCUGND Pin=R218-1
+Added Pin To Net: NetName=NetD47_2 Pin=R218-2
+Added Pin To Net: NetName=MCUGND Pin=R219-1
+Added Pin To Net: NetName=NetD48_2 Pin=R219-2
+Added Pin To Net: NetName=feedback Pin=R220-1
+Added Pin To Net: NetName=5vMCU Pin=R220-2
+Added Pin To Net: NetName=DCin Pin=R221-1
+Added Pin To Net: NetName=NetR221_2 Pin=R221-2
+Added Pin To Net: NetName=MCUGND Pin=R222-1
+Added Pin To Net: NetName=feedback Pin=R222-2
+Added Pin To Net: NetName=NetR221_2 Pin=R223-1
+Added Pin To Net: NetName=MCUGND Pin=R223-2
+Added Pin To Net: NetName=MCUGND Pin=U30-1
+Added Pin To Net: NetName=DCin Pin=U30-2
+Added Pin To Net: NetName=NetR221_2 Pin=U30-3
+Added Pin To Net: NetName=feedback Pin=U30-5
+Added Pin To Net: NetName=NetC57_1 Pin=U30-6
+Added Pin To Net: NetName=NetC58_1 Pin=U30-7
+Added Pin To Net: NetName=NetC58_2 Pin=U30-8
+Added Pin To Net: NetName=MCUGND Pin=U30-9
+Added Pin To Net: NetName=MCUGND Pin=U31-1
+Added Pin To Net: NetName=3v3MCU2 Pin=U31-2
+Added Pin To Net: NetName=5vMCU Pin=U31-3
+Added Pin To Net: NetName=3v3MCU2 Pin=U31-4
+Added Member To Class: ClassName=power Member=Component C56 HT1V477M1012PC
+Added Member To Class: ClassName=power Member=Component C57 CAP1206 1uf 50V
+Added Member To Class: ClassName=power Member=Component C58 CAP1206 100nf 50V
+Added Member To Class: ClassName=power Member=Component C59 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C60 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C61 CAP1206 220nf 50V
+Added Member To Class: ClassName=power Member=Component C62 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C63 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C64 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C65 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C66 100uF
+Added Member To Class: ClassName=power Member=Component C67 CAP1206 1uf 50V
+Added Member To Class: ClassName=power Member=Component C68 47uF
+Added Member To Class: ClassName=power Member=Component C69 CAP1206 2.2uf 50V
+Added Member To Class: ClassName=power Member=Component D43 SS34
+Added Member To Class: ClassName=power Member=Component D44 SS34
+Added Member To Class: ClassName=power Member=Component D45 SMBJ24CA
+Added Member To Class: ClassName=power Member=Component D46 LED1206GRN
+Added Member To Class: ClassName=power Member=Component D47 LED1206GRN
+Added Member To Class: ClassName=power Member=Component D48 LED1206GRN
+Added Member To Class: ClassName=power Member=Component D49 ss14
+Added Member To Class: ClassName=power Member=Component FH1 xf-155
+Added Member To Class: ClassName=power Member=Component L1 8uH-7.3mmx6.6mm
+Added Member To Class: ClassName=power Member=Component POWER1 CONN_ATXPWR_2
+Added Member To Class: ClassName=power Member=Component R217 RES1206 2.2K 1%
+Added Member To Class: ClassName=power Member=Component R218 RES1206 560R 1%
+Added Member To Class: ClassName=power Member=Component R219 RES1206 180R 1%
+Added Member To Class: ClassName=power Member=Component R220 RES1206 100k 1%
+Added Member To Class: ClassName=power Member=Component R221 RES1206 100K 1%
+Added Member To Class: ClassName=power Member=Component R222 RES1206 24.9k 1%
+Added Member To Class: ClassName=power Member=Component R223 RES1206 10K 1%
+Added Member To Class: ClassName=power Member=Component U30 LMR33630ADDAR
+Added Member To Class: ClassName=power Member=Component U31 TLV76133DCYR
+Added Room: Name=power

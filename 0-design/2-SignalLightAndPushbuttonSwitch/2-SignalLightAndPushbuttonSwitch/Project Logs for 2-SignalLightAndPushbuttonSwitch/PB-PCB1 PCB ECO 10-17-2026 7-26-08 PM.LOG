@@ -1,0 +1,147 @@
+Added Pin To Net: NetName=MCUGND Pin=C43-1
+Added Pin To Net: NetName=NetC43_2 Pin=C43-2
+Added Pin To Net: NetName=MCUGND Pin=C44-1
+Added Pin To Net: NetName=NetC44_2 Pin=C44-2
+Added Pin To Net: NetName=MCUGND Pin=C45-1
+Added Pin To Net: NetName=NetC45_2 Pin=C45-2
+Added Pin To Net: NetName=MCUGND Pin=C46-1
+Added Pin To Net: NetName=RESET Pin=C46-2
+Added Pin To Net: NetName=MCUGND Pin=C47-1
+Added Pin To Net: NetName=RESET Pin=C47-2
+Added Pin To Net: NetName=MCUGND Pin=C48-1
+Added Pin To Net: NetName=NetC48_2 Pin=C48-2
+Added Pin To Net: NetName=MCUGND Pin=C49-1
+Added Pin To Net: NetName=NetC49_2 Pin=C49-2
+Added Pin To Net: NetName=MCUGND Pin=C50-1
+Added Pin To Net: NetName=3v3MCU2 Pin=C50-2
+Added Pin To Net: NetName=MCUGND Pin=C51-1
+Added Pin To Net: NetName=3v3MCU2 Pin=C51-2
+Added Pin To Net: NetName=MCUGND Pin=C52-1
+Added Pin To Net: NetName=3v3MCU2 Pin=C52-2
+Added Pin To Net: NetName=MCUGND Pin=C53-1
+Added Pin To Net: NetName=3v3MCU2 Pin=C53-2
+Added Pin To Net: NetName=MCUGND Pin=C54-1
+Added Pin To Net: NetName=3v3MCU2 Pin=C54-2
+Added Pin To Net: NetName=MCUGND Pin=C55-1
+Added Pin To Net: NetName=3v3MCU2 Pin=C55-2
+Added Pin To Net: NetName=5vMCU Pin=FUSE_SMD1-1
+Added Pin To Net: NetName=NetC43_2 Pin=FUSE_SMD1-2
+Added Pin To Net: NetName=NetJ43_1 Pin=J43-1
+Added Pin To Net: NetName=NetJ43_2 Pin=J43-2
+Added Pin To Net: NetName=NetJ43_3 Pin=J43-3
+Added Pin To Net: NetName=MCUGND Pin=J43-4
+Added Pin To Net: NetName=3v3MCU2 Pin=J44-1
+Added Pin To Net: NetName=NetJ44_2 Pin=J44-2
+Added Pin To Net: NetName=NetJ44_3 Pin=J44-3
+Added Pin To Net: NetName=MCUGND Pin=J44-4
+Added Pin To Net: NetName=3v3MCU2 Pin=J45-1
+Added Pin To Net: NetName=SWD_IO Pin=J45-2
+Added Pin To Net: NetName=SWD_CLK Pin=J45-3
+Added Pin To Net: NetName=MCUGND Pin=J45-4
+Added Pin To Net: NetName=MCUGND Pin=J46-A1B12
+Added Pin To Net: NetName=NetC43_2 Pin=J46-A4B9
+Added Pin To Net: NetName=NetJ46_A6 Pin=J46-A6
+Added Pin To Net: NetName=NetJ46_A7 Pin=J46-A7
+Added Pin To Net: NetName=MCUGND Pin=J46-B1A12
+Added Pin To Net: NetName=NetC43_2 Pin=J46-B4A9
+Added Pin To Net: NetName=NetJ46_A6 Pin=J46-B6
+Added Pin To Net: NetName=NetJ46_A7 Pin=J46-B7
+Added Pin To Net: NetName=NetJP1_1 Pin=JP1-1
+Added Pin To Net: NetName=MODE Pin=JP1-2
+Added Pin To Net: NetName=NetJP1_3 Pin=JP1-3
+Added Pin To Net: NetName=NetJP2_1 Pin=JP2-1
+Added Pin To Net: NetName=Boot0 Pin=JP2-2
+Added Pin To Net: NetName=NetJP2_3 Pin=JP2-3
+Added Pin To Net: NetName=NetR210_1 Pin=R210-1
+Added Pin To Net: NetName=MCUGND Pin=R210-2
+Added Pin To Net: NetName=RESET Pin=R211-1
+Added Pin To Net: NetName=3v3MCU2 Pin=R211-2
+Added Pin To Net: NetName=NetJP1_1 Pin=R212-1
+Added Pin To Net: NetName=3v3MCU2 Pin=R212-2
+Added Pin To Net: NetName=3v3MCU2 Pin=R213-1
+Added Pin To Net: NetName=NetJ46_A6 Pin=R213-2
+Added Pin To Net: NetName=NetJP1_3 Pin=R214-1
+Added Pin To Net: NetName=MCUGND Pin=R214-2
+Added Pin To Net: NetName=NetJP2_1 Pin=R215-1
+Added Pin To Net: NetName=3v3MCU2 Pin=R215-2
+Added Pin To Net: NetName=NetJP2_3 Pin=R216-1
+Added Pin To Net: NetName=MCUGND Pin=R216-2
+Added Pin To Net: NetName=MCUGND Pin=U29-10
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-11
+Added Pin To Net: NetName=NetC45_2 Pin=U29-12
+Added Pin To Net: NetName=NetC44_2 Pin=U29-13
+Added Pin To Net: NetName=RESET Pin=U29-14
+Added Pin To Net: NetName=analog_in_14 Pin=U29-15
+Added Pin To Net: NetName=analog_in_13 Pin=U29-16
+Added Pin To Net: NetName=analog_in_12 Pin=U29-17
+Added Pin To Net: NetName=analog_in_11 Pin=U29-18
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-19
+Added Pin To Net: NetName=MCUGND Pin=U29-20
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-21
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-22
+Added Pin To Net: NetName=analog_in_10 Pin=U29-23
+Added Pin To Net: NetName=analog_in_9 Pin=U29-24
+Added Pin To Net: NetName=analog_in_8 Pin=U29-25
+Added Pin To Net: NetName=analog_in_7 Pin=U29-26
+Added Pin To Net: NetName=MCUGND Pin=U29-27
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-28
+Added Pin To Net: NetName=analog_in_6 Pin=U29-29
+Added Pin To Net: NetName=analog_in_5 Pin=U29-30
+Added Pin To Net: NetName=analog_in_4 Pin=U29-31
+Added Pin To Net: NetName=analog_in_3 Pin=U29-32
+Added Pin To Net: NetName=analog_in_2 Pin=U29-35
+Added Pin To Net: NetName=analog_in_1 Pin=U29-36
+Added Pin To Net: NetName=NetR210_1 Pin=U29-37
+Added Pin To Net: NetName=NetC49_2 Pin=U29-49
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-50
+Added Pin To Net: NetName=NetU29_51 Pin=U29-51
+Added Pin To Net: NetName=NetU29_52 Pin=U29-52
+Added Pin To Net: NetName=NetJ44_2 Pin=U29-68
+Added Pin To Net: NetName=NetJ44_3 Pin=U29-69
+Added Pin To Net: NetName=NetJ46_A7 Pin=U29-70
+Added Pin To Net: NetName=NetJ46_A6 Pin=U29-71
+Added Pin To Net: NetName=SWD_IO Pin=U29-72
+Added Pin To Net: NetName=NetC48_2 Pin=U29-73
+Added Pin To Net: NetName=MCUGND Pin=U29-74
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-75
+Added Pin To Net: NetName=SWD_CLK Pin=U29-76
+Added Pin To Net: NetName=NetU29_81 Pin=U29-81
+Added Pin To Net: NetName=NetU29_82 Pin=U29-82
+Added Pin To Net: NetName=NetJ43_1 Pin=U29-89
+Added Pin To Net: NetName=NetJ43_2 Pin=U29-90
+Added Pin To Net: NetName=NetJ43_3 Pin=U29-91
+Added Pin To Net: NetName=MODE Pin=U29-93
+Added Pin To Net: NetName=Boot0 Pin=U29-94
+Added Pin To Net: NetName=MCUGND Pin=U29-99
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-100
+Added Pin To Net: NetName=NetC44_2 Pin=X1-1
+Added Pin To Net: NetName=NetC45_2 Pin=X1-2
+Added Member To Class: ClassName=MCU Member=Component C43 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component C44 CAP1206 22pf 50V
+Added Member To Class: ClassName=MCU Member=Component C45 CAP1206 22pf 50V
+Added Member To Class: ClassName=MCU Member=Component C46 CAP1206 1uf 50V
+Added Member To Class: ClassName=MCU Member=Component C47 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component C48 CAP1206 2.2uf 50V
+Added Member To Class: ClassName=MCU Member=Component C49 CAP1206 2.2uf 50V
+Added Member To Class: ClassName=MCU Member=Component C50 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component C51 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component C52 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component C53 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component C54 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component C55 CAP1206 100nf 50V
+Added Member To Class: ClassName=MCU Member=Component FUSE_SMD1 FUSE1206
+Added Member To Class: ClassName=MCU Member=Component J43 XH_4
+Added Member To Class: ClassName=MCU Member=Component J44 XH_4
+Added Member To Class: ClassName=MCU Member=Component J45 XH_4
+Added Member To Class: ClassName=MCU Member=Component J46 DX07S016JA1
+Added Member To Class: ClassName=MCU Member=Component JP1 JMPHDR3PIN
+Added Member To Class: ClassName=MCU Member=Component JP2 JMPHDR3PIN
+Added Member To Class: ClassName=MCU Member=Component R210 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R211 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R212 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R213 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R214 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R215 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R216 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component U29 STM32F407VGT6
+Added Member To Class: ClassName=MCU Member=Component X1 XTL_8MHz

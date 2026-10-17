@@ -1,0 +1,98 @@
+Removed Pin From Net: NetName=MCUGND Pin=C1-1
+Removed Pin From Net: NetName=3v3MCU2 Pin=C1-2
+Change Component Footprint: Designator=JP1 Old Footprint=JPH_3 New Footprint=USBC_SMD_16_DX07S016JA1
+Change Component Footprint: Designator=J46 Old Footprint=USBC_SMD_16_DX07S016JA1 New Footprint=XH_4
+Change Component Footprint: Designator=J43 Old Footprint=XH_4 New Footprint=C1206
+Change Component Footprint: Designator=X1 Old Footprint=XTL_2_11X5 New Footprint=JPH_3
+Change Component Comment : Designator=J46 Old Comment=DX07S016JA1 New Comment=XH_4
+Change Component Comment : Designator=JP1 Old Comment=JMPHDR3PIN New Comment=DX07S016JA1
+Change Component Comment : Designator=J43 Old Comment=XH_4 New Comment=CAP1206 100nf 50V
+Change Component Comment : Designator=X1 Old Comment=XTL_8MHz New Comment=JMPHDR3PIN
+Change Component Designator: OldDesignator=J43 NewDesignator=C1
+Change Component Designator: OldDesignator=J44 NewDesignator=J43
+Change Component Designator: OldDesignator=J45 NewDesignator=J44
+Change Component Designator: OldDesignator=J46 NewDesignator=J45
+Change Component Designator: OldDesignator=JP1 NewDesignator=J46
+Change Component Designator: OldDesignator=JP2 NewDesignator=JP1
+Change Component Designator: OldDesignator=X1 NewDesignator=JP2
+Change component parameters: Designator = "J43" ("C1"); Footprint = "XH_4"; UniqueID = "\CFMOVMIR" ("\CFMOVMIR")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "MANF_PART#"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "-, -%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "-V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "100= 1$"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J46" ("J45"); Footprint = "USBC_SMD_16_DX07S016JA1"; UniqueID = "\APRKGFOO" ("\APRKGFOO")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "JST"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "B4B-XH-A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "3.0A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "250v"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "XH_4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "JP1" ("J46"); Footprint = "JPH_3"; UniqueID = "\VGSJPVYL" ("\VGSJPVYL")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "JAE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "DX07S016JA1R1500"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "5A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "1.5$"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "DX07S016JA1"; VariantName = "[No Variations]"
+Change component parameters: Designator = "X1" ("JP2"); Footprint = "XTL_2_11X5"; UniqueID = "\EWMHYOCX" ("\EWMHYOCX")
+Change component parameters (AddParameter): Name = "MANF"; Value = "MANF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "MANF_P#"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = "JMPHDR3PIN"; VariantName = "[No Variations]"
+Added Component: Designator=X1(XTL_2_11X5)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "ABRACON"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "ABLS-8.000MHZ-B4-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "8MHz, 18pF, 30PPM, -20~70oC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "0.3$"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "XTL_8MHz"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=MCUGND Pin=C1-1
+Added Pin To Net: NetName=3v3MCU2 Pin=C1-2
+Added Pin To Net: NetName=NetJ43_1 Pin=J43-1
+Added Pin To Net: NetName=NetJ43_2 Pin=J43-2
+Added Pin To Net: NetName=NetJ43_3 Pin=J43-3
+Added Pin To Net: NetName=MCUGND Pin=J43-4
+Added Pin To Net: NetName=3v3MCU2 Pin=J44-1
+Added Pin To Net: NetName=NetJ44_2 Pin=J44-2
+Added Pin To Net: NetName=NetJ44_3 Pin=J44-3
+Added Pin To Net: NetName=MCUGND Pin=J44-4
+Added Pin To Net: NetName=3v3MCU2 Pin=J45-1
+Added Pin To Net: NetName=SWD_IO Pin=J45-2
+Added Pin To Net: NetName=SWD_CLK Pin=J45-3
+Added Pin To Net: NetName=MCUGND Pin=J45-4
+Added Pin To Net: NetName=MCUGND Pin=J46-A1B12
+Added Pin To Net: NetName=NetC43_2 Pin=J46-A4B9
+Added Pin To Net: NetName=NetJ46_A6 Pin=J46-A6
+Added Pin To Net: NetName=NetJ46_A7 Pin=J46-A7
+Added Pin To Net: NetName=MCUGND Pin=J46-B1A12
+Added Pin To Net: NetName=NetC43_2 Pin=J46-B4A9
+Added Pin To Net: NetName=NetJ46_A6 Pin=J46-B6
+Added Pin To Net: NetName=NetJ46_A7 Pin=J46-B7
+Added Pin To Net: NetName=NetJP1_1 Pin=JP1-1
+Added Pin To Net: NetName=MODE Pin=JP1-2
+Added Pin To Net: NetName=NetJP1_3 Pin=JP1-3
+Added Pin To Net: NetName=NetJP2_1 Pin=JP2-1
+Added Pin To Net: NetName=Boot0 Pin=JP2-2
+Added Pin To Net: NetName=NetJP2_3 Pin=JP2-3
+Added Pin To Net: NetName=NetC44_2 Pin=X1-1
+Added Pin To Net: NetName=NetC45_2 Pin=X1-2
+Added Member To Class: ClassName=MCU Member=Component J43 XH_4
+Added Member To Class: ClassName=MCU Member=Component J44 XH_4
+Added Member To Class: ClassName=MCU Member=Component J45 XH_4
+Added Member To Class: ClassName=MCU Member=Component J46 DX07S016JA1
+Added Member To Class: ClassName=MCU Member=Component JP1 JMPHDR3PIN
+Added Member To Class: ClassName=MCU Member=Component JP2 JMPHDR3PIN
+Added Member To Class: ClassName=MCU Member=Component X1 XTL_8MHz

@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=NetD2_A Pin=R10-1
+Removed Pin From Net: NetName=24vMCU2 Pin=U1-2
+Removed Member From Class: ClassName=push-button-switch-1 Member=R10
+Added Component: Designator=R?(R1206)
+Add component (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = "1%, 0.25W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PRICE"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD2_A Pin=R11-2
+Added Pin To Net: NetName=24vMCU2 Pin=R?-1
+Added Pin To Net: NetName=NetD2_A Pin=U2-3
+Added Pin To Net: NetName=NetR?_2 Pin=R?-2
+Added Pin To Net: NetName=NetR?_2 Pin=U1-2
+Added Net: Name=NetR?_2
+Added Member To Class: ClassName=push-button-switch-1 Member=Component R? FUSE 1206
