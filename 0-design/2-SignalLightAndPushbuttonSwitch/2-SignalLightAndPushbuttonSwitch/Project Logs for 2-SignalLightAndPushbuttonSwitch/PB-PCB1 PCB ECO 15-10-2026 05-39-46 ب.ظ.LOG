@@ -1,0 +1,28 @@
+Added Pin To Net: NetName=3v3MCU2 Pin=C34-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C37-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C40-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C43-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C46-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C49-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C52-2
+Added Pin To Net: NetName=3v3MCU2 Pin=U17-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U19-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U21-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U23-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U25-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U27-5
+Added Pin To Net: NetName=3v3MCU2 Pin=U29-5
+Added Room: Name=push-button-switch-1
+Added Room: Name=push-button-switch-2
+Added Room: Name=push-button-switch-3
+Added Room: Name=push-button-switch-4
+Added Room: Name=push-button-switch-5
+Added Room: Name=push-button-switch-6
+Added Room: Name=push-button-switch-7
+Added Room: Name=push-button-switch-8
+Added Room: Name=push-button-switch-9
+Added Room: Name=push-button-switch-10
+Added Room: Name=push-button-switch-11
+Added Room: Name=push-button-switch-12
+Added Room: Name=push-button-switch-13
+Added Room: Name=push-button-switch-14
