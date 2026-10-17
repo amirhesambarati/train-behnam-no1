@@ -1,0 +1,41 @@
+Change Component Designator: OldDesignator= NewDesignator=C17
+Change Component Designator: OldDesignator= NewDesignator=C21
+Change Component Designator: OldDesignator= NewDesignator=C22
+Change Component Designator: OldDesignator= NewDesignator=C23
+Change Component Designator: OldDesignator= NewDesignator=C24
+Change Component Designator: OldDesignator= NewDesignator=C25
+Change Component Designator: OldDesignator= NewDesignator=C26
+Change Component Designator: OldDesignator= NewDesignator=C28
+Change Component Designator: OldDesignator= NewDesignator=C29
+Change Component Designator: OldDesignator= NewDesignator=C30
+Change Component Designator: OldDesignator= NewDesignator=J5
+Change Component Designator: OldDesignator= NewDesignator=J6
+Change Component Designator: OldDesignator= NewDesignator=L1
+Change Component Designator: OldDesignator= NewDesignator=L2
+Change Component Designator: OldDesignator= NewDesignator=R17
+Change Component Designator: OldDesignator= NewDesignator=R18
+Change Component Designator: OldDesignator= NewDesignator=R19
+Change Component Designator: OldDesignator= NewDesignator=R20
+Change Component Designator: OldDesignator= NewDesignator=R124
+Change Component Designator: OldDesignator= NewDesignator=R126
+Added Member To Class: ClassName=CAN Member=Component C17 CAP0805 4.7nf 50V
+Added Member To Class: ClassName=CAN Member=Component C21 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C22 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C23 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C24 CAP0805 4.7nf 50V
+Added Member To Class: ClassName=CAN Member=Component C25 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C26 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C28 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C29 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C30 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component J5 CONN_ATXPWR_6
+Added Member To Class: ClassName=CAN Member=Component J6 CONN_ATXPWR_6
+Added Member To Class: ClassName=CAN Member=Component L1 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component L2 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component R17 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R18 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R19 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R20 RES1206 60 1%
+Added Member To Class: ClassName=power Member=Component R124 RES1206 100K 1%
+Added Member To Class: ClassName=power Member=Component R126 RES1206 10K 1%
+Added Room: Name=power
