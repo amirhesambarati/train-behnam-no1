@@ -254,7 +254,7 @@ GenerateClassCluster=0
 DocumentUniqueId=LTEKAISU
 
 [Document13]
-DocumentPath=PCB1.PcbDoc
+DocumentPath=1-LightingAndSolenoidValve.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0

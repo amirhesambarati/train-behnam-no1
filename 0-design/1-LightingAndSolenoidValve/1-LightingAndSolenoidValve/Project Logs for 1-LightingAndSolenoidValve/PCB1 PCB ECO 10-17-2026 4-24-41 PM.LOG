@@ -1,0 +1,42 @@
+Removed Pin From Net: NetName=NetB1_10 Pin=C21-1
+Removed Pin From Net: NetName=MGND Pin=C21-2
+Removed Pin From Net: NetName=NetB1_10 Pin=C22-1
+Removed Pin From Net: NetName=MGND Pin=C22-2
+Removed Pin From Net: NetName=NetB1_10 Pin=C23-1
+Removed Pin From Net: NetName=MGND Pin=C23-2
+Change Component Footprint: Designator=C17 Old Footprint=C1206 New Footprint=C0805
+Change Component Footprint: Designator=C21 Old Footprint=C1206 New Footprint=C0805
+Change Component Footprint: Designator=C22 Old Footprint=C1206 New Footprint=C0805
+Change Component Footprint: Designator=C23 Old Footprint=C1206 New Footprint=C0805
+Change Component Footprint: Designator=R17 Old Footprint=R1206 New Footprint=R0805
+Change Component Footprint: Designator=R18 Old Footprint=R1206 New Footprint=R0805
+Change Component Comment : Designator=C17 Old Comment=CAP1206 4.7nf 50V New Comment=CAP0805 4.7nf 50V
+Change Component Comment : Designator=C21 Old Comment=CAP1206 10uf 50V New Comment=CAP0805 100nf 50V
+Change Component Comment : Designator=C22 Old Comment=CAP1206 100nf 50V New Comment=CAP0805 100nf 50V
+Change Component Comment : Designator=C23 Old Comment=CAP1206 100nf 50V New Comment=CAP0805 100nf 50V
+Change component parameters: Designator = "R17" ("R17"); Footprint = "R1206"; UniqueID = "\JGDYGXNK" ("\JGDYGXNK")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "-W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "100= 0.5$"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R18" ("R18"); Footprint = "R1206"; UniqueID = "\SDAIDLTG" ("\SDAIDLTG")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "-W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "100= 0.5$"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=MGND Pin=C21-1
+Added Pin To Net: NetName=NetB1_10 Pin=C21-2
+Added Pin To Net: NetName=MGND Pin=C22-1
+Added Pin To Net: NetName=NetB1_10 Pin=C22-2
+Added Pin To Net: NetName=MGND Pin=C23-1
+Added Pin To Net: NetName=NetB1_10 Pin=C23-2

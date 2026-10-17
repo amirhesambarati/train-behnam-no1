@@ -1,0 +1,49 @@
+Removed Pin From Net: NetName=NetB2_10 Pin=C28-1
+Removed Pin From Net: NetName=MGND Pin=C28-2
+Removed Pin From Net: NetName=NetB2_10 Pin=C29-1
+Removed Pin From Net: NetName=MGND Pin=C29-2
+Removed Pin From Net: NetName=NetB2_10 Pin=C30-1
+Removed Pin From Net: NetName=MGND Pin=C30-2
+Removed Member From Class: ClassName=CAN Member=J?
+Removed Member From Class: ClassName=Load1 Member=J?
+Change Component Footprint: Designator=C24 Old Footprint=C1206 New Footprint=C0805
+Change Component Footprint: Designator=C28 Old Footprint=C1206 New Footprint=C0805
+Change Component Footprint: Designator=C29 Old Footprint=C1206 New Footprint=C0805
+Change Component Footprint: Designator=C30 Old Footprint=C1206 New Footprint=C0805
+Change Component Footprint: Designator=R19 Old Footprint=R1206 New Footprint=R0805
+Change Component Footprint: Designator=R20 Old Footprint=R1206 New Footprint=R0805
+Change Component Comment : Designator=C24 Old Comment=CAP1206 4.7nf 50V New Comment=CAP0805 4.7nf 50V
+Change Component Comment : Designator=C28 Old Comment=CAP1206 10uf 50V New Comment=CAP0805 100nf 50V
+Change Component Comment : Designator=C29 Old Comment=CAP1206 100nf 50V New Comment=CAP0805 100nf 50V
+Change Component Comment : Designator=C30 Old Comment=CAP1206 100nf 50V New Comment=CAP0805 100nf 50V
+Change Component Designator: OldDesignator=J6 NewDesignator=J7
+Change Component Designator: OldDesignator=J? NewDesignator=J6
+Change component parameters: Designator = "R19" ("R19"); Footprint = "R1206"; UniqueID = "\BEAIASEK" ("\BEAIASEK")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "-W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "100= 0.5$"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R20" ("R20"); Footprint = "R1206"; UniqueID = "\RJMRXHWI" ("\RJMRXHWI")
+Change component parameters (AddParameter): Name = "ASSEMBLY"; Value = "ASSEMBLY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DESC"; Value = "DESCRIPTION"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DIST#"; Value = "MOUSER"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MANF_P#"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM"; Value = "-W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PARAM2"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PRICE"; Value = "100= 0.5$"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=MGND Pin=C28-1
+Added Pin To Net: NetName=NetB2_10 Pin=C28-2
+Added Pin To Net: NetName=MGND Pin=C29-1
+Added Pin To Net: NetName=NetB2_10 Pin=C29-2
+Added Pin To Net: NetName=MGND Pin=C30-1
+Added Pin To Net: NetName=NetB2_10 Pin=C30-2
+Change Net Name : Old Net Name=NetJ6_1 New Net Name=NetJ7_1
+Change Net Name : Old Net Name=NetJ6_2 New Net Name=NetJ7_2
+Added Member To Class: ClassName=CAN Member=Component J7 CONN_ATXPWR_4

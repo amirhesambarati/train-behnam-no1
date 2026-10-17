@@ -1,0 +1,24 @@
+Change Component Designator: OldDesignator= NewDesignator=C17
+Change Component Designator: OldDesignator= NewDesignator=C21
+Change Component Designator: OldDesignator= NewDesignator=C22
+Change Component Designator: OldDesignator= NewDesignator=R17
+Change Component Designator: OldDesignator= NewDesignator=R18
+Change Component Designator: OldDesignator= NewDesignator=R124
+Change Component Designator: OldDesignator= NewDesignator=R126
+Added Component: Designator=J?(ATXPWR_6)
+Add component (AddParameter): Name = "MANF"; Value = "TE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANF_P#"; Value = "4-1775099-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "THD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "ATXPWR-6pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PARAM2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Type"; Value = "Conn."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "CONN_ATXPWR_6"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=CAN Member=Component C17 CAP1206 4.7nf 50V
+Added Member To Class: ClassName=CAN Member=Component C21 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C22 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component J? CONN_ATXPWR_6
+Added Member To Class: ClassName=CAN Member=Component R17 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R18 RES1206 60 1%
+Added Member To Class: ClassName=power Member=Component R124 RES1206 100K 1%
+Added Member To Class: ClassName=power Member=Component R126 RES1206 10K 1%
