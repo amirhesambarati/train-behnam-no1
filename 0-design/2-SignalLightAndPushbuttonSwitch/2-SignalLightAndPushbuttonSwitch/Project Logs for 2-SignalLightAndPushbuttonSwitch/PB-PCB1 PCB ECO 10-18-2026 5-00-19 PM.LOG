@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=analog_in_14 Pin=U29-15
+Removed Pin From Net: NetName=analog_in_13 Pin=U29-16
+Removed Pin From Net: NetName=analog_in_2 Pin=U29-35
+Removed Pin From Net: NetName=analog_in_1 Pin=U29-36
+Added Pin To Net: NetName=analog_in_13 Pin=U29-35
+Added Pin To Net: NetName=analog_in_14 Pin=U29-36

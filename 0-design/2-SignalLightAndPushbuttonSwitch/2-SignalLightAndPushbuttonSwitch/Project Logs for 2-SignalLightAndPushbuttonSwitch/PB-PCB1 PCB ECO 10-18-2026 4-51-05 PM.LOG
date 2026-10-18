@@ -1,0 +1,76 @@
+Removed Member From Class: ClassName=push-button-switch-6 Member=R92
+Removed Member From Class: ClassName=push-button-switch-12 Member=R182
+Removed Member From Class: ClassName=push-button-switch-14 Member=R212
+Removed Member From Class: ClassName=MCU Member=R219
+Added Member To Class: ClassName=push-button-switch-6 Member=Component R83 RES1206 100R 1%
+Added Member To Class: ClassName=push-button-switch-6 Member=Component R84 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-6 Member=Component R86 RES 2512 500m 1%
+Added Member To Class: ClassName=push-button-switch-6 Member=Component R88 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-7 Member=Component R91 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-7 Member=Component R93 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-7 Member=Component R95 RES1206 470 1%
+Added Member To Class: ClassName=push-button-switch-7 Member=Component R98 RES1206 100R 1%
+Added Member To Class: ClassName=push-button-switch-7 Member=Component R100 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-7 Member=Component R102 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-7 Member=Component R104 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-8 Member=Component R106 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-8 Member=Component R108 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-8 Member=Component R110 RES1206 470 1%
+Added Member To Class: ClassName=push-button-switch-8 Member=Component R113 RES1206 100R 1%
+Added Member To Class: ClassName=push-button-switch-8 Member=Component R115 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-8 Member=Component R117 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-8 Member=Component R119 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R121 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R122 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R124 RES1206 470 1%
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R126 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R127 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R128 RES1206 100R 1%
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R130 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R132 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R134 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-10 Member=Component R137 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-10 Member=Component R139 RES1206 470 1%
+Added Member To Class: ClassName=push-button-switch-10 Member=Component R141 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-10 Member=Component R143 RES1206 100R 1%
+Added Member To Class: ClassName=push-button-switch-10 Member=Component R144 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-10 Member=Component R146 RES 2512 500m 1%
+Added Member To Class: ClassName=push-button-switch-10 Member=Component R148 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R151 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R153 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R155 RES1206 470 1%
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R157 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R158 RES1206 100R 1%
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R160 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R162 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R164 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R166 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R167 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R169 RES1206 470 1%
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R171 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R174 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R176 RES 2512 500m 1%
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R178 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R180 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-13 Member=Component R181 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-13 Member=Component R183 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-13 Member=Component R185 RES1206 470 1%
+Added Member To Class: ClassName=push-button-switch-13 Member=Component R188 RES1206 100R 1%
+Added Member To Class: ClassName=push-button-switch-13 Member=Component R190 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-13 Member=Component R192 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-13 Member=Component R194 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-14 Member=Component R197 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-14 Member=Component R199 RES1206 470 1%
+Added Member To Class: ClassName=push-button-switch-14 Member=Component R201 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-14 Member=Component R204 RES1206 12K 1%
+Added Member To Class: ClassName=push-button-switch-14 Member=Component R206 RES 2512 500m 1%
+Added Member To Class: ClassName=push-button-switch-14 Member=Component R208 RES1206 4.7K 1%
+Added Member To Class: ClassName=push-button-switch-14 Member=Component R210 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R211 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R213 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R216 RES1206 4.7K 1%
+Added Member To Class: ClassName=MCU Member=Component R217 RES1206 4.7K 1%
+Added Member To Class: ClassName=power Member=Component R218 RES1206 2.2K 1%
+Added Member To Class: ClassName=power Member=Component R220 RES1206 180R 1%
+Added Member To Class: ClassName=power Member=Component R221 RES1206 100k 1%
+Added Member To Class: ClassName=power Member=Component R223 RES1206 24.9k 1%
