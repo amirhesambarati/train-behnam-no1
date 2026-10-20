@@ -1,0 +1,363 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD25\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10/20/2026</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5:32:21 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc" class="file"><acronym title="C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc">C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">9</td></tr>
+</table>
+</td>
+</table><a name="IDZTRHQMQLPSMZF4B0MMSJDYTUWMBPRKR2WPRWYGSLGEKON4KXVK"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDG2NFZJOIATBRPMZLGQ4Y0UAVVFDB35W30AIOPVEKV12HERPLEDFC">Clearance Constraint (Gap=0.25mm) (InPolygon),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDD54ZTULHAXLIFWZPNV1LK2AUKHYSJVEM5Q551MLVSUATS04B4YGB">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCYVF1GI4223TBMW4OMWQPXO1MEJPXBSBRZSVXZQOLBBI5XD1TOF">Clearance Constraint (Gap=0.3mm) (IsStitchingVia and InNet('GND')),((IsVia and (Not IsStitchingVia)) Or IsPad)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLAPWQJJODGOCFVF3DVYDJEHBKJN3EUMOFRNC45IWTCXDHBZP4DSL">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNWWTYYHOL3BBKSCYBXQH0XXGTBHWAGJQ0FLIPYPWEQHEEP5WUPEH">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDD1Q3E4XY5KINHAWHACR0TU03VLIRI1B2FPTEN2GFERC1ZFI2JCBL">Width Constraint (Min=0.2mm) (Max=10mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMLJNVBVDRQWUHYHCAZLDCN2HHEQY0S5CGSMK2XFFXD5EYY31QTOC">Routing Via (MinHoleWidth=0.4mm) (MaxHoleWidth=2mm) (PreferredHoleWidth=0.5mm) (MinWidth=0.8mm) (MaxWidth=3mm) (PreferedWidth=0.9mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMGHWL10Q0MDCD5R1LJV3IDR2PKI20UAXWFTDTXG5U3FNXYFLN21C">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV3GKY2YNEDBLBOHMXCQG1LOLJGVVJI3J23IXTJFGVPR2KOHULSRC">Minimum Annular Ring (Minimum=0.2mm) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1GH4ZDTGG12OEGGBUP2HLZJQKJ54VPE4EAWHWAMQL5VSCPPBLJYD">Acute Angle Constraint (Minimum=75.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCUZZEGD1RMVDKUX0XBSFRYOFDNDFUIA0IXHQ4OKU3Q15WMWOA5CK">Hole Size Constraint (Min=0.4mm) (Max=50mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1UBU3LYKXE3DI0FRN3Q5S22B1LXN2D2I0FGGKCBQSCEBNGCW1WJB">Hole To Hole Clearance (Gap=0.3mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOCH4B5IZYNQMSVWIPVNUGHLNIGVHM5BHDF0ORHYF40WEAGRCIBP">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">9</td>
+</tr>
+</table><br><a name="IDD54ZTULHAXLIFWZPNV1LK2AUKHYSJVEM5Q551MLVSUATS04B4YGB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7477.722mil|Location2.X=7490.783mil|Location1.Y=11394.454mil|Location2.Y=11407.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7477.722mil|Location2.X=7490.783mil|Location1.Y=11394.454mil|Location2.Y=11407.515mil|Absolute=True">Clearance Constraint: (0.27mm &lt; 0.3mm) Between Hole of Pad J4-(-104.2mm,-36.8mm) on Multi-Layer And Pad J4-B1A12(-104.09mm,-35.68mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7242.289mil|Location2.X=7255.35mil|Location1.Y=11394.454mil|Location2.Y=11407.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7242.289mil|Location2.X=7255.35mil|Location1.Y=11394.454mil|Location2.Y=11407.515mil|Absolute=True">Clearance Constraint: (0.27mm &lt; 0.3mm) Between Hole of Pad J4-(-110.18mm,-36.8mm) on Multi-Layer And Pad J4-A1B12(-110.29mm,-35.68mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDV3GKY2YNEDBLBOHMXCQG1LOLJGVVJI3J23IXTJFGVPR2KOHULSRC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=0.2mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16721.285mil|Location2.X=16727.534mil|Location1.Y=13477.19mil|Location2.Y=13483.44mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16721.285mil|Location2.X=16727.534mil|Location1.Y=13477.19mil|Location2.Y=13483.44mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-1(130.5mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16721.285mil|Location2.X=16727.534mil|Location1.Y=12177.978mil|Location2.Y=12184.227mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16721.285mil|Location2.X=16727.534mil|Location1.Y=12177.978mil|Location2.Y=12184.227mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-2(130.5mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6445.694mil|Location2.X=6451.944mil|Location1.Y=13477.19mil|Location2.Y=13483.44mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6445.694mil|Location2.X=6451.944mil|Location1.Y=13477.19mil|Location2.Y=13483.44mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-3(-130.5mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6445.694mil|Location2.X=6451.944mil|Location1.Y=12177.978mil|Location2.Y=12184.227mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6445.694mil|Location2.X=6451.944mil|Location1.Y=12177.978mil|Location2.Y=12184.227mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-4(-130.5mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDOCH4B5IZYNQMSVWIPVNUGHLNIGVHM5BHDF0ORHYF40WEAGRCIBP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7036.808mil|Location2.X=7045.932mil|Location1.Y=13169.651mil|Location2.Y=13178.775mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7036.808mil|Location2.X=7045.932mil|Location1.Y=13169.651mil|Location2.Y=13178.775mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.098mm &lt; 0.2mm) Between Pad C74-1(-116.3mm,9mm) on Multi-Layer And Track (-113.925mm,8.725mm)(-113.925mm,9.275mm) on Bottom Solder [Bottom Solder] Mask Sliver [0.098mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7482.353mil|Location2.X=7491.477mil|Location1.Y=11398.391mil|Location2.Y=11407.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7482.353mil|Location2.X=7491.477mil|Location1.Y=11398.391mil|Location2.Y=11407.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.175mm &lt; 0.2mm) Between Pad J4-(-104.2mm,-36.8mm) on Multi-Layer And Track (-104.09mm,-35.93mm)(-104.09mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7241.594mil|Location2.X=7250.718mil|Location1.Y=11398.391mil|Location2.Y=11407.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7241.594mil|Location2.X=7250.718mil|Location1.Y=11398.391mil|Location2.Y=11407.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.175mm &lt; 0.2mm) Between Pad J4-(-110.18mm,-36.8mm) on Multi-Layer And Track (-110.29mm,-35.93mm)(-110.29mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
