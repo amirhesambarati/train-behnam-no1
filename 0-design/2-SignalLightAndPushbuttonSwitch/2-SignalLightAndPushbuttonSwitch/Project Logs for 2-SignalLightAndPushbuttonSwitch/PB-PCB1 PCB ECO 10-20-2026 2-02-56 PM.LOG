@@ -1,0 +1,114 @@
+Change Component Comment : Designator=C79 Old Comment=CAP1206 10uf 50V New Comment=CAP1206 100nf 50V
+Change Component Comment : Designator=C78 Old Comment=CAP1206 100nf 50V New Comment=CAP1206 10uf 50V
+Added Pin To Net: NetName=NetB1_1 Pin=B1-1
+Added Pin To Net: NetName=NetB1_4 Pin=B1-4
+Added Pin To Net: NetName=MCUGND Pin=B1-5
+Added Pin To Net: NetName=5vMCU Pin=B1-6
+Added Pin To Net: NetName=3v3MCU2 Pin=B1-7
+Added Pin To Net: NetName=MCUGND Pin=B1-8
+Added Pin To Net: NetName=MGND Pin=B1-9
+Added Pin To Net: NetName=NetB1_10 Pin=B1-10
+Added Pin To Net: NetName=NetB1_10 Pin=B1-11
+Added Pin To Net: NetName=MGND Pin=B1-12
+Added Pin To Net: NetName=NetB1_14 Pin=B1-14
+Added Pin To Net: NetName=NetB1_15 Pin=B1-15
+Added Pin To Net: NetName=NetB2_1 Pin=B2-1
+Added Pin To Net: NetName=NetB2_4 Pin=B2-4
+Added Pin To Net: NetName=MCUGND Pin=B2-5
+Added Pin To Net: NetName=5vMCU Pin=B2-6
+Added Pin To Net: NetName=3v3MCU2 Pin=B2-7
+Added Pin To Net: NetName=MCUGND Pin=B2-8
+Added Pin To Net: NetName=MGND Pin=B2-9
+Added Pin To Net: NetName=NetB2_10 Pin=B2-10
+Added Pin To Net: NetName=NetB2_10 Pin=B2-11
+Added Pin To Net: NetName=MGND Pin=B2-12
+Added Pin To Net: NetName=NetB2_14 Pin=B2-14
+Added Pin To Net: NetName=NetB2_15 Pin=B2-15
+Added Pin To Net: NetName=NetC70_1 Pin=C70-1
+Added Pin To Net: NetName=MGND Pin=C70-2
+Added Pin To Net: NetName=MCUGND Pin=C71-1
+Added Pin To Net: NetName=5vMCU Pin=C71-2
+Added Pin To Net: NetName=MCUGND Pin=C72-1
+Added Pin To Net: NetName=5vMCU Pin=C72-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C73-1
+Added Pin To Net: NetName=MCUGND Pin=C73-2
+Added Pin To Net: NetName=MGND Pin=C74-1
+Added Pin To Net: NetName=NetB1_10 Pin=C74-2
+Added Pin To Net: NetName=MGND Pin=C75-1
+Added Pin To Net: NetName=NetB1_10 Pin=C75-2
+Added Pin To Net: NetName=MGND Pin=C76-1
+Added Pin To Net: NetName=NetB1_10 Pin=C76-2
+Added Pin To Net: NetName=NetC77_1 Pin=C77-1
+Added Pin To Net: NetName=MGND Pin=C77-2
+Added Pin To Net: NetName=MCUGND Pin=C78-1
+Added Pin To Net: NetName=5vMCU Pin=C78-2
+Added Pin To Net: NetName=MCUGND Pin=C79-1
+Added Pin To Net: NetName=5vMCU Pin=C79-2
+Added Pin To Net: NetName=3v3MCU2 Pin=C80-1
+Added Pin To Net: NetName=MCUGND Pin=C80-2
+Added Pin To Net: NetName=MGND Pin=C81-1
+Added Pin To Net: NetName=NetB2_10 Pin=C81-2
+Added Pin To Net: NetName=MGND Pin=C82-1
+Added Pin To Net: NetName=NetB2_10 Pin=C82-2
+Added Pin To Net: NetName=MGND Pin=C83-1
+Added Pin To Net: NetName=NetB2_10 Pin=C83-2
+Added Pin To Net: NetName=NetJ47_1 Pin=J47-1
+Added Pin To Net: NetName=NetJ47_2 Pin=J47-2
+Added Pin To Net: NetName=MGND Pin=J47-3
+Added Pin To Net: NetName=NetJ47_1 Pin=J47-4
+Added Pin To Net: NetName=NetJ47_2 Pin=J47-5
+Added Pin To Net: NetName=MGND Pin=J47-6
+Added Pin To Net: NetName=NetJ48_1 Pin=J48-1
+Added Pin To Net: NetName=NetJ48_2 Pin=J48-2
+Added Pin To Net: NetName=MGND Pin=J48-3
+Added Pin To Net: NetName=NetJ48_1 Pin=J48-4
+Added Pin To Net: NetName=NetJ48_2 Pin=J48-5
+Added Pin To Net: NetName=MGND Pin=J48-6
+Added Pin To Net: NetName=NetB1_15 Pin=L2-1
+Added Pin To Net: NetName=NetB1_14 Pin=L2-2
+Added Pin To Net: NetName=NetJ47_2 Pin=L2-3
+Added Pin To Net: NetName=NetJ47_1 Pin=L2-4
+Added Pin To Net: NetName=NetB2_15 Pin=L3-1
+Added Pin To Net: NetName=NetB2_14 Pin=L3-2
+Added Pin To Net: NetName=NetJ48_2 Pin=L3-3
+Added Pin To Net: NetName=NetJ48_1 Pin=L3-4
+Added Pin To Net: NetName=NetC70_1 Pin=R225-1
+Added Pin To Net: NetName=NetB1_15 Pin=R225-2
+Added Pin To Net: NetName=NetB1_14 Pin=R226-1
+Added Pin To Net: NetName=NetC70_1 Pin=R226-2
+Added Pin To Net: NetName=NetC77_1 Pin=R227-1
+Added Pin To Net: NetName=NetB2_15 Pin=R227-2
+Added Pin To Net: NetName=NetB2_14 Pin=R228-1
+Added Pin To Net: NetName=NetC77_1 Pin=R228-2
+Added Pin To Net: NetName=NetB1_14 Pin=U32-1
+Added Pin To Net: NetName=NetB1_15 Pin=U32-2
+Added Pin To Net: NetName=MGND Pin=U32-3
+Added Pin To Net: NetName=NetB2_14 Pin=U33-1
+Added Pin To Net: NetName=NetB2_15 Pin=U33-2
+Added Pin To Net: NetName=MGND Pin=U33-3
+Added Member To Class: ClassName=CAN Member=Component B1 CA-IS2062A
+Added Member To Class: ClassName=CAN Member=Component B2 CA-IS2062A
+Added Member To Class: ClassName=CAN Member=Component C70 CAP0805 4.7nf 50V
+Added Member To Class: ClassName=CAN Member=Component C71 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C72 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C73 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C74 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C75 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C76 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C77 CAP0805 4.7nf 50V
+Added Member To Class: ClassName=CAN Member=Component C78 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C79 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C80 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C81 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C82 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C83 CAP0805 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component J47 CONN_ATXPWR_6
+Added Member To Class: ClassName=CAN Member=Component J48 CONN_ATXPWR_6
+Added Member To Class: ClassName=CAN Member=Component L2 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component L3 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component R225 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R226 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R227 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R228 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component U32 NUP2105LT1G
+Added Member To Class: ClassName=CAN Member=Component U33 NUP2105LT1G

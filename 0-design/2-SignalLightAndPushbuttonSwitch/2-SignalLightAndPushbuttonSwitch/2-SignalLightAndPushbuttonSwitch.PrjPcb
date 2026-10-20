@@ -288,6 +288,23 @@ GenerateClassCluster=0
 DocumentUniqueId=MDMJRGSH
 
 [Document15]
+DocumentPath=CAN.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=DTHCRXBQ
+
+[Document16]
 DocumentPath=MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -304,7 +321,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UQYAMHHQ
 
-[Document16]
+[Document17]
 DocumentPath=power.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -321,7 +338,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UWSTBFGW
 
-[Document17]
+[Document18]
 DocumentPath=PB-PCB1.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1

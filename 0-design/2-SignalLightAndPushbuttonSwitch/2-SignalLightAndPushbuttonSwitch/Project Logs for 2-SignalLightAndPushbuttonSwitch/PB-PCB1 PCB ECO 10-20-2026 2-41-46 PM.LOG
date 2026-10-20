@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=MCUGND Pin=B1-5
+Removed Pin From Net: NetName=5vMCU Pin=B1-6
+Removed Pin From Net: NetName=3v3MCU2 Pin=B1-7
+Removed Pin From Net: NetName=MCUGND Pin=B1-8
+Removed Pin From Net: NetName=MCUGND Pin=B2-5
+Removed Pin From Net: NetName=5vMCU Pin=B2-6
+Removed Pin From Net: NetName=3v3MCU2 Pin=B2-7
+Removed Pin From Net: NetName=MCUGND Pin=B2-8
+Removed Pin From Net: NetName=MCUGND Pin=C71-1
+Removed Pin From Net: NetName=5vMCU Pin=C71-2
+Removed Pin From Net: NetName=MCUGND Pin=C72-1
+Removed Pin From Net: NetName=5vMCU Pin=C72-2
+Removed Pin From Net: NetName=3v3MCU2 Pin=C73-1
+Removed Pin From Net: NetName=MCUGND Pin=C73-2
+Removed Pin From Net: NetName=MCUGND Pin=C78-1
+Removed Pin From Net: NetName=5vMCU Pin=C78-2
+Removed Pin From Net: NetName=MCUGND Pin=C79-1
+Removed Pin From Net: NetName=5vMCU Pin=C79-2
+Removed Pin From Net: NetName=3v3MCU2 Pin=C80-1
+Removed Pin From Net: NetName=MCUGND Pin=C80-2
+Removed Pin From Net: NetName=analog_in_9 Pin=U29-67
+Added Pin To Net: NetName=NetU29_51 Pin=U29-51
+Added Net: Name=NetU29_51
+Added Pin To Net: NetName=NetU29_52 Pin=U29-52
+Added Net: Name=NetU29_52
+Added Pin To Net: NetName=NetU29_81 Pin=U29-81
+Added Net: Name=NetU29_81
+Added Pin To Net: NetName=NetU29_82 Pin=U29-82
+Added Net: Name=NetU29_82
