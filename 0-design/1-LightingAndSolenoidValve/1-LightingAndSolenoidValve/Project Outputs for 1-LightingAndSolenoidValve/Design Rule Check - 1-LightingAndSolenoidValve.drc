@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc
-Date     : 10/20/2026
-Time     : 5:32:21 PM
+Date     : 10/21/2026
+Time     : 2:43:51 PM
 
 Processing Rule : Clearance Constraint (Gap=0.25mm) (InPolygon),(All)
 Rule Violations :0
@@ -46,7 +46,7 @@ Processing Rule : Hole To Hole Clearance (Gap=0.3mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.2mm) Between Pad C74-1(-116.3mm,9mm) on Multi-Layer And Track (-113.925mm,8.725mm)(-113.925mm,9.275mm) on Bottom Solder [Bottom Solder] Mask Sliver [0.098mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.2mm) Between Pad C38-1(-116.3mm,9mm) on Multi-Layer And Track (-113.925mm,8.725mm)(-113.925mm,9.275mm) on Bottom Solder [Bottom Solder] Mask Sliver [0.098mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J4-(-104.2mm,-36.8mm) on Multi-Layer And Track (-104.09mm,-35.93mm)(-104.09mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J4-(-110.18mm,-36.8mm) on Multi-Layer And Track (-110.29mm,-35.93mm)(-110.29mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]
 Rule Violations :3
