@@ -1,0 +1,691 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://D:\project\altium designer\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">21/10/2026</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">06:54:24 È.Ù</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc" class="file"><acronym title="E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc">E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">117</td></tr>
+</table>
+</td>
+</table><a name="IDLQ3CYNVPAJ4MC3SU04OF51QQIKK4WJL4FJXFZ0C4HGEGR04BKX1E"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQ5SLQ3DASXY2NFQKSGKA0TOW3GVESJNBLNHFAPMMTNMKCZKGEORG">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIXB5UXMKZMKLHRGKWBF45BIN0O5CKM5QR1YJ4RLFJQ0CEXM3D5IP">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDU3WNIDWCB0EYKDACTBG1FGFYAJTGQEOXS1EJS0KUGUBGCSTDTOAJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">31</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMUAZWAGBGPOBNBUU2ORHZFX33K5HPVCEX3BX1VLOAKSOBKYNGR0H">Width Constraint (Min=0.2mm) (Max=10mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3MIL4B2MANGHCL4LCBMFZPKH1ME44ZTSITSVHRNV3ZTL3EBKAZUJ">Routing Via (MinHoleWidth=0.4mm) (MaxHoleWidth=2mm) (PreferredHoleWidth=0.5mm) (MinWidth=0.8mm) (MaxWidth=3mm) (PreferedWidth=0.9mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGBQRBP45AKFDCFOQFUJSRUX1WJMZUAQNC2JGIEPO1RBEZI41A3XK">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDQTHDBKY4VBHM30N4CPLLF0JUFHHBTKFKRDZDCNDFISIJBCBJ02M">Minimum Annular Ring (Minimum=0.2mm) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWDUEP4BJVBS2KUZDPUOQB0JR5J0WN5FXD5P5YYLLYVCTMI00SONC">Acute Angle Constraint (Minimum=75.000) (All)</a></td>
+<td class="column2">46</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDC5UEU1X5Q2DPFKHXREVFY4EU0J1XKRW5C4RUSJEVHQZDMCUNLQJJ">Hole Size Constraint (Min=0.4mm) (Max=50mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAODQOWMHAXRCBRIV5ZIHYLJCBMVGHJOJ0EG53ACICL5IN3LZSXPN">Hole To Hole Clearance (Gap=0.3mm) (All),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM0KMALPR2HZHCZSYSBDFPRV5TVKM5MOEHJETFEEHKOURWTQ4HEF">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">31</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">117</td>
+</tr>
+</table><br><a name="IDQ5SLQ3DASXY2NFQKSGKA0TOW3GVESJNBLNHFAPMMTNMKCZKGEORG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8918.666mil|Location2.X=8931.728mil|Location1.Y=6244.847mil|Location2.Y=6257.908mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8918.666mil|Location2.X=8931.728mil|Location1.Y=6244.847mil|Location2.Y=6257.908mil|Absolute=True">Clearance Constraint: (0.27mm &lt; 0.3mm) Between Pad J46-(-57.3mm,-36.9mm) on Multi-Layer And Pad J46-B1A12(-57.19mm,-35.78mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8683.234mil|Location2.X=8696.294mil|Location1.Y=6244.847mil|Location2.Y=6257.908mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8683.234mil|Location2.X=8696.294mil|Location1.Y=6244.847mil|Location2.Y=6257.908mil|Absolute=True">Clearance Constraint: (0.27mm &lt; 0.3mm) Between Pad J46-(-63.28mm,-36.9mm) on Multi-Layer And Pad J46-A1B12(-63.39mm,-35.78mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDU3WNIDWCB0EYKDACTBG1FGFYAJTGQEOXS1EJS0KUGUBGCSTDTOAJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9127.953mil|Location2.X=9218.504mil|Location1.Y=8497.047mil|Location2.Y=8540.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9127.953mil|Location2.X=9218.504mil|Location1.Y=8497.047mil|Location2.Y=8540.354mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad B1-5(-51.975mm,21.175mm) on Top Layer [Unplated] And Pad B1-8(-50.025mm,21.175mm) on Top Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9204.725mil|Location2.X=9452.756mil|Location1.Y=8488.189mil|Location2.Y=8551.181mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9204.725mil|Location2.X=9452.756mil|Location1.Y=8488.189mil|Location2.Y=8551.181mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad B1-8(-50.025mm,21.175mm) on Top Layer [Unplated] And Pad C71-1(-44.7mm,21.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9188.977mil|Location2.X=9251.969mil|Location1.Y=8263.78mil|Location2.Y=8540.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9188.977mil|Location2.X=9251.969mil|Location1.Y=8263.78mil|Location2.Y=8540.354mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad B1-8(-50.025mm,21.175mm) on Top Layer [Unplated] And Pad C73-2(-49.8mm,15.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9726.378mil|Location2.X=9816.929mil|Location1.Y=8497.047mil|Location2.Y=8540.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9726.378mil|Location2.X=9816.929mil|Location1.Y=8497.047mil|Location2.Y=8540.354mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad B2-5(-36.775mm,21.175mm) on Top Layer [Unplated] And Pad B2-8(-34.825mm,21.175mm) on Top Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9389.764mil|Location2.X=9740.158mil|Location1.Y=8488.189mil|Location2.Y=8551.181mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9389.764mil|Location2.X=9740.158mil|Location1.Y=8488.189mil|Location2.Y=8551.181mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C71-1(-44.7mm,21.2mm) on Top Layer And Pad B2-5(-36.775mm,21.175mm) on Top Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9803.15mil|Location2.X=10051.181mil|Location1.Y=8497.047mil|Location2.Y=8590.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9803.15mil|Location2.X=10051.181mil|Location1.Y=8497.047mil|Location2.Y=8590.551mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad B2-8(-34.825mm,21.175mm) on Top Layer [Unplated] And Pad C79-1(-29.5mm,22.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9787.402mil|Location2.X=9850.394mil|Location1.Y=8263.78mil|Location2.Y=8540.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9787.402mil|Location2.X=9850.394mil|Location1.Y=8263.78mil|Location2.Y=8540.354mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad B2-8(-34.825mm,21.175mm) on Top Layer [Unplated] And Pad C80-2(-34.6mm,15.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8842.52mil|Location2.X=9003.937mil|Location1.Y=6362.205mil|Location2.Y=6700.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8842.52mil|Location2.X=9003.937mil|Location1.Y=6362.205mil|Location2.Y=6700.787mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C48-1(-58.6mm,-25.8mm) on Bottom Layer And Pad C43-1(-56.1mm,-32.8mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8919.685mil|Location2.X=9003.937mil|Location1.Y=6256.693mil|Location2.Y=6425.197mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8919.685mil|Location2.X=9003.937mil|Location1.Y=6256.693mil|Location2.Y=6425.197mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad J46-B1A12(-57.19mm,-35.78mm) on Top Layer And Pad C43-1(-56.1mm,-32.8mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9137.795mil|Location2.X=9401.575mil|Location1.Y=7767.717mil|Location2.Y=7830.708mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9137.795mil|Location2.X=9401.575mil|Location1.Y=7767.717mil|Location2.Y=7830.708mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C45-1(-51.1mm,2.9mm) on Bottom Layer And Pad C44-1(-46mm,2.9mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.583mil|Location2.X=9637.795mil|Location1.Y=7681.102mil|Location2.Y=7830.708mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.583mil|Location2.X=9637.795mil|Location1.Y=7681.102mil|Location2.Y=7830.708mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C44-1(-46mm,2.9mm) on Bottom Layer And Pad C46-1(-40mm,0.7mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9069.291mil|Location2.X=9287.914mil|Location1.Y=7699.212mil|Location2.Y=7530.197mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9069.291mil|Location2.X=9287.914mil|Location1.Y=7699.212mil|Location2.Y=7530.197mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C45-1(-51.1mm,2.9mm) on Bottom Layer And Track (-50.627mm,-9.678mm)(-50.627mm,-6.473mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9574.803mil|Location2.X=9724.409mil|Location1.Y=7681.102mil|Location2.Y=7744.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9574.803mil|Location2.X=9724.409mil|Location1.Y=7681.102mil|Location2.Y=7744.094mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C46-1(-40mm,0.7mm) on Bottom Layer And Pad C47-1(-37.8mm,0.7mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8774.016mil|Location2.X=9202.362mil|Location1.Y=6569.291mil|Location2.Y=6773.228mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8774.016mil|Location2.X=9202.362mil|Location1.Y=6569.291mil|Location2.Y=6773.228mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C48-1(-58.6mm,-25.8mm) on Bottom Layer And Track (-52.8mm,-25.7mm)(-52.7mm,-25.8mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9633.858mil|Location2.X=9767.717mil|Location1.Y=6590.551mil|Location2.Y=6877.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9633.858mil|Location2.X=9767.717mil|Location1.Y=6590.551mil|Location2.Y=6877.953mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C49-1(-38.5mm,-27mm) on Bottom Layer And Pad R211-2(-36.7mm,-21.3mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9633.858mil|Location2.X=9767.717mil|Location1.Y=6814.961mil|Location2.Y=6960.63mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9633.858mil|Location2.X=9767.717mil|Location1.Y=6814.961mil|Location2.Y=6960.63mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C50-1(-38.5mm,-19.2mm) on Top Layer And Pad R211-2(-36.7mm,-21.3mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8925.197mil|Location2.X=9251.969mil|Location1.Y=8263.78mil|Location2.Y=8377.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8925.197mil|Location2.X=9251.969mil|Location1.Y=8263.78mil|Location2.Y=8377.953mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C57-2(-56.5mm,16.8mm) on Bottom Layer And Pad C73-2(-49.8mm,15.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8793.724mil|Location2.X=9056.693mil|Location1.Y=8155.905mil|Location2.Y=8446.457mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8793.724mil|Location2.X=9056.693mil|Location1.Y=8155.905mil|Location2.Y=8446.457mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Track (-58.099mm,14.5mm)(-58mm,14.5mm) on Top Layer And Pad C57-2(-56.5mm,16.8mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8862.205mil|Location2.X=8925.197mil|Location1.Y=7543.307mil|Location2.Y=7728.346mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8862.205mil|Location2.X=8925.197mil|Location1.Y=7543.307mil|Location2.Y=7728.346mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad R220-1(-58.1mm,-2.8mm) on Top Layer And Pad C68-2(-58.1mm,0mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8862.205mil|Location2.X=8925.197mil|Location1.Y=7641.732mil|Location2.Y=8063.941mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8862.205mil|Location2.X=8925.197mil|Location1.Y=7641.732mil|Location2.Y=8063.941mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C68-2(-58.1mm,0mm) on Top Layer And Pad U31-1(-58.099mm,8.549mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9389.764mil|Location2.X=9452.756mil|Location1.Y=8397.638mil|Location2.Y=8551.181mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9389.764mil|Location2.X=9452.756mil|Location1.Y=8397.638mil|Location2.Y=8551.181mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C72-1(-44.7mm,18.9mm) on Top Layer And Pad C71-1(-44.7mm,21.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9988.189mil|Location2.X=10051.181mil|Location1.Y=8437.008mil|Location2.Y=8590.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9988.189mil|Location2.X=10051.181mil|Location1.Y=8437.008mil|Location2.Y=8590.551mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C78-1(-29.5mm,19.9mm) on Top Layer And Pad C79-1(-29.5mm,22.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9988.189mil|Location2.X=10234.315mil|Location1.Y=8256.827mil|Location2.Y=8500mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9988.189mil|Location2.X=10234.315mil|Location1.Y=8256.827mil|Location2.Y=8500mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad C78-1(-29.5mm,19.9mm) on Top Layer And Pad Q1-2(-24.45mm,15.24mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8919.685mil|Location2.X=9360.299mil|Location1.Y=6110.173mil|Location2.Y=6296.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8919.685mil|Location2.X=9360.299mil|Location1.Y=6110.173mil|Location2.Y=6296.063mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad J46-B1A12(-57.19mm,-35.78mm) on Top Layer And Pad J44-4(-47.05mm,-38.8mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8228.283mil|Location2.X=8695.276mil|Location1.Y=6256.693mil|Location2.Y=6450.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8228.283mil|Location2.X=8695.276mil|Location1.Y=6256.693mil|Location2.Y=6450.85mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad J45-4(-73.8mm,-32.15mm) on Multi-Layer And Pad J46-A1B12(-63.39mm,-35.78mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8675.591mil|Location2.X=8939.37mil|Location1.Y=6256.693mil|Location2.Y=6296.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8675.591mil|Location2.X=8939.37mil|Location1.Y=6256.693mil|Location2.Y=6296.063mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad J46-A1B12(-63.39mm,-35.78mm) on Top Layer And Pad J46-B1A12(-57.19mm,-35.78mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8305.512mil|Location2.X=8627.563mil|Location1.Y=7270.079mil|Location2.Y=7785.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8305.512mil|Location2.X=8627.563mil|Location1.Y=7270.079mil|Location2.Y=7785.039mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad R215-2(-70.5mm,-8mm) on Top Layer And Track (-70.5mm,0mm)(-67.4mm,0mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8793.701mil|Location2.X=8993.701mil|Location1.Y=7474.803mil|Location2.Y=7328.346mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8793.701mil|Location2.X=8993.701mil|Location1.Y=7474.803mil|Location2.Y=7328.346mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad R220-1(-58.1mm,-2.8mm) on Top Layer And Track (-58.1mm,-11.6mm)(-58mm,-11.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8565.354mil|Location2.X=8993.724mil|Location1.Y=8183.465mil|Location2.Y=8355.905mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8565.354mil|Location2.X=8993.724mil|Location1.Y=8183.465mil|Location2.Y=8355.905mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Pad U30-9(-63.9mm,15.2mm) on Bottom Layer And Track (-58.099mm,14.5mm)(-58mm,14.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8427.563mil|Location2.X=8718.11mil|Location1.Y=7585.039mil|Location2.Y=7875.587mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8427.563mil|Location2.X=8718.11mil|Location1.Y=7585.039mil|Location2.Y=7875.587mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Track (-70.5mm,0mm)(-67.4mm,0mm) on Top Layer And Track (-65.1mm,2.3mm)(-65.1mm,6.1mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9181.102mil|Location2.X=9389.764mil|Location1.Y=7263.78mil|Location2.Y=7303.15mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9181.102mil|Location2.X=9389.764mil|Location1.Y=7263.78mil|Location2.Y=7303.15mil|Absolute=True">Un-Routed Net Constraint: Net MCUGND Between Via (-50.3mm,-10.2mm) from Top Layer to Bottom Layer And Via (-46mm,-10.2mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDDQTHDBKY4VBHM30N4CPLLF0JUFHHBTKFKRDZDCNDFISIJBCBJ02M"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=0.2mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14485.064mil|Location2.X=14491.314mil|Location1.Y=8331.521mil|Location2.Y=8337.77mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14485.064mil|Location2.X=14491.314mil|Location1.Y=8331.521mil|Location2.Y=8337.77mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-1(84mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14485.064mil|Location2.X=14491.314mil|Location1.Y=7032.309mil|Location2.Y=7038.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14485.064mil|Location2.X=14491.314mil|Location1.Y=7032.309mil|Location2.Y=7038.558mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-2(84mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7870.891mil|Location2.X=7877.14mil|Location1.Y=8331.521mil|Location2.Y=8337.77mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7870.891mil|Location2.X=7877.14mil|Location1.Y=8331.521mil|Location2.Y=8337.77mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-3(-84mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7870.891mil|Location2.X=7877.14mil|Location1.Y=7032.309mil|Location2.Y=7038.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7870.891mil|Location2.X=7877.14mil|Location1.Y=7032.309mil|Location2.Y=7038.558mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-4(-84mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDWDUEP4BJVBS2KUZDPUOQB0JR5J0WN5FXD5P5YYLLYVCTMI00SONC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Acute Angle Constraint (Minimum=75.000) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14137.921mil|Location2.X=14157.421mil|Location1.Y=8434.173mil|Location2.Y=8453.673mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14137.921mil|Location2.X=14157.421mil|Location1.Y=8434.173mil|Location2.Y=8453.673mil|Absolute=True">Acute Angle Constraint: (73.125 &lt; 75.000) Between Track (67.6mm,19.92mm)(76.88mm,19.92mm) on Bottom Layer And Track (74.77mm,15.15mm)(74.77mm,19.004mm) on Bottom Layer (Angle = 73.125)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14100.685mil|Location2.X=14120.185mil|Location1.Y=8434.173mil|Location2.Y=8453.673mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14100.685mil|Location2.X=14120.185mil|Location1.Y=8434.173mil|Location2.Y=8453.673mil|Absolute=True">Acute Angle Constraint: (73.125 &lt; 75.000) Between Track (67.6mm,19.92mm)(76.88mm,19.92mm) on Bottom Layer And Track (74.77mm,15.15mm)(74.77mm,19.004mm) on Bottom Layer (Angle = 73.125)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13994.5mil|Location2.X=14014mil|Location1.Y=8493.726mil|Location2.Y=8513.226mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13994.5mil|Location2.X=14014mil|Location1.Y=8493.726mil|Location2.Y=8513.226mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R101-2(72.4mm,21.1mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10569.303mil|Location2.X=10588.803mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10569.303mil|Location2.X=10588.803mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R11-2(-14.6mm,21.1mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13750.329mil|Location2.X=13769.829mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13750.329mil|Location2.X=13769.829mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R116-2(66.2mm,-21mm) on Top Layer And Track (65.349mm,-21mm)(66.2mm,-21mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13813.398mil|Location2.X=13832.898mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13813.398mil|Location2.X=13832.898mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R116-2(66.2mm,-21mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13179.463mil|Location2.X=13198.963mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13179.463mil|Location2.X=13198.963mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R131-2(51.7mm,-21mm) on Top Layer And Track (50.849mm,-21mm)(51.7mm,-21mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13242.531mil|Location2.X=13262.031mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13242.531mil|Location2.X=13262.031mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R131-2(51.7mm,-21mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12608.597mil|Location2.X=12628.097mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12608.597mil|Location2.X=12628.097mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R146-2(37.2mm,-21mm) on Top Layer And Track (36.349mm,-21mm)(37.2mm,-21mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12671.665mil|Location2.X=12691.165mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12671.665mil|Location2.X=12691.165mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R146-2(37.2mm,-21mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12037.731mil|Location2.X=12057.231mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12037.731mil|Location2.X=12057.231mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R161-2(22.7mm,-21mm) on Top Layer And Track (21.849mm,-21mm)(22.7mm,-21mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12100.799mil|Location2.X=12120.299mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12100.799mil|Location2.X=12120.299mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R161-2(22.7mm,-21mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11466.865mil|Location2.X=11486.365mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11466.865mil|Location2.X=11486.365mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R176-2(8.2mm,-21mm) on Top Layer And Track (7.349mm,-21mm)(8.2mm,-21mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11529.933mil|Location2.X=11549.433mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11529.933mil|Location2.X=11549.433mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R176-2(8.2mm,-21mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10895.999mil|Location2.X=10915.499mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10895.999mil|Location2.X=10915.499mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R191-2(-6.3mm,-21mm) on Top Layer And Track (-7.151mm,-21mm)(-6.3mm,-21mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10959.067mil|Location2.X=10978.567mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10959.067mil|Location2.X=10978.567mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R191-2(-6.3mm,-21mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10388.201mil|Location2.X=10407.701mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10388.201mil|Location2.X=10407.701mil|Location1.Y=6869.287mil|Location2.Y=6888.787mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R206-2(-20.8mm,-21mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11203.238mil|Location2.X=11222.738mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11203.238mil|Location2.X=11222.738mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R26-2(-0.1mm,21.1mm) on Top Layer And Track (-0.1mm,21.1mm)(0.751mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11140.169mil|Location2.X=11159.669mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11140.169mil|Location2.X=11159.669mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R26-2(-0.1mm,21.1mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11711.035mil|Location2.X=11730.535mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11711.035mil|Location2.X=11730.535mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R41-2(14.4mm,21.1mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12281.901mil|Location2.X=12301.401mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12281.901mil|Location2.X=12301.401mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R56-2(28.9mm,21.1mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12852.767mil|Location2.X=12872.267mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12852.767mil|Location2.X=12872.267mil|Location1.Y=8493.729mil|Location2.Y=8513.229mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R71-2(43.4mm,21.1mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13423.634mil|Location2.X=13443.134mil|Location1.Y=8493.726mil|Location2.Y=8513.226mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13423.634mil|Location2.X=13443.134mil|Location1.Y=8493.726mil|Location2.Y=8513.226mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R86-2(57.9mm,21.1mm) on Top Layer And Polygon Region (14 hole(s)) Top Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11774.104mil|Location2.X=11793.604mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11774.104mil|Location2.X=11793.604mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Track (14.4mm,21.1mm)(15.251mm,21.1mm) on Top Layer And Track (15.251mm,21.1mm)(15.4mm,20.951mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10632.371mil|Location2.X=10651.871mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10632.371mil|Location2.X=10651.871mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Track (-13.749mm,21.1mm)(-13.6mm,20.951mm) on Top Layer And Track (-14.6mm,21.1mm)(-13.749mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10325.133mil|Location2.X=10344.633mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10325.133mil|Location2.X=10344.633mil|Location1.Y=6858.037mil|Location2.Y=6877.537mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Track (-21.651mm,-21mm)(-20.8mm,-21mm) on Top Layer And Track (-21.8mm,-20.851mm)(-21.651mm,-21mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10203.162mil|Location2.X=10222.662mil|Location1.Y=6947.92mil|Location2.Y=6967.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10203.162mil|Location2.X=10222.662mil|Location1.Y=6947.92mil|Location2.Y=6967.42mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Polygon Region (14 hole(s)) Top Layer And Track (-25.8mm,-19.5mm)(-24.4mm,-18.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12344.97mil|Location2.X=12364.47mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12344.97mil|Location2.X=12364.47mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Track (28.9mm,21.1mm)(29.751mm,21.1mm) on Top Layer And Track (29.751mm,21.1mm)(29.9mm,20.951mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12915.836mil|Location2.X=12935.336mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12915.836mil|Location2.X=12935.336mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Track (43.4mm,21.1mm)(44.251mm,21.1mm) on Top Layer And Track (44.251mm,21.1mm)(44.4mm,20.951mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13486.702mil|Location2.X=13506.202mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13486.702mil|Location2.X=13506.202mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R86-2(57.9mm,21.1mm) on Top Layer And Track (57.9mm,21.1mm)(58.751mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14057.568mil|Location2.X=14077.068mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14057.568mil|Location2.X=14077.068mil|Location1.Y=8504.979mil|Location2.Y=8524.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Track (72.4mm,21.1mm)(73.251mm,21.1mm) on Top Layer And Track (73.251mm,21.1mm)(73.4mm,20.951mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9254.343mil|Location2.X=9273.843mil|Location1.Y=8951.857mil|Location2.Y=8971.357mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9254.343mil|Location2.X=9273.843mil|Location1.Y=8951.857mil|Location2.Y=8971.357mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Polygon Region (0 hole(s)) Top Layer And Track (-50mm,31.3mm)(-47.825mm,33.475mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12392.062mil|Location2.X=12411.562mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12392.062mil|Location2.X=12411.562mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R56-1(31.7mm,21.1mm) on Top Layer And Track (30.7mm,20.951mm)(30.849mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12962.928mil|Location2.X=12982.428mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12962.928mil|Location2.X=12982.428mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R71-1(46.2mm,21.1mm) on Top Layer And Track (45.2mm,20.951mm)(45.349mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13533.794mil|Location2.X=13553.294mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13533.794mil|Location2.X=13553.294mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R86-1(60.7mm,21.1mm) on Top Layer And Track (59.7mm,20.951mm)(59.849mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10679.463mil|Location2.X=10698.963mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10679.463mil|Location2.X=10698.963mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R11-1(-11.8mm,21.1mm) on Top Layer And Track (-12.8mm,20.951mm)(-12.651mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14104.66mil|Location2.X=14124.16mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14104.66mil|Location2.X=14124.16mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R101-1(75.2mm,21.1mm) on Top Layer And Track (74.349mm,21.1mm)(75.2mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13703.237mil|Location2.X=13722.737mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13703.237mil|Location2.X=13722.737mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R116-1(63.4mm,-21mm) on Top Layer And Track (64.251mm,-21mm)(64.4mm,-20.851mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13132.371mil|Location2.X=13151.871mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13132.371mil|Location2.X=13151.871mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R131-1(48.9mm,-21mm) on Top Layer And Track (49.751mm,-21mm)(49.9mm,-20.851mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12561.505mil|Location2.X=12581.005mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12561.505mil|Location2.X=12581.005mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R146-1(34.4mm,-21mm) on Top Layer And Track (35.251mm,-21mm)(35.4mm,-20.851mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11990.639mil|Location2.X=12010.139mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11990.639mil|Location2.X=12010.139mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R161-1(19.9mm,-21mm) on Top Layer And Track (20.751mm,-21mm)(20.9mm,-20.851mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11419.773mil|Location2.X=11439.273mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11419.773mil|Location2.X=11439.273mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R176-1(5.4mm,-21mm) on Top Layer And Track (6.251mm,-21mm)(6.4mm,-20.851mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10848.907mil|Location2.X=10868.407mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10848.907mil|Location2.X=10868.407mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R191-1(-9.1mm,-21mm) on Top Layer And Track (-8.249mm,-21mm)(-8.1mm,-20.851mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10278.041mil|Location2.X=10297.541mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10278.041mil|Location2.X=10297.541mil|Location1.Y=6858.038mil|Location2.Y=6877.538mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R206-1(-23.6mm,-21mm) on Top Layer And Track (-23.6mm,-21mm)(-22.749mm,-21mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11250.329mil|Location2.X=11269.829mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11250.329mil|Location2.X=11269.829mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R26-1(2.7mm,21.1mm) on Top Layer And Track (1.7mm,20.951mm)(1.849mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11821.195mil|Location2.X=11840.695mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11821.195mil|Location2.X=11840.695mil|Location1.Y=8504.978mil|Location2.Y=8524.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R41-1(17.2mm,21.1mm) on Top Layer And Track (16.2mm,20.951mm)(16.349mm,21.1mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDAODQOWMHAXRCBRIV5ZIHYLJCBMVGHJOJ0EG53ACICL5IN3LZSXPN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole To Hole Clearance (Gap=0.3mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9495.563mil|Location2.X=9504.437mil|Location1.Y=7227.846mil|Location2.Y=7236.72mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9495.563mil|Location2.X=9504.437mil|Location1.Y=7227.846mil|Location2.Y=7236.72mil|Absolute=True">Hole To Hole Clearance Constraint: (Collision &lt; 0.3mm) Between Via (-42.7mm,-11.5mm) from Top Layer to Bottom Layer And Via (-42.7mm,-11.5mm) from Top Layer to Bottom Layer Pad/Via Touching Holes</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9440.445mil|Location2.X=9449.319mil|Location1.Y=7279.028mil|Location2.Y=7287.901mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9440.445mil|Location2.X=9449.319mil|Location1.Y=7279.028mil|Location2.Y=7287.901mil|Absolute=True">Hole To Hole Clearance Constraint: (Collision &lt; 0.3mm) Between Via (-44.1mm,-10.2mm) from Top Layer to Bottom Layer And Via (-44.1mm,-10.2mm) from Top Layer to Bottom Layer Pad/Via Touching Holes</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9255.406mil|Location2.X=9264.28mil|Location1.Y=7279.028mil|Location2.Y=7287.901mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9255.406mil|Location2.X=9264.28mil|Location1.Y=7279.028mil|Location2.Y=7287.901mil|Absolute=True">Hole To Hole Clearance Constraint: (Collision &lt; 0.3mm) Between Via (-48.8mm,-10.2mm) from Top Layer to Bottom Layer And Via (-48.8mm,-10.2mm) from Top Layer to Bottom Layer Pad/Via Touching Holes</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDM0KMALPR2HZHCZSYSBDFPRV5TVKM5MOEHJETFEEHKOURWTQ4HEF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8477.753mil|Location2.X=8486.877mil|Location1.Y=8020.044mil|Location2.Y=8029.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8477.753mil|Location2.X=8486.877mil|Location1.Y=8020.044mil|Location2.Y=8029.168mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.098mm &lt; 0.2mm) Between Pad C66-1(-69.4mm,8.9mm) on Multi-Layer And Track (-67.025mm,8.625mm)(-67.025mm,9.175mm) on Bottom Solder [Bottom Solder] Mask Sliver [0.098mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8923.298mil|Location2.X=8932.422mil|Location1.Y=6248.785mil|Location2.Y=6257.909mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8923.298mil|Location2.X=8932.422mil|Location1.Y=6248.785mil|Location2.Y=6257.909mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.175mm &lt; 0.2mm) Between Pad J46-(-57.3mm,-36.9mm) on Multi-Layer And Track (-57.19mm,-36.03mm)(-57.19mm,-35.53mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8682.539mil|Location2.X=8691.663mil|Location1.Y=6248.785mil|Location2.Y=6257.909mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8682.539mil|Location2.X=8691.663mil|Location1.Y=6248.785mil|Location2.Y=6257.909mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.175mm &lt; 0.2mm) Between Pad J46-(-63.28mm,-36.9mm) on Multi-Layer And Track (-63.39mm,-36.03mm)(-63.39mm,-35.53mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13007.741mil|Location2.X=13016.865mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13007.741mil|Location2.X=13016.865mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U10-1(46.055mm,17.25mm) on Top Layer And Pad U10-2(46.055mm,18.2mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13007.741mil|Location2.X=13016.865mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13007.741mil|Location2.X=13016.865mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U10-2(46.055mm,18.2mm) on Top Layer And Pad U10-3(46.055mm,19.15mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13578.607mil|Location2.X=13587.731mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13578.607mil|Location2.X=13587.731mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U12-1(60.555mm,17.25mm) on Top Layer And Pad U12-2(60.555mm,18.2mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13578.607mil|Location2.X=13587.731mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13578.607mil|Location2.X=13587.731mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U12-2(60.555mm,18.2mm) on Top Layer And Pad U12-3(60.555mm,19.15mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14149.473mil|Location2.X=14158.597mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14149.473mil|Location2.X=14158.597mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U14-1(75.055mm,17.25mm) on Top Layer And Pad U14-2(75.055mm,18.2mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14113.45mil|Location2.X=14122.574mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14113.45mil|Location2.X=14122.574mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U14-2(75.055mm,18.2mm) on Top Layer And Pad U14-3(75.055mm,19.15mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13660.3mil|Location2.X=13669.424mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13660.3mil|Location2.X=13669.424mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U16-1(63.545mm,-17.15mm) on Top Layer And Pad U16-2(63.545mm,-18.1mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13660.3mil|Location2.X=13669.424mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13660.3mil|Location2.X=13669.424mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U16-2(63.545mm,-18.1mm) on Top Layer And Pad U16-3(63.545mm,-19.05mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13089.434mil|Location2.X=13098.558mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13089.434mil|Location2.X=13098.558mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U18-1(49.045mm,-17.15mm) on Top Layer And Pad U18-2(49.045mm,-18.1mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13089.434mil|Location2.X=13098.558mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13089.434mil|Location2.X=13098.558mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U18-2(49.045mm,-18.1mm) on Top Layer And Pad U18-3(49.045mm,-19.05mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12518.568mil|Location2.X=12527.692mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12518.568mil|Location2.X=12527.692mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U20-1(34.545mm,-17.15mm) on Top Layer And Pad U20-2(34.545mm,-18.1mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12518.568mil|Location2.X=12527.692mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12518.568mil|Location2.X=12527.692mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U20-2(34.545mm,-18.1mm) on Top Layer And Pad U20-3(34.545mm,-19.05mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10724.277mil|Location2.X=10733.401mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10724.277mil|Location2.X=10733.401mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U2-1(-11.945mm,17.25mm) on Top Layer And Pad U2-2(-11.945mm,18.2mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10724.277mil|Location2.X=10733.401mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10724.277mil|Location2.X=10733.401mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U2-2(-11.945mm,18.2mm) on Top Layer And Pad U2-3(-11.945mm,19.15mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11947.702mil|Location2.X=11956.826mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11947.702mil|Location2.X=11956.826mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U22-1(20.045mm,-17.15mm) on Top Layer And Pad U22-2(20.045mm,-18.1mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11947.702mil|Location2.X=11956.826mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11947.702mil|Location2.X=11956.826mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U22-2(20.045mm,-18.1mm) on Top Layer And Pad U22-3(20.045mm,-19.05mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11376.836mil|Location2.X=11385.96mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11376.836mil|Location2.X=11385.96mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U24-1(5.545mm,-17.15mm) on Top Layer And Pad U24-2(5.545mm,-18.1mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11376.836mil|Location2.X=11385.96mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11376.836mil|Location2.X=11385.96mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U24-2(5.545mm,-18.1mm) on Top Layer And Pad U24-3(5.545mm,-19.05mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10805.969mil|Location2.X=10815.094mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10805.969mil|Location2.X=10815.094mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U26-1(-8.955mm,-17.15mm) on Top Layer And Pad U26-2(-8.955mm,-18.1mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10805.969mil|Location2.X=10815.094mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10805.969mil|Location2.X=10815.094mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U26-2(-8.955mm,-18.1mm) on Top Layer And Pad U26-3(-8.955mm,-19.05mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10235.103mil|Location2.X=10244.227mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10235.103mil|Location2.X=10244.227mil|Location1.Y=6986.58mil|Location2.Y=6995.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U28-1(-23.455mm,-17.15mm) on Top Layer And Pad U28-2(-23.455mm,-18.1mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10235.103mil|Location2.X=10244.227mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10235.103mil|Location2.X=10244.227mil|Location1.Y=6949.178mil|Location2.Y=6958.302mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U28-2(-23.455mm,-18.1mm) on Top Layer And Pad U28-3(-23.455mm,-19.05mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11295.143mil|Location2.X=11304.267mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11295.143mil|Location2.X=11304.267mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U4-1(2.555mm,17.25mm) on Top Layer And Pad U4-2(2.555mm,18.2mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11295.143mil|Location2.X=11304.267mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11295.143mil|Location2.X=11304.267mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U4-2(2.555mm,18.2mm) on Top Layer And Pad U4-3(2.555mm,19.15mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11866.009mil|Location2.X=11875.133mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11866.009mil|Location2.X=11875.133mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U6-1(17.055mm,17.25mm) on Top Layer And Pad U6-2(17.055mm,18.2mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11866.009mil|Location2.X=11875.133mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11866.009mil|Location2.X=11875.133mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U6-2(17.055mm,18.2mm) on Top Layer And Pad U6-3(17.055mm,19.15mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12436.875mil|Location2.X=12445.999mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12436.875mil|Location2.X=12445.999mil|Location1.Y=8378.312mil|Location2.Y=8387.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U8-1(31.555mm,17.25mm) on Top Layer And Pad U8-2(31.555mm,18.2mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12436.875mil|Location2.X=12445.999mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12436.875mil|Location2.X=12445.999mil|Location1.Y=8415.714mil|Location2.Y=8424.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.157mm &lt; 0.2mm) Between Pad U8-2(31.555mm,18.2mm) on Top Layer And Pad U8-3(31.555mm,19.15mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
