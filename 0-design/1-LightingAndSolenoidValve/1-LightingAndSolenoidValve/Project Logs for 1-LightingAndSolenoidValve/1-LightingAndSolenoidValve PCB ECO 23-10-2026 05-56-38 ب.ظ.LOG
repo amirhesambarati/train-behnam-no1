@@ -1,0 +1,55 @@
+Removed Member From Class: ClassName=Load1 Member=.
+Removed Member From Class: ClassName=Load2 Member=.
+Removed Member From Class: ClassName=Load3 Member=.
+Removed Member From Class: ClassName=Load4 Member=.
+Removed Member From Class: ClassName=Load5 Member=.
+Removed Member From Class: ClassName=Load6 Member=.
+Removed Member From Class: ClassName=Load7 Member=.
+Removed Member From Class: ClassName=Load8 Member=.
+Removed Member From Class: ClassName=Load9 Member=.
+Removed Member From Class: ClassName=Load10 Member=.
+Removed Member From Class: ClassName=Load11 Member=.
+Removed Member From Class: ClassName=power Member=.
+Change Component Designator: OldDesignator=. NewDesignator=C14
+Change Component Designator: OldDesignator=. NewDesignator=D5
+Change Component Designator: OldDesignator=. NewDesignator=J5
+Change Component Designator: OldDesignator=. NewDesignator=L1
+Change Component Designator: OldDesignator=. NewDesignator=L2
+Change Component Designator: OldDesignator=. NewDesignator=LO1
+Change Component Designator: OldDesignator=. NewDesignator=LO2
+Change Component Designator: OldDesignator=. NewDesignator=LO3
+Change Component Designator: OldDesignator=. NewDesignator=LO4
+Change Component Designator: OldDesignator=. NewDesignator=LO5
+Change Component Designator: OldDesignator=. NewDesignator=LO6
+Change Component Designator: OldDesignator=. NewDesignator=LO7
+Change Component Designator: OldDesignator=. NewDesignator=LO8
+Change Component Designator: OldDesignator=. NewDesignator=LO9
+Change Component Designator: OldDesignator=. NewDesignator=LO10
+Change Component Designator: OldDesignator=. NewDesignator=LO11
+Change Component Designator: OldDesignator=. NewDesignator=R8
+Change Component Designator: OldDesignator=. NewDesignator=R9
+Change Component Designator: OldDesignator=. NewDesignator=R10
+Change Component Designator: OldDesignator=. NewDesignator=R11
+Change Component Designator: OldDesignator=. NewDesignator=R18
+Added Component: Designator=3(PCBComponent_1)
+Added Member To Class: ClassName=MCU Member=Component 3 Component_1
+Added Member To Class: ClassName=power Member=Component D5 SMBJ24CA
+Added Member To Class: ClassName=CAN Member=Component J5 CONN_ATXPWR_6
+Added Member To Class: ClassName=CAN Member=Component L1 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component L2 ACM2520-102-2P-T002
+Added Member To Class: ClassName=Load1 Member=Component LO1 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load2 Member=Component LO2 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load3 Member=Component LO3 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load4 Member=Component LO4 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load5 Member=Component LO5 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load6 Member=Component LO6 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load7 Member=Component LO7 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load8 Member=Component LO8 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load9 Member=Component LO9 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load10 Member=Component LO10 CONN_ATXPWR_4
+Added Member To Class: ClassName=Load11 Member=Component LO11 CONN_ATXPWR_4
+Added Member To Class: ClassName=CAN Member=Component R8 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R9 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R10 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R11 RES1206 60 1%
+Added Member To Class: ClassName=power Member=Component R18 RES1206 10K 1%

@@ -1,18 +1,15 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc
-Date     : 10/21/2026
-Time     : 2:43:51 PM
+PCB File : E:\github\train-behnam-no1\0-design\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve\1-LightingAndSolenoidValve.PcbDoc
+Date     : 23/10/2026
+Time     : 06:13:02 È.Ù
 
-Processing Rule : Clearance Constraint (Gap=0.25mm) (InPolygon),(All)
+Processing Rule : Clearance Constraint (Gap=0.3mm) (IsStitchingVia and InNet('GND')),((IsVia and (Not IsStitchingVia)) Or IsPad)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
    Violation between Clearance Constraint: (0.27mm < 0.3mm) Between Hole of Pad J4-(-104.2mm,-36.8mm) on Multi-Layer And Pad J4-B1A12(-104.09mm,-35.68mm) on Top Layer 
    Violation between Clearance Constraint: (0.27mm < 0.3mm) Between Hole of Pad J4-(-110.18mm,-36.8mm) on Multi-Layer And Pad J4-A1B12(-110.29mm,-35.68mm) on Top Layer 
 Rule Violations :2
-
-Processing Rule : Clearance Constraint (Gap=0.3mm) (IsStitchingVia and InNet('GND')),((IsVia and (Not IsStitchingVia)) Or IsPad)
-Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
@@ -37,7 +34,9 @@ Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (All)
 Rule Violations :4
 
 Processing Rule : Acute Angle Constraint (Minimum=75.000) (All)
-Rule Violations :0
+   Violation between Acute Angle Constraint: (68.159 < 75.000) Between Polygon Region (0 hole(s)) Bottom Layer And Track (-101.6mm,-10.4mm)(-100.7mm,-11.3mm) on Bottom Layer (Angle = 68.159)
+   Violation between Acute Angle Constraint: (59.493 < 75.000) Between Polygon Region (0 hole(s)) Top Layer And Region (0 hole(s)) Top Layer (Angle = 59.493)
+Rule Violations :2
 
 Processing Rule : Hole Size Constraint (Min=0.4mm) (Max=50mm) (All)
 Rule Violations :0
@@ -46,12 +45,11 @@ Processing Rule : Hole To Hole Clearance (Gap=0.3mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.2mm) Between Pad C38-1(-116.3mm,9mm) on Multi-Layer And Track (-113.925mm,8.725mm)(-113.925mm,9.275mm) on Bottom Solder [Bottom Solder] Mask Sliver [0.098mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J4-(-104.2mm,-36.8mm) on Multi-Layer And Track (-104.09mm,-35.93mm)(-104.09mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J4-(-110.18mm,-36.8mm) on Multi-Layer And Track (-110.29mm,-35.93mm)(-110.29mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]
-Rule Violations :3
+Rule Violations :2
 
 
-Violations Detected : 9
+Violations Detected : 10
 Waived Violations : 0
 Time Elapsed        : 00:00:00

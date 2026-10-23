@@ -1,0 +1,6 @@
+Added Component: Designator=RAMON1(PCBComponent_1)
+Added Component: Designator=RAMON2(PCBComponent_1)
+Added Member To Class: ClassName=MCU Member=Component RAMON1 WWW.RAMONIC.COM
+Added Member To Class: ClassName=MCU Member=Component RAMON2 WWW.RAMONIC.COM
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1

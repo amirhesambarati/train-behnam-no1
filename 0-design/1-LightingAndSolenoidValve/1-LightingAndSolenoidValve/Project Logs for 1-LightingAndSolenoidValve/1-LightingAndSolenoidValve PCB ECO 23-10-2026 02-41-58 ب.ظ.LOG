@@ -1,0 +1,34 @@
+Change Component Comment : Designator=C23 Old Comment=CAP1206 10uf 50V New Comment=CAP1206 100nf 50V
+Change Component Comment : Designator=C22 Old Comment=CAP1206 100nf 50V New Comment=CAP1206 10uf 50V
+Added Pin To Net: NetName=MCUGND Pin=C15-1
+Added Pin To Net: NetName=5V Pin=C15-2
+Added Pin To Net: NetName=MCUGND Pin=C16-1
+Added Pin To Net: NetName=5V Pin=C16-2
+Added Pin To Net: NetName=3v3MCU Pin=C17-1
+Added Pin To Net: NetName=MCUGND Pin=C17-2
+Added Pin To Net: NetName=MCUGND Pin=C22-1
+Added Pin To Net: NetName=5V Pin=C22-2
+Added Pin To Net: NetName=MCUGND Pin=C23-1
+Added Pin To Net: NetName=5V Pin=C23-2
+Added Pin To Net: NetName=3v3MCU Pin=C24-1
+Added Pin To Net: NetName=MCUGND Pin=C24-2
+Added Member To Class: ClassName=CAN Member=Component C15 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C16 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C17 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C22 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C23 CAP1206 100nf 50V
+Added Member To Class: ClassName=CAN Member=Component C24 CAP1206 100nf 50V
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_5
+Added Rule: Name=Schematic Supply Nets_6
+Added Rule: Name=Schematic Supply Nets_7
+Added Rule: Name=Schematic Supply Nets_8
+Added Rule: Name=Schematic Supply Nets_9
+Added Rule: Name=Schematic Supply Nets_10
+Added Rule: Name=Schematic Supply Nets_11
+Added Rule: Name=Schematic Supply Nets_12
+Added Rule: Name=Schematic Supply Nets_13
