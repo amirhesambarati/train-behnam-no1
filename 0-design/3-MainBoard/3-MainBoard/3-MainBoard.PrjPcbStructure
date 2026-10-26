@@ -1,6 +1,7 @@
-Record=TopLevelDocument|FileName=CAN.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=CAN.SchDoc|FileName=digital-joystick.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=CAN.SchDoc|FileName=MCU.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=CAN.SchDoc|FileName=power.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=CAN.SchDoc|FileName=pressure-transmitter.SchDoc|SheetNumber=6
-Record=NoMainPathDocument|SourceDocument=CAN.SchDoc|FileName=RS485.SchDoc|SheetNumber=5
+Record=TopLevelDocument|FileName=analog-joystick.SchDoc|SheetNumber=7
+Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=CAN.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=digital-joystick.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=MCU.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=power.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=pressure-transmitter.SchDoc|SheetNumber=6
+Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=RS485.SchDoc|SheetNumber=5
