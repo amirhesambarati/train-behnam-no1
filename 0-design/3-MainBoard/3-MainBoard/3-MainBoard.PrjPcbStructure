@@ -1,7 +1,10 @@
-Record=TopLevelDocument|FileName=analog-joystick.SchDoc|SheetNumber=7
-Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=CAN.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=digital-joystick.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=MCU.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=power.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=pressure-transmitter.SchDoc|SheetNumber=6
-Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=RS485.SchDoc|SheetNumber=5
+Record=TopLevelDocument|FileName=acc-output.SchDoc|SheetNumber=8
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=analog-joystick.SchDoc|SheetNumber=7
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=CAN.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=digital-joystick.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=MCU.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=power.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=pressure-transmitter.SchDoc|SheetNumber=6
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=RS485.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=speed-and-rpm.SchDoc|SheetNumber=10
+Record=NoMainPathDocument|SourceDocument=acc-output.SchDoc|FileName=switch.SchDoc|SheetNumber=9
