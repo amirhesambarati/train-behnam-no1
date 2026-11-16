@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=digital_in_12 Pin=U29-47
+Removed Pin From Net: NetName=digital_in_13 Pin=U29-48
+Added Pin To Net: NetName=digital_in_12 Pin=U29-46
+Added Pin To Net: NetName=digital_in_13 Pin=U29-47
+Added Pin To Net: NetName=digital_in_14 Pin=U29-48

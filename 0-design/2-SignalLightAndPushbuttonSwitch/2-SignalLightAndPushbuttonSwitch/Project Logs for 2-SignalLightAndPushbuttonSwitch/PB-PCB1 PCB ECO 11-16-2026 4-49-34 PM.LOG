@@ -1,0 +1,174 @@
+Removed Pin From Net: NetName=NetJ1_3 Pin=J1-3
+Removed Pin From Net: NetName=3v3MCU Pin=J3-3
+Removed Pin From Net: NetName=digital_in_1 Pin=J3-4
+Removed Pin From Net: NetName=NetJ4_3 Pin=J4-3
+Removed Pin From Net: NetName=3v3MCU Pin=J6-3
+Removed Pin From Net: NetName=digital_in_2 Pin=J6-4
+Removed Pin From Net: NetName=NetJ7_3 Pin=J7-3
+Removed Pin From Net: NetName=3v3MCU Pin=J9-3
+Removed Pin From Net: NetName=digital_in_3 Pin=J9-4
+Removed Pin From Net: NetName=NetJ10_3 Pin=J10-3
+Removed Pin From Net: NetName=3v3MCU Pin=J12-3
+Removed Pin From Net: NetName=digital_in_4 Pin=J12-4
+Removed Pin From Net: NetName=NetJ13_3 Pin=J13-3
+Removed Pin From Net: NetName=3v3MCU Pin=J15-3
+Removed Pin From Net: NetName=digital_in_5 Pin=J15-4
+Removed Pin From Net: NetName=NetJ16_3 Pin=J16-3
+Removed Pin From Net: NetName=3v3MCU Pin=J18-3
+Removed Pin From Net: NetName=digital_in_6 Pin=J18-4
+Removed Pin From Net: NetName=NetJ19_3 Pin=J19-3
+Removed Pin From Net: NetName=3v3MCU Pin=J21-3
+Removed Pin From Net: NetName=digital_in_7 Pin=J21-4
+Removed Pin From Net: NetName=NetJ22_3 Pin=J22-3
+Removed Pin From Net: NetName=3v3MCU Pin=J24-3
+Removed Pin From Net: NetName=digital_in_8 Pin=J24-4
+Removed Pin From Net: NetName=NetJ25_3 Pin=J25-3
+Removed Pin From Net: NetName=3v3MCU Pin=J27-3
+Removed Pin From Net: NetName=digital_in_9 Pin=J27-4
+Removed Pin From Net: NetName=NetJ28_3 Pin=J28-3
+Removed Pin From Net: NetName=3v3MCU Pin=J30-3
+Removed Pin From Net: NetName=digital_in_10 Pin=J30-4
+Removed Pin From Net: NetName=NetJ31_3 Pin=J31-3
+Removed Pin From Net: NetName=3v3MCU Pin=J33-3
+Removed Pin From Net: NetName=digital_in_11 Pin=J33-4
+Removed Pin From Net: NetName=NetJ34_3 Pin=J34-3
+Removed Pin From Net: NetName=3v3MCU Pin=J36-3
+Removed Pin From Net: NetName=digital_in_12 Pin=J36-4
+Removed Pin From Net: NetName=NetJ37_3 Pin=J37-3
+Removed Pin From Net: NetName=3v3MCU Pin=J39-3
+Removed Pin From Net: NetName=digital_in_13 Pin=J39-4
+Removed Pin From Net: NetName=NetJ40_3 Pin=J40-3
+Removed Pin From Net: NetName=3v3MCU Pin=J42-3
+Removed Pin From Net: NetName=digital_in_14 Pin=J42-4
+Removed Member From Class: ClassName=power Member=.
+Change Component Designator: OldDesignator=. NewDesignator=C70
+Change Component Designator: OldDesignator=. NewDesignator=J47
+Change Component Designator: OldDesignator=. NewDesignator=L2
+Change Component Designator: OldDesignator=. NewDesignator=L3
+Change Component Designator: OldDesignator=. NewDesignator=R223
+Change Component Designator: OldDesignator=. NewDesignator=R224
+Change Component Designator: OldDesignator=. NewDesignator=R225
+Change Component Designator: OldDesignator=. NewDesignator=R226
+Change Component Designator: OldDesignator=. NewDesignator=R227
+Change Component Designator: OldDesignator=. NewDesignator=R228
+Added Pin To Net: NetName=NetJ1_3 Pin=J1-4
+Added Pin To Net: NetName=digital_in_1 Pin=J3-3
+Added Pin To Net: NetName=3v3MCU Pin=J3-4
+Added Pin To Net: NetName=NetJ4_3 Pin=J4-4
+Added Pin To Net: NetName=digital_in_2 Pin=J6-3
+Added Pin To Net: NetName=3v3MCU Pin=J6-4
+Added Pin To Net: NetName=NetJ7_3 Pin=J7-4
+Added Pin To Net: NetName=digital_in_3 Pin=J9-3
+Added Pin To Net: NetName=3v3MCU Pin=J9-4
+Added Pin To Net: NetName=NetJ10_3 Pin=J10-4
+Added Pin To Net: NetName=digital_in_4 Pin=J12-3
+Added Pin To Net: NetName=3v3MCU Pin=J12-4
+Added Pin To Net: NetName=NetJ13_3 Pin=J13-4
+Added Pin To Net: NetName=digital_in_5 Pin=J15-3
+Added Pin To Net: NetName=3v3MCU Pin=J15-4
+Added Pin To Net: NetName=NetJ16_3 Pin=J16-4
+Added Pin To Net: NetName=digital_in_6 Pin=J18-3
+Added Pin To Net: NetName=3v3MCU Pin=J18-4
+Added Pin To Net: NetName=NetJ19_3 Pin=J19-4
+Added Pin To Net: NetName=digital_in_7 Pin=J21-3
+Added Pin To Net: NetName=3v3MCU Pin=J21-4
+Added Pin To Net: NetName=NetJ22_3 Pin=J22-4
+Added Pin To Net: NetName=digital_in_8 Pin=J24-3
+Added Pin To Net: NetName=3v3MCU Pin=J24-4
+Added Pin To Net: NetName=NetJ25_3 Pin=J25-4
+Added Pin To Net: NetName=digital_in_9 Pin=J27-3
+Added Pin To Net: NetName=3v3MCU Pin=J27-4
+Added Pin To Net: NetName=NetJ28_3 Pin=J28-4
+Added Pin To Net: NetName=digital_in_10 Pin=J30-3
+Added Pin To Net: NetName=3v3MCU Pin=J30-4
+Added Pin To Net: NetName=NetJ31_3 Pin=J31-4
+Added Pin To Net: NetName=digital_in_11 Pin=J33-3
+Added Pin To Net: NetName=3v3MCU Pin=J33-4
+Added Pin To Net: NetName=NetJ34_3 Pin=J34-4
+Added Pin To Net: NetName=digital_in_12 Pin=J36-3
+Added Pin To Net: NetName=3v3MCU Pin=J36-4
+Added Pin To Net: NetName=NetJ37_3 Pin=J37-4
+Added Pin To Net: NetName=digital_in_13 Pin=J39-3
+Added Pin To Net: NetName=3v3MCU Pin=J39-4
+Added Pin To Net: NetName=NetJ40_3 Pin=J40-4
+Added Pin To Net: NetName=digital_in_14 Pin=J42-3
+Added Pin To Net: NetName=3v3MCU Pin=J42-4
+Change Net Name : Old Net Name=NetJ1_3 New Net Name=NetJ1_4
+Change Net Name : Old Net Name=NetJ4_3 New Net Name=NetJ4_4
+Change Net Name : Old Net Name=NetJ7_3 New Net Name=NetJ7_4
+Change Net Name : Old Net Name=NetJ10_3 New Net Name=NetJ10_4
+Change Net Name : Old Net Name=NetJ13_3 New Net Name=NetJ13_4
+Change Net Name : Old Net Name=NetJ16_3 New Net Name=NetJ16_4
+Change Net Name : Old Net Name=NetJ19_3 New Net Name=NetJ19_4
+Change Net Name : Old Net Name=NetJ22_3 New Net Name=NetJ22_4
+Change Net Name : Old Net Name=NetJ25_3 New Net Name=NetJ25_4
+Change Net Name : Old Net Name=NetJ28_3 New Net Name=NetJ28_4
+Change Net Name : Old Net Name=NetJ31_3 New Net Name=NetJ31_4
+Change Net Name : Old Net Name=NetJ34_3 New Net Name=NetJ34_4
+Change Net Name : Old Net Name=NetJ37_3 New Net Name=NetJ37_4
+Change Net Name : Old Net Name=NetJ40_3 New Net Name=NetJ40_4
+Added Pin To Net: NetName=NetJ1_3 Pin=J1-3
+Added Pin To Net: NetName=NetJ1_3 Pin=R6-1
+Added Pin To Net: NetName=NetJ1_3 Pin=R7-1
+Added Net: Name=NetJ1_3
+Added Pin To Net: NetName=NetJ4_3 Pin=J4-3
+Added Pin To Net: NetName=NetJ4_3 Pin=R21-1
+Added Pin To Net: NetName=NetJ4_3 Pin=R22-1
+Added Net: Name=NetJ4_3
+Added Pin To Net: NetName=NetJ7_3 Pin=J7-3
+Added Pin To Net: NetName=NetJ7_3 Pin=R36-1
+Added Pin To Net: NetName=NetJ7_3 Pin=R37-1
+Added Net: Name=NetJ7_3
+Added Pin To Net: NetName=NetJ10_3 Pin=J10-3
+Added Pin To Net: NetName=NetJ10_3 Pin=R51-1
+Added Pin To Net: NetName=NetJ10_3 Pin=R52-1
+Added Net: Name=NetJ10_3
+Added Pin To Net: NetName=NetJ13_3 Pin=J13-3
+Added Pin To Net: NetName=NetJ13_3 Pin=R66-1
+Added Pin To Net: NetName=NetJ13_3 Pin=R67-1
+Added Net: Name=NetJ13_3
+Added Pin To Net: NetName=NetJ16_3 Pin=J16-3
+Added Pin To Net: NetName=NetJ16_3 Pin=R81-1
+Added Pin To Net: NetName=NetJ16_3 Pin=R82-1
+Added Net: Name=NetJ16_3
+Added Pin To Net: NetName=NetJ19_3 Pin=J19-3
+Added Pin To Net: NetName=NetJ19_3 Pin=R96-1
+Added Pin To Net: NetName=NetJ19_3 Pin=R97-1
+Added Net: Name=NetJ19_3
+Added Pin To Net: NetName=NetJ22_3 Pin=J22-3
+Added Pin To Net: NetName=NetJ22_3 Pin=R111-1
+Added Pin To Net: NetName=NetJ22_3 Pin=R112-1
+Added Net: Name=NetJ22_3
+Added Pin To Net: NetName=NetJ25_3 Pin=J25-3
+Added Pin To Net: NetName=NetJ25_3 Pin=R126-1
+Added Pin To Net: NetName=NetJ25_3 Pin=R127-1
+Added Net: Name=NetJ25_3
+Added Pin To Net: NetName=NetJ28_3 Pin=J28-3
+Added Pin To Net: NetName=NetJ28_3 Pin=R141-1
+Added Pin To Net: NetName=NetJ28_3 Pin=R142-1
+Added Net: Name=NetJ28_3
+Added Pin To Net: NetName=NetJ31_3 Pin=J31-3
+Added Pin To Net: NetName=NetJ31_3 Pin=R156-1
+Added Pin To Net: NetName=NetJ31_3 Pin=R157-1
+Added Net: Name=NetJ31_3
+Added Pin To Net: NetName=NetJ34_3 Pin=J34-3
+Added Pin To Net: NetName=NetJ34_3 Pin=R171-1
+Added Pin To Net: NetName=NetJ34_3 Pin=R172-1
+Added Net: Name=NetJ34_3
+Added Pin To Net: NetName=NetJ37_3 Pin=J37-3
+Added Pin To Net: NetName=NetJ37_3 Pin=R186-1
+Added Pin To Net: NetName=NetJ37_3 Pin=R187-1
+Added Net: Name=NetJ37_3
+Added Pin To Net: NetName=NetJ40_3 Pin=J40-3
+Added Pin To Net: NetName=NetJ40_3 Pin=R201-1
+Added Pin To Net: NetName=NetJ40_3 Pin=R202-1
+Added Net: Name=NetJ40_3
+Added Member To Class: ClassName=CAN Member=Component J47 CONN_ATXPWR_6
+Added Member To Class: ClassName=CAN Member=Component L2 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component L3 ACM2520-102-2P-T002
+Added Member To Class: ClassName=power Member=Component R223 RES1206 24.9k 1%
+Added Member To Class: ClassName=power Member=Component R224 RES1206 10K 1%
+Added Member To Class: ClassName=CAN Member=Component R225 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R226 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R227 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R228 RES1206 60 1%

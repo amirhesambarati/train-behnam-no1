@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=NetD2_A Pin=J2-3
+Removed Pin From Net: NetName=com1 Pin=J2-6
+Added Pin To Net: NetName=NetD2_A Pin=J2-6
