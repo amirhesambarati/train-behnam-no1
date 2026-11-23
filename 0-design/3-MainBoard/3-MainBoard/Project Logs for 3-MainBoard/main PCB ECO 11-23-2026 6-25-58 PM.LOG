@@ -1,0 +1,75 @@
+Add component: Footprint Not Found SOIC127P599X175-8N
+Add component: Footprint Not Found SOIC127P599X175-8N
+Add component: Footprint Not Found SOIC127P599X175-8N
+Add component: Footprint Not Found SOIC127P599X175-8N
+Add component: Footprint Not Found SOIC127P599X175-8N
+Add component: Footprint Not Found SOIC127P599X175-8N
+Add component: Footprint Not Found SOIC127P599X175-8N
+Add component: Footprint Not Found SOIC127P599X175-8N
+Add Pin To Net: Unknown Pin: Pin U14-1
+Add Pin To Net: Unknown Pin: Pin U14-2
+Add Pin To Net: Unknown Pin: Pin U14-3
+Add Pin To Net: Unknown Pin: Pin U14-4
+Add Pin To Net: Unknown Pin: Pin U14-5
+Add Pin To Net: Unknown Pin: Pin U14-6
+Add Pin To Net: Unknown Pin: Pin U14-7
+Add Pin To Net: Unknown Pin: Pin U14-8
+Add Pin To Net: Unknown Pin: Pin U15-1
+Add Pin To Net: Unknown Pin: Pin U15-2
+Add Pin To Net: Unknown Pin: Pin U15-3
+Add Pin To Net: Unknown Pin: Pin U15-4
+Add Pin To Net: Unknown Pin: Pin U15-5
+Add Pin To Net: Unknown Pin: Pin U15-6
+Add Pin To Net: Unknown Pin: Pin U15-7
+Add Pin To Net: Unknown Pin: Pin U15-8
+Add Pin To Net: Unknown Pin: Pin U16-1
+Add Pin To Net: Unknown Pin: Pin U16-2
+Add Pin To Net: Unknown Pin: Pin U16-3
+Add Pin To Net: Unknown Pin: Pin U16-4
+Add Pin To Net: Unknown Pin: Pin U16-5
+Add Pin To Net: Unknown Pin: Pin U16-6
+Add Pin To Net: Unknown Pin: Pin U16-7
+Add Pin To Net: Unknown Pin: Pin U16-8
+Add Pin To Net: Unknown Pin: Pin U17-1
+Add Pin To Net: Unknown Pin: Pin U17-2
+Add Pin To Net: Unknown Pin: Pin U17-3
+Add Pin To Net: Unknown Pin: Pin U17-4
+Add Pin To Net: Unknown Pin: Pin U17-5
+Add Pin To Net: Unknown Pin: Pin U17-6
+Add Pin To Net: Unknown Pin: Pin U17-7
+Add Pin To Net: Unknown Pin: Pin U17-8
+Add Pin To Net: Unknown Pin: Pin U18-1
+Add Pin To Net: Unknown Pin: Pin U18-2
+Add Pin To Net: Unknown Pin: Pin U18-3
+Add Pin To Net: Unknown Pin: Pin U18-4
+Add Pin To Net: Unknown Pin: Pin U18-5
+Add Pin To Net: Unknown Pin: Pin U18-6
+Add Pin To Net: Unknown Pin: Pin U18-7
+Add Pin To Net: Unknown Pin: Pin U18-8
+Add Pin To Net: Unknown Pin: Pin U19-1
+Add Pin To Net: Unknown Pin: Pin U19-2
+Add Pin To Net: Unknown Pin: Pin U19-3
+Add Pin To Net: Unknown Pin: Pin U19-4
+Add Pin To Net: Unknown Pin: Pin U19-8
+Add Pin To Net: Unknown Pin: Pin U20-1
+Add Pin To Net: Unknown Pin: Pin U20-2
+Add Pin To Net: Unknown Pin: Pin U20-3
+Add Pin To Net: Unknown Pin: Pin U20-4
+Add Pin To Net: Unknown Pin: Pin U20-8
+Add Pin To Net: Unknown Pin: Pin U?-1
+Add Pin To Net: Unknown Pin: Pin U?-2
+Add Pin To Net: Unknown Pin: Pin U?-3
+Add Pin To Net: Unknown Pin: Pin U?-4
+Add Pin To Net: Unknown Pin: Pin U?-8
+Added Member To Class: ClassName=fuelGauge Member=Component C? CAP1206 100nf 50V
+Added Member To Class: ClassName=MainCurrent Member=Component C? CAP1206 100nf 50V
+Added Member To Class: ClassName=fuelGauge Member=Component R? RES1206 180R 1%
+Added Member To Class: ClassName=fuelGauge Member=Component R? RES1206 10K 1%
+Add Class Member: Failed to add class member : Component U14 LM358BAIDR
+Add Class Member: Failed to add class member : Component U15 LM358BAIDR
+Add Class Member: Failed to add class member : Component U16 LM2903DR
+Add Class Member: Failed to add class member : Component U17 LM2903DR
+Add Class Member: Failed to add class member : Component U18 LM358BAIDR
+Add Class Member: Failed to add class member : Component U19 LM358BAIDR
+Add Class Member: Failed to add class member : Component U20 LM358BAIDR
+Add Class Member: Failed to add class member : Component U? LM358BAIDR
