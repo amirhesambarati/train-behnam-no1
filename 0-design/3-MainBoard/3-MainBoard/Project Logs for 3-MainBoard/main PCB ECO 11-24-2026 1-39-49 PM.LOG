@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=+-4V-Battrycurrent Pin=J35-2
+Removed Pin From Net: NetName=NetE1_4 Pin=J35-4
+Added Pin To Net: NetName=NetE1_4 Pin=J35-2
+Added Pin To Net: NetName=+-4V-Battrycurrent Pin=J35-4

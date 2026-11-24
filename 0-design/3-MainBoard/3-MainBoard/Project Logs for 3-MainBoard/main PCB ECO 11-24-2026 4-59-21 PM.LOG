@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GasOut1 Pin=J18-5
+Added Pin To Net: NetName=GasOut1 Pin=J18-1
+Added Pin To Net: NetName=NetJ18_4 Pin=J18-5
+Added Pin To Net: NetName=NetR43_2 Pin=R43-2
+Added Pin To Net: NetName=NetR43_2 Pin=R47-2
+Added Net: Name=NetR43_2
+Added Room: Name=battery-voltage
+Added Room: Name=gas
+Added Room: Name=MainCurrent
+Added Room: Name=pressure-transmitter
+Added Room: Name=speed-and-rpm
+Added Room: Name=speed-and-rpm-analog

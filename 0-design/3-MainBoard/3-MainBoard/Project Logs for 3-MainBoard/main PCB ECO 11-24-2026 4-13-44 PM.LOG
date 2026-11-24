@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=rpm_B Pin=J22-3
+Removed Pin From Net: NetName=rpm_A Pin=J22-4
+Removed Pin From Net: NetName=speed_B Pin=J23-3
+Removed Pin From Net: NetName=speed_A Pin=J23-4
+Removed Pin From Net: NetName=rpm_A Pin=R71-2
+Removed Pin From Net: NetName=rpm_A Pin=R72-2
+Removed Pin From Net: NetName=speed_A Pin=R73-2
+Removed Pin From Net: NetName=speed_A Pin=R74-2
+Removed Pin From Net: NetName=rpm_B Pin=R79-2
+Removed Pin From Net: NetName=rpm_B Pin=R80-2
+Removed Pin From Net: NetName=speed_B Pin=R81-2
+Removed Pin From Net: NetName=speed_B Pin=R82-2
+Added Pin To Net: NetName=ISOrpm_A Pin=J22-4
+Added Pin To Net: NetName=ISOrpm_A Pin=R71-2
+Added Pin To Net: NetName=ISOrpm_A Pin=R72-2
+Added Net: Name=ISOrpm_A
+Added Pin To Net: NetName=ISOrpm_B Pin=J22-3
+Added Pin To Net: NetName=ISOrpm_B Pin=R79-2
+Added Pin To Net: NetName=ISOrpm_B Pin=R80-2
+Added Net: Name=ISOrpm_B
+Added Pin To Net: NetName=ISOspeed_A Pin=J23-4
+Added Pin To Net: NetName=ISOspeed_A Pin=R73-2
+Added Pin To Net: NetName=ISOspeed_A Pin=R74-2
+Added Net: Name=ISOspeed_A
+Added Pin To Net: NetName=ISOspeed_B Pin=J23-3
+Added Pin To Net: NetName=ISOspeed_B Pin=R81-2
+Added Pin To Net: NetName=ISOspeed_B Pin=R82-2
+Added Net: Name=ISOspeed_B
+Added Room: Name=battery-voltage
+Added Room: Name=MainCurrent
+Added Room: Name=pressure-transmitter
+Added Room: Name=speed-and-rpm
+Added Room: Name=speed-and-rpm-analog

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=MCUGND Pin=J35-1
+Removed Pin From Net: NetName=NetE1_2 Pin=J35-3
+Added Pin To Net: NetName=NetE1_2 Pin=J35-1
+Added Pin To Net: NetName=MCUGND Pin=J35-3
+Added Room: Name=battery-voltage
+Added Room: Name=MainCurrent

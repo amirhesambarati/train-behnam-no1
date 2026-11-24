@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GasOut1 Pin=J18-1
+Removed Pin From Net: NetName=GasOut2 Pin=J18-2
+Removed Pin From Net: NetName=MCUGND Pin=J18-3
+Removed Pin From Net: NetName=MCUGND Pin=J18-6
+Added Pin To Net: NetName=MCUGND Pin=J18-1
+Added Pin To Net: NetName=MCUGND Pin=J18-4
+Added Pin To Net: NetName=GasOut2 Pin=J18-5
+Added Pin To Net: NetName=GasOut1 Pin=J18-6
+Added Pin To Net: NetName=NetJ18_2 Pin=J18-2
+Added Pin To Net: NetName=NetJ18_2 Pin=J18-3
+Added Pin To Net: NetName=NetJ18_2 Pin=R42-2
+Added Pin To Net: NetName=NetJ18_2 Pin=R46-2
+Added Net: Name=NetJ18_2

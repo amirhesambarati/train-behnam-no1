@@ -1,0 +1,81 @@
+Removed Pin From Net: NetName=MCUGND Pin=C72-1
+Removed Pin From Net: NetName=NetC72_2 Pin=C72-2
+Removed Pin From Net: NetName=MCUGND Pin=C73-1
+Removed Pin From Net: NetName=NetC72_2 Pin=C73-2
+Removed Pin From Net: NetName=MCUGND Pin=C74-1
+Removed Pin From Net: NetName=NetC74_2 Pin=C74-2
+Removed Pin From Net: NetName=MCUGND Pin=C75-1
+Removed Pin From Net: NetName=NetC74_2 Pin=C75-2
+Removed Pin From Net: NetName=MCUGND Pin=C76-1
+Removed Pin From Net: NetName=NetC76_2 Pin=C76-2
+Removed Pin From Net: NetName=MCUGND Pin=C77-1
+Removed Pin From Net: NetName=NetC77_2 Pin=C77-2
+Removed Pin From Net: NetName=MCUGND Pin=C78-1
+Removed Pin From Net: NetName=MCUGND Pin=C79-1
+Removed Pin From Net: NetName=MCUGND Pin=C80-1
+Removed Pin From Net: NetName=vcc1 Pin=C80-2
+Removed Pin From Net: NetName=MCUGND Pin=C81-1
+Removed Pin From Net: NetName=vcc2 Pin=C81-2
+Removed Pin From Net: NetName=MCUGND Pin=C82-1
+Removed Pin From Net: NetName=NetC82_2 Pin=C82-2
+Removed Pin From Net: NetName=MCUGND Pin=C83-1
+Removed Pin From Net: NetName=NetC83_2 Pin=C83-2
+Change Component Footprint: Designator=C72 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C73 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C74 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C75 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C76 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C77 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C78 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C79 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C80 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C81 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C82 Old Footprint=C0805 New Footprint=C1206
+Change Component Footprint: Designator=C83 Old Footprint=C0805 New Footprint=C1206
+Change Component Comment : Designator=C73 Old Comment=0805 1uf 50V New Comment=CAP1206 1uf 50V
+Change Component Comment : Designator=C75 Old Comment=0805 1uf 50V New Comment=CAP1206 1uf 50V
+Change Component Comment : Designator=C72 Old Comment=0805 100nf 50V New Comment=CAP1206 100nf 50V
+Change Component Comment : Designator=C74 Old Comment=0805 100nf 50V New Comment=CAP1206 100nf 50V
+Change Component Comment : Designator=C80 Old Comment=0805 100nf 50V New Comment=CAP1206 100nf 50V
+Change Component Comment : Designator=C81 Old Comment=0805 100nf 50V New Comment=CAP1206 100nf 50V
+Change Component Comment : Designator=C82 Old Comment=0805 100pf 50V New Comment=CAP1206 100pf 50V
+Change Component Comment : Designator=C83 Old Comment=0805 100pf 50V New Comment=CAP1206 100pf 50V
+Change Component Comment : Designator=C76 Old Comment=0805 300pf 50V New Comment=CAP1206 330pf 50V
+Change Component Comment : Designator=C77 Old Comment=0805 300pf 50V New Comment=CAP1206 330pf 50V
+Change Component Comment : Designator=C78 Old Comment=0805 330pf 50V New Comment=CAP1206 330pf 50V
+Change Component Comment : Designator=C79 Old Comment=0805 330pf 50V New Comment=CAP1206 330pf 50V
+Added Pin To Net: NetName=NetC72_2 Pin=C72-1
+Added Pin To Net: NetName=MCUGND Pin=C72-2
+Added Pin To Net: NetName=NetC72_2 Pin=C73-1
+Added Pin To Net: NetName=MCUGND Pin=C73-2
+Added Pin To Net: NetName=NetC74_2 Pin=C74-1
+Added Pin To Net: NetName=MCUGND Pin=C74-2
+Added Pin To Net: NetName=NetC74_2 Pin=C75-1
+Added Pin To Net: NetName=MCUGND Pin=C75-2
+Added Pin To Net: NetName=NetC76_2 Pin=C76-1
+Added Pin To Net: NetName=MCUGND Pin=C76-2
+Added Pin To Net: NetName=NetC77_2 Pin=C77-1
+Added Pin To Net: NetName=MCUGND Pin=C78-2
+Added Pin To Net: NetName=MCUGND Pin=C79-2
+Added Pin To Net: NetName=vcc1 Pin=C80-1
+Added Pin To Net: NetName=MCUGND Pin=C80-2
+Added Pin To Net: NetName=vcc2 Pin=C81-1
+Added Pin To Net: NetName=MCUGND Pin=C81-2
+Added Pin To Net: NetName=NetC82_2 Pin=C82-1
+Added Pin To Net: NetName=MCUGND Pin=C82-2
+Added Pin To Net: NetName=NetC83_2 Pin=C83-1
+Added Pin To Net: NetName=MCUGND Pin=C83-2
+Change Net Name : Old Net Name=NetC72_2 New Net Name=NetC72_1
+Change Net Name : Old Net Name=NetC74_2 New Net Name=NetC74_1
+Change Net Name : Old Net Name=NetC76_2 New Net Name=NetC76_1
+Change Net Name : Old Net Name=NetC77_2 New Net Name=NetC77_1
+Change Net Name : Old Net Name=NetC82_2 New Net Name=NetC82_1
+Change Net Name : Old Net Name=NetC83_2 New Net Name=NetC83_1
+Added Pin To Net: NetName=NetC78_1 Pin=C78-1
+Added Pin To Net: NetName=NetC78_1 Pin=U1-29
+Added Pin To Net: NetName=NetC78_1 Pin=U17-3
+Added Net: Name=NetC78_1
+Added Pin To Net: NetName=NetC79_1 Pin=C79-1
+Added Pin To Net: NetName=NetC79_1 Pin=U1-30
+Added Pin To Net: NetName=NetC79_1 Pin=U18-3
+Added Net: Name=NetC79_1

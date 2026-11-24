@@ -1,0 +1,145 @@
+Removed Member From Class: ClassName=pressure-transmitter Member=C66
+Removed Member From Class: ClassName=analog-joystick Member=C72
+Removed Member From Class: ClassName=gas Member=C84
+Removed Member From Class: ClassName=switchStart Member=C86
+Removed Member From Class: ClassName=speed-and-rpm Member=C90
+Removed Member From Class: ClassName=Micro-Switch Member=C98
+Removed Member From Class: ClassName=MainCurrent Member=C100
+Removed Member From Class: ClassName=analog-joystick Member=R50
+Removed Member From Class: ClassName=pressure-transmitter Member=R50
+Removed Member From Class: ClassName=analog-joystick Member=R51
+Removed Member From Class: ClassName=pressure-transmitter Member=R51
+Removed Member From Class: ClassName=battery-voltage Member=R110
+Removed Member From Class: ClassName=gas Member=R110
+Removed Member From Class: ClassName=MainCurrent Member=R110
+Removed Member From Class: ClassName=Micro-Switch Member=R110
+Removed Member From Class: ClassName=speed-and-rpm-analog Member=R110
+Removed Member From Class: ClassName=speed-and-rpm Member=R110
+Removed Member From Class: ClassName=switchStart Member=R110
+Removed Member From Class: ClassName=battery-voltage Member=R111
+Removed Member From Class: ClassName=gas Member=R111
+Removed Member From Class: ClassName=MainCurrent Member=R111
+Removed Member From Class: ClassName=Micro-Switch Member=R111
+Removed Member From Class: ClassName=speed-and-rpm-analog Member=R111
+Removed Member From Class: ClassName=speed-and-rpm Member=R111
+Removed Member From Class: ClassName=switchStart Member=R111
+Removed Member From Class: ClassName=pressure-transmitter Member=U15
+Removed Member From Class: ClassName=analog-joystick Member=U17
+Removed Member From Class: ClassName=gas Member=U19
+Removed Member From Class: ClassName=battery-voltage Member=U21
+Added Pin To Net: NetName=JoyFeedback2-1 Pin=U1-15
+Added Member To Class: ClassName=pressure-transmitter Member=Component C55 CAP1206 100nf 50V
+Added Member To Class: ClassName=pressure-transmitter Member=Component C57 CAP1206 100nf 50V
+Added Member To Class: ClassName=pressure-transmitter Member=Component C59 CAP1206 100nf 50V
+Added Member To Class: ClassName=pressure-transmitter Member=Component C61 CAP1206 100nf 50V
+Added Member To Class: ClassName=pressure-transmitter Member=Component C63 CAP1206 100nf 50V
+Added Member To Class: ClassName=pressure-transmitter Member=Component C65 CAP1206 100nf 50V
+Added Member To Class: ClassName=analog-joystick Member=Component C67 CAP1206 100nf 50V
+Added Member To Class: ClassName=analog-joystick Member=Component C69 CAP1206 100nf 50V
+Added Member To Class: ClassName=analog-joystick Member=Component C71 CAP1206 100nf 50V
+Added Member To Class: ClassName=gas Member=Component C73 0805 1uf 50V
+Added Member To Class: ClassName=gas Member=Component C75 0805 1uf 50V
+Added Member To Class: ClassName=gas Member=Component C77 0805 300pf 50V
+Added Member To Class: ClassName=gas Member=Component C79 0805 330pf 50V
+Added Member To Class: ClassName=gas Member=Component C81 0805 100nf 50V
+Added Member To Class: ClassName=gas Member=Component C83 0805 100pf 50V
+Added Member To Class: ClassName=switchStart Member=Component C85 CAP1206 1nf 50V
+Added Member To Class: ClassName=speed-and-rpm Member=Component C87 CAP1206 1nf 50V
+Added Member To Class: ClassName=speed-and-rpm Member=Component C89 CAP1206 1nf 50V
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component C91 CAP1206 1nf 50V
+Added Member To Class: ClassName=battery-voltage Member=Component C93 CAP1206 100nf 50V
+Added Member To Class: ClassName=Micro-Switch Member=Component C95 CAP1206 1nf 50V
+Added Member To Class: ClassName=Micro-Switch Member=Component C97 CAP1206 1nf 50V
+Added Member To Class: ClassName=MainCurrent Member=Component C99 CAP1206 100nf 50V
+Added Member To Class: ClassName=pressure-transmitter Member=Component R25 RES1206 10K 1%
+Added Member To Class: ClassName=pressure-transmitter Member=Component R27 RES1206 1R 1%
+Added Member To Class: ClassName=pressure-transmitter Member=Component R28 RES1206 10K 1%
+Added Member To Class: ClassName=pressure-transmitter Member=Component R29 RES1206 1R 1%
+Added Member To Class: ClassName=pressure-transmitter Member=Component R30 RES1206 1R 1%
+Added Member To Class: ClassName=analog-joystick Member=Component R31 RES1206 1k 1%
+Added Member To Class: ClassName=analog-joystick Member=Component R32 RES1206 1k 1%
+Added Member To Class: ClassName=analog-joystick Member=Component R33 RES1206 2k 1%
+Added Member To Class: ClassName=analog-joystick Member=Component R34 RES1206 2k 1%
+Added Member To Class: ClassName=analog-joystick Member=Component R35 RES1206 1k 1%
+Added Member To Class: ClassName=analog-joystick Member=Component R36 RES1206 1k 1%
+Added Member To Class: ClassName=analog-joystick Member=Component R37 RES1206 2k 1%
+Added Member To Class: ClassName=analog-joystick Member=Component R38 RES1206 2k 1%
+Added Member To Class: ClassName=gas Member=Component R39 RES1206 100k 1%
+Added Member To Class: ClassName=gas Member=Component R40 RES1206 100k 1%
+Added Member To Class: ClassName=gas Member=Component R41 RES1206 10k 1%
+Added Member To Class: ClassName=gas Member=Component R42 RES1206 10k 1%
+Added Member To Class: ClassName=gas Member=Component R43 RES1206 1.6k 1%
+Added Member To Class: ClassName=gas Member=Component R44 RES1206 1.6k 1%
+Added Member To Class: ClassName=gas Member=Component R45 RES1206 2.7k 1%
+Added Member To Class: ClassName=gas Member=Component R46 RES1206 2.7k 1%
+Added Member To Class: ClassName=gas Member=Component R47 RES1206 1.6k 1%
+Added Member To Class: ClassName=gas Member=Component R48 RES1206 1.6k 1%
+Added Member To Class: ClassName=gas Member=Component R49 RES1206 4.3k 1%
+Added Member To Class: ClassName=gas Member=Component R52 RES1206 4.3k 1%
+Added Member To Class: ClassName=gas Member=Component R53 RES1206 22k 1%
+Added Member To Class: ClassName=gas Member=Component R54 RES1206 22k 1%
+Added Member To Class: ClassName=gas Member=Component R55 RES1206 2k 1%
+Added Member To Class: ClassName=gas Member=Component R56 RES1206 2k 1%
+Added Member To Class: ClassName=gas Member=Component R57 RES1206 2k 1%
+Added Member To Class: ClassName=gas Member=Component R58 RES1206 2k 1%
+Added Member To Class: ClassName=gas Member=Component R59 RES1206 2k 1%
+Added Member To Class: ClassName=gas Member=Component R60 RES1206 2k 1%
+Added Member To Class: ClassName=gas Member=Component R61 RES1206 0R 1%
+Added Member To Class: ClassName=gas Member=Component R62 RES1206 0R 1%
+Added Member To Class: ClassName=switchStart Member=Component R63 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R64 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R65 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R66 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R67 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R68 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R69 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R70 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R71 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R72 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R73 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R74 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R75 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R76 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R77 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R78 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R79 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R80 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R81 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R82 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R83 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R84 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R85 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R86 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component R87 RES1206 10k 1%
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component R88 RES1206 10k 1%
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component R89 RES1206 1k 1%
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component R90 RES1206 1k 1%
+Added Member To Class: ClassName=battery-voltage Member=Component R91 RES1206 10k 1%
+Added Member To Class: ClassName=battery-voltage Member=Component R92 RES1206 1k 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R93 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R94 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R95 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R96 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R97 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R98 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R99 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R100 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R101 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R102 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R103 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R104 RES1206 4.7K 1%
+Added Member To Class: ClassName=MainCurrent Member=Component R105 RES1206 33K 1%
+Added Member To Class: ClassName=MainCurrent Member=Component R106 RES1206 33K 1%
+Added Member To Class: ClassName=MainCurrent Member=Component R107 RES1206 80K 1%
+Added Member To Class: ClassName=MainCurrent Member=Component R108 RES1206 10K 1%
+Added Member To Class: ClassName=fuelGauge Member=Component R109 RES1206 10K 1%
+Added Member To Class: ClassName=pressure-transmitter Member=Component U10 ADG708BRUZ
+Added Member To Class: ClassName=pressure-transmitter Member=Component U12 INA180A1IDBVR
+Added Member To Class: ClassName=pressure-transmitter Member=Component U14 INA180A1IDBVR
+Added Member To Class: ClassName=analog-joystick Member=Component U16 LM358BAIDR
+Added Member To Class: ClassName=gas Member=Component U18 LM2903DR
+Added Member To Class: ClassName=battery-voltage Member=Component U20 LM358BAIDR
+Added Room: Name=battery-voltage
+Added Room: Name=MainCurrent
+Added Room: Name=pressure-transmitter
+Added Room: Name=speed-and-rpm-analog
