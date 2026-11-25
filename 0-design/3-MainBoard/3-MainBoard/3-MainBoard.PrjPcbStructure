@@ -3,6 +3,7 @@ Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=battery
 Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=CAN.SchDoc|SheetNumber=2
 Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=fuelGauge.SchDoc|SheetNumber=14
 Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=gas.SchDoc|SheetNumber=6
+Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=INPUTOUTPUTDIGITAL.SchDoc|SheetNumber=15
 Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=MainCurrent.SchDoc|SheetNumber=13
 Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=MCU.SchDoc|SheetNumber=1
 Record=NoMainPathDocument|SourceDocument=analog-joystick.SchDoc|FileName=Micro-Switch.SchDoc|SheetNumber=11

@@ -1,0 +1,88 @@
+Removed Member From Class: ClassName=switchStart Member=D30
+Removed Member From Class: ClassName=switchStart Member=D31
+Removed Member From Class: ClassName=switchStart Member=D32
+Removed Member From Class: ClassName=speed-and-rpm-analog Member=R109
+Removed Member From Class: ClassName=speed-and-rpm Member=R109
+Removed Member From Class: ClassName=Micro-Switch Member=R117
+Removed Member From Class: ClassName=speed-and-rpm-analog Member=R117
+Removed Member From Class: ClassName=speed-and-rpm Member=R117
+Removed Member From Class: ClassName=battery-voltage Member=R122
+Removed Member From Class: ClassName=MainCurrent Member=R122
+Removed Member From Class: ClassName=Micro-Switch Member=R122
+Removed Member From Class: ClassName=speed-and-rpm Member=R122
+Removed Member From Class: ClassName=MainCurrent Member=R123
+Removed Member From Class: ClassName=Micro-Switch Member=R123
+Removed Member From Class: ClassName=speed-and-rpm-analog Member=R123
+Removed Member From Class: ClassName=speed-and-rpm Member=R123
+Removed Member From Class: ClassName=switchStart Member=R123
+Removed Member From Class: ClassName=MainCurrent Member=R125
+Removed Member From Class: ClassName=Micro-Switch Member=R125
+Removed Member From Class: ClassName=fuelGauge Member=R127
+Removed Member From Class: ClassName=fuelGauge Member=R128
+Removed Member From Class: ClassName=Micro-Switch Member=R128
+Removed Member From Class: ClassName=battery-voltage Member=R129
+Removed Member From Class: ClassName=Micro-Switch Member=R129
+Removed Member From Class: ClassName=speed-and-rpm Member=R129
+Removed Member From Class: ClassName=Micro-Switch Member=R130
+Removed Member From Class: ClassName=MainCurrent Member=R133
+Removed Member From Class: ClassName=Micro-Switch Member=R133
+Removed Member From Class: ClassName=speed-and-rpm-analog Member=R133
+Removed Member From Class: ClassName=speed-and-rpm Member=R133
+Removed Member From Class: ClassName=switchStart Member=R133
+Added Pin To Net: NetName=MCUGND Pin=D12-1
+Added Member To Class: ClassName=switchStart Member=Component D12 LED1206RED
+Added Member To Class: ClassName=switchStart Member=Component D13 LED1206GRN
+Added Member To Class: ClassName=switchStart Member=Component D14 LED1206RED
+Added Member To Class: ClassName=switchStart Member=Component R66 RES1206 1k 1%
+Added Member To Class: ClassName=switchStart Member=Component R67 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R69 RES1206 4.7K 1%
+Added Member To Class: ClassName=switchStart Member=Component R71 RES1206 1k 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R72 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R73 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R74 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R75 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R76 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R77 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R78 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R79 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R80 RES1206 1k 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R81 RES1206 1k 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R82 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R83 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R84 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R85 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R86 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R87 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R88 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R89 RES1206 4.7K 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R90 RES1206 1k 1%
+Added Member To Class: ClassName=speed-and-rpm Member=Component R91 RES1206 1k 1%
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component R92 RES1206 10k 1%
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component R93 RES1206 10k 1%
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component R94 RES1206 1k 1%
+Added Member To Class: ClassName=speed-and-rpm-analog Member=Component R95 RES1206 1k 1%
+Added Member To Class: ClassName=battery-voltage Member=Component R96 RES1206 10k 1%
+Added Member To Class: ClassName=battery-voltage Member=Component R97 RES1206 1k 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R98 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R99 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R100 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R101 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R102 RES1206 1k 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R103 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R104 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R105 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R106 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R107 RES1206 1k 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R108 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R110 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R111 RES1206 4.7K 1%
+Added Member To Class: ClassName=Micro-Switch Member=Component R112 RES1206 1k 1%
+Added Member To Class: ClassName=MainCurrent Member=Component R113 RES1206 33K 1%
+Added Member To Class: ClassName=MainCurrent Member=Component R114 RES1206 33K 1%
+Added Member To Class: ClassName=MainCurrent Member=Component R115 RES1206 80K 1%
+Added Member To Class: ClassName=MainCurrent Member=Component R116 RES1206 10K 1%
+Added Member To Class: ClassName=fuelGauge Member=Component R118 RES1206 20K 1%
+Added Member To Class: ClassName=fuelGauge Member=Component R119 RES1206 180R 1%
+Added Member To Class: ClassName=INPUTOUTPUTDIGITAL Member=Component R120 FUSE 1206
+Added Member To Class: ClassName=INPUTOUTPUTDIGITAL Member=Component R121 RES1206 12K 1%
+Added Member To Class: ClassName=INPUTOUTPUTDIGITAL Member=Component R124 RES1206 1k 1%

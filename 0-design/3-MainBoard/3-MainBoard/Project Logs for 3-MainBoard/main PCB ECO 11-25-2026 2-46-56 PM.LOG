@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Pressure-input2 Pin=U10-5
+Removed Pin From Net: NetName=Pressure-input6 Pin=U10-11
+Added Pin To Net: NetName=Pressure-input2 Pin=U10-11
+Added Pin To Net: NetName=Pressure-input6 Pin=U10-12

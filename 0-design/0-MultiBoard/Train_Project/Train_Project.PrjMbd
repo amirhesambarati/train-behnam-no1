@@ -136,29 +136,6 @@ VaultURL=
 VaultName=
 
 [Document5]
-DocumentPath=..\..\4-Power\4-Power\4-Power.PrjPcb
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-VaultGUID=
-ManagedProjectGUID=
-RevisionGUID=
-ProjectName=4-Power.PrjPcb
-VaultURL=
-VaultName=
-
-[Document6]
 DocumentPath=Assembly1.MbaDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -175,7 +152,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=94f49f00-fe8b-4635-be70-7e149542af3a
 
-[Document7]
+[Document6]
 DocumentPath=..\..\5-SignalLight\5-SignalLight\5-SignalLight.PrjPcb
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -198,7 +175,7 @@ ProjectName=5-SignalLight.PrjPcb
 VaultURL=
 VaultName=
 
-[Document8]
+[Document7]
 DocumentPath=..\..\6-gear\6-gear.PrjPcb
 AnnotationEnabled=1
 AnnotateStartValue=1

@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=battryVoltage Pin=U1-23
+Added Pin To Net: NetName=NetU22_1 Pin=U22-1
+Added Pin To Net: NetName=NetU22_1 Pin=U22-2
+Added Net: Name=NetU22_1
+Added Room: Name=battery-voltage
+Added Room: Name=gas
+Added Room: Name=MainCurrent
+Added Room: Name=pressure-transmitter
+Added Room: Name=speed-and-rpm
+Added Room: Name=speed-and-rpm-analog

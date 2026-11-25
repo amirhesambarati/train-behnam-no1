@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=DirBackward Pin=U1-56
+Added Pin To Net: NetName=DirN Pin=U1-57
+Added Pin To Net: NetName=DirForward Pin=U1-58
+Added Pin To Net: NetName=speed_A Pin=U1-59
+Added Pin To Net: NetName=speed_B Pin=U1-60
+Added Pin To Net: NetName=rpm_A Pin=U1-61
+Added Pin To Net: NetName=rpm_B Pin=U1-62

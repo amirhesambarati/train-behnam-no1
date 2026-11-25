@@ -1,0 +1,58 @@
+Removed Pin From Net: NetName=MCUGND Pin=D12-1
+Removed Pin From Net: NetName=MCUGND Pin=D14-1
+Removed Pin From Net: NetName=GND Pin=D16-1
+Removed Pin From Net: NetName=GND Pin=D20-1
+Removed Pin From Net: NetName=MCUGND Pin=D24-1
+Removed Pin From Net: NetName=MCUGND Pin=D26-1
+Removed Pin From Net: NetName=MCUGND Pin=D28-1
+Removed Pin From Net: NetName=MCUGND Pin=D33-1
+Removed Pin From Net: NetName=MCUGND Pin=J19-2
+Removed Pin From Net: NetName=MCUGND Pin=J20-1
+Removed Pin From Net: NetName=MCUGND Pin=J21-2
+Removed Pin From Net: NetName=GND Pin=J22-1
+Removed Pin From Net: NetName=GND Pin=J24-2
+Removed Pin From Net: NetName=GND Pin=J26-2
+Removed Pin From Net: NetName=MCUGND Pin=J29-2
+Removed Pin From Net: NetName=MCUGND Pin=J30-2
+Removed Pin From Net: NetName=MCUGND Pin=J31-2
+Removed Pin From Net: NetName=MCUGND Pin=J32-2
+Removed Pin From Net: NetName=MCUGND Pin=J33-2
+Removed Pin From Net: NetName=MCUGND Pin=J34-2
+Removed Pin From Net: NetName=MCUGND Pin=J39-2
+Added Pin To Net: NetName=com14 Pin=J38-3
+Change Net Name : Old Net Name=GND New Net Name=GND2
+Added Pin To Net: NetName=GND1 Pin=D16-1
+Added Pin To Net: NetName=GND1 Pin=D20-1
+Added Pin To Net: NetName=GND1 Pin=J22-1
+Added Pin To Net: NetName=GND1 Pin=J24-2
+Added Pin To Net: NetName=GND1 Pin=J26-2
+Added Net: Name=GND1
+Added Pin To Net: NetName=GND3 Pin=D24-1
+Added Pin To Net: NetName=GND3 Pin=J29-2
+Added Pin To Net: NetName=GND3 Pin=J30-2
+Added Net: Name=GND3
+Added Pin To Net: NetName=GND4 Pin=D26-1
+Added Pin To Net: NetName=GND4 Pin=J31-2
+Added Pin To Net: NetName=GND4 Pin=J32-2
+Added Net: Name=GND4
+Added Pin To Net: NetName=GND5 Pin=D28-1
+Added Pin To Net: NetName=GND5 Pin=J33-2
+Added Pin To Net: NetName=GND5 Pin=J34-2
+Added Net: Name=GND5
+Added Pin To Net: NetName=GND6 Pin=D12-1
+Added Pin To Net: NetName=GND6 Pin=D14-1
+Added Pin To Net: NetName=GND6 Pin=J19-2
+Added Pin To Net: NetName=GND6 Pin=J20-1
+Added Pin To Net: NetName=GND6 Pin=J21-2
+Added Net: Name=GND6
+Added Pin To Net: NetName=GND7 Pin=D33-1
+Added Pin To Net: NetName=GND7 Pin=J38-1
+Added Pin To Net: NetName=GND7 Pin=J39-2
+Added Net: Name=GND7
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_5
+Added Rule: Name=Schematic Supply Nets_6
+Added Rule: Name=Schematic Supply Nets_7
+Added Rule: Name=Schematic Supply Nets_8
+Added Rule: Name=Schematic Supply Nets_9

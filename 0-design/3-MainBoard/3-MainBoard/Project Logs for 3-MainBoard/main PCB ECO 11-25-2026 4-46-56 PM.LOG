@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetR113_2 Pin=U1-24
+Removed Pin From Net: NetName=24V_analog_in1 Pin=U1-25
+Removed Pin From Net: NetName=24V_analog_in2 Pin=U1-26
+Added Pin To Net: NetName=24V_analog_in1 Pin=U1-24
+Added Pin To Net: NetName=24V_analog_in2 Pin=U1-25
+Added Pin To Net: NetName=NetR38_2 Pin=U1-26

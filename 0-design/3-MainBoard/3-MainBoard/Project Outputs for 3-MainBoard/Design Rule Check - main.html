@@ -1,0 +1,518 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD25\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11/25/2026</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:29:53 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc" class="file"><acronym title="C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc">C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">62</td></tr>
+</table>
+</td>
+</table><a name="IDMS2XBIELWHEYLNKKNOZJR5XELBFT4MHINSANT3KHKGIFRY1WE1XH"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDE411P3DON1TQISRHTELMHSBYHPJ51KJ0P0SNRNKFA4RROLYCOYNM">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDUIOTTYEC4W3OQMB3TPP1UMQDIJS4JGCKTTGRVNSWHHJJ1Z0AW2B">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTFUNFUCCFNYADIA345SV2NW33PYDS0MSP2FHHWM0A0M4JGALBS0D">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0Q5RBUUGBK3BPII5O5GYSPQF4KZI2XGKV5KPVKMIDOYQDVOBDRNP">Width Constraint (Min=0.2mm) (Max=10mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYAZDGNLP2ZOZDMDHO0GAW0SCSNEFARNW5G1EUOOE5GYCTLUGGAAM">Routing Via (MinHoleWidth=0.4mm) (MaxHoleWidth=2mm) (PreferredHoleWidth=0.5mm) (MinWidth=0.8mm) (MaxWidth=3mm) (PreferedWidth=0.9mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHMCB0GWGDHUOE4T2BBFJAA5G3NWX0RTOFSIDYPQQRLBMEFMB4NP">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDES3V4QQFEKLXG2W01ZBHB4X12MJHQ330WEJVNVD5SVEYGXNZPFQN">Minimum Annular Ring (Minimum=0.2mm) (All)</a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFZPSUZT0ZR2DL1Y2EMNGXF4DDG53HTEDP5E2FJJY23MOKRTVVPRM">Acute Angle Constraint (Minimum=75.000) (All)</a></td>
+<td class="column2">42</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBTKTRAHO5FO1DWUINHFUIQT2WMULKZYBRCTJBGKTZCDAIZVK1BH">Hole Size Constraint (Min=0.4mm) (Max=50mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIDFFERD4JRNGNLJG0FNA1IPR5FGGJWTVJTAMBLOPK0HAIBH0MHNK">Hole To Hole Clearance (Gap=0.3mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDY1Q4XBPUZFXVML3HQTU1DLUFDHTIIQ2HLGLQUCPHHRK5L14SJQ3G">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">62</td>
+</tr>
+</table><br><a name="IDE411P3DON1TQISRHTELMHSBYHPJ51KJ0P0SNRNKFA4RROLYCOYNM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8895.044mil|Location2.X=8908.105mil|Location1.Y=11394.454mil|Location2.Y=11407.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8895.044mil|Location2.X=8908.105mil|Location1.Y=11394.454mil|Location2.Y=11407.515mil|Absolute=True">Clearance Constraint: (0.27mm &lt; 0.3mm) Between Hole of Pad J4-(-68.2mm,-36.8mm) on Multi-Layer And Pad J4-B1A12(-68.09mm,-35.68mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8659.611mil|Location2.X=8672.672mil|Location1.Y=11394.454mil|Location2.Y=11407.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8659.611mil|Location2.X=8672.672mil|Location1.Y=11394.454mil|Location2.Y=11407.515mil|Absolute=True">Clearance Constraint: (0.27mm &lt; 0.3mm) Between Hole of Pad J4-(-74.18mm,-36.8mm) on Multi-Layer And Pad J4-A1B12(-74.29mm,-35.68mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDES3V4QQFEKLXG2W01ZBHB4X12MJHQ330WEJVNVD5SVEYGXNZPFQN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=0.2mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15303.962mil|Location2.X=15310.211mil|Location1.Y=13477.19mil|Location2.Y=13483.44mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15303.962mil|Location2.X=15310.211mil|Location1.Y=13477.19mil|Location2.Y=13483.44mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-3(94.5mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7863.017mil|Location2.X=7869.266mil|Location1.Y=13477.19mil|Location2.Y=13483.44mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7863.017mil|Location2.X=7869.266mil|Location1.Y=13477.19mil|Location2.Y=13483.44mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-3(-94.5mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15303.962mil|Location2.X=15310.211mil|Location1.Y=12177.978mil|Location2.Y=12184.227mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15303.962mil|Location2.X=15310.211mil|Location1.Y=12177.978mil|Location2.Y=12184.227mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-4(94.5mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7863.017mil|Location2.X=7869.266mil|Location1.Y=12177.978mil|Location2.Y=12184.227mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7863.017mil|Location2.X=7869.266mil|Location1.Y=12177.978mil|Location2.Y=12184.227mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad Free-4(-94.5mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8897.013mil|Location2.X=8906.137mil|Location1.Y=13779.887mil|Location2.Y=13789.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8897.013mil|Location2.X=8906.137mil|Location1.Y=13779.887mil|Location2.Y=13789.011mil|Absolute=True">Minimum Annular Ring: (0.15mm &lt; 0.2mm) Via (-68.2mm,23.8mm) from Top Layer to Bottom Layer (Annular Ring=0.15mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8818.273mil|Location2.X=8827.397mil|Location1.Y=13724.769mil|Location2.Y=13733.893mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8818.273mil|Location2.X=8827.397mil|Location1.Y=13724.769mil|Location2.Y=13733.893mil|Absolute=True">Minimum Annular Ring: (0.15mm &lt; 0.2mm) Via (-70.2mm,22.4mm) from Top Layer to Bottom Layer (Annular Ring=0.15mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8818.273mil|Location2.X=8827.397mil|Location1.Y=13779.887mil|Location2.Y=13789.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8818.273mil|Location2.X=8827.397mil|Location1.Y=13779.887mil|Location2.Y=13789.011mil|Absolute=True">Minimum Annular Ring: (0.15mm &lt; 0.2mm) Via (-70.2mm,23.8mm) from Top Layer to Bottom Layer (Annular Ring=0.15mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8393.076mil|Location2.X=8402.2mil|Location1.Y=13712.958mil|Location2.Y=13722.082mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8393.076mil|Location2.X=8402.2mil|Location1.Y=13712.958mil|Location2.Y=13722.082mil|Absolute=True">Minimum Annular Ring: (0.15mm &lt; 0.2mm) Via (-81mm,22.1mm) from Top Layer to Bottom Layer (Annular Ring=0.15mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8393.076mil|Location2.X=8402.2mil|Location1.Y=13791.698mil|Location2.Y=13800.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8393.076mil|Location2.X=8402.2mil|Location1.Y=13791.698mil|Location2.Y=13800.822mil|Absolute=True">Minimum Annular Ring: (0.15mm &lt; 0.2mm) Via (-81mm,24.1mm) from Top Layer to Bottom Layer (Annular Ring=0.15mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8393.076mil|Location2.X=8402.2mil|Location1.Y=13870.438mil|Location2.Y=13879.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8393.076mil|Location2.X=8402.2mil|Location1.Y=13870.438mil|Location2.Y=13879.562mil|Absolute=True">Minimum Annular Ring: (0.15mm &lt; 0.2mm) Via (-81mm,26.1mm) from Top Layer to Bottom Layer (Annular Ring=0.15mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDFZPSUZT0ZR2DL1Y2EMNGXF4DDG53HTEDP5E2FJJY23MOKRTVVPRM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Acute Angle Constraint (Minimum=75.000) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12041.647mil|Location2.X=12061.147mil|Location1.Y=14133.097mil|Location2.Y=14152.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12041.647mil|Location2.X=12061.147mil|Location1.Y=14133.097mil|Location2.Y=14152.597mil|Absolute=True">Acute Angle Constraint: (10.441 &lt; 75.000) Between Track (10.1mm,35mm)(11.825mm,33.275mm) on Bottom Layer And Track (11.825mm,29.226mm)(11.825mm,33.275mm) on Bottom Layer (Angle = 10.441)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12210.63mil|Location2.X=12230.13mil|Location1.Y=13717.2mil|Location2.Y=13736.7mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12210.63mil|Location2.X=12230.13mil|Location1.Y=13717.2mil|Location2.Y=13736.7mil|Absolute=True">Acute Angle Constraint: (72.861 &lt; 75.000) Between Track (15.849mm,10.149mm)(15.849mm,22.795mm) on Bottom Layer And Track (15.849mm,22.795mm)(17.13mm,22.795mm) on Bottom Layer (Angle = 72.861)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10190.182mil|Location2.X=10209.682mil|Location1.Y=13906.718mil|Location2.Y=13926.218mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10190.182mil|Location2.X=10209.682mil|Location1.Y=13906.718mil|Location2.Y=13926.218mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Polygon Region (0 hole(s)) Bottom Layer And Track (-35.2mm,21.9mm)(-35.2mm,28.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9671.738mil|Location2.X=9691.238mil|Location1.Y=13565.086mil|Location2.Y=13584.586mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9671.738mil|Location2.X=9691.238mil|Location1.Y=13565.086mil|Location2.Y=13584.586mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Track (-48.354mm,19.5mm)(-47.154mm,18.3mm) on Bottom Layer And Track (-49.1mm,5.3mm)(-49.1mm,19.5mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8602.364mil|Location2.X=8621.864mil|Location1.Y=11561.502mil|Location2.Y=11581.002mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8602.364mil|Location2.X=8621.864mil|Location1.Y=11561.502mil|Location2.Y=11581.002mil|Absolute=True">Acute Angle Constraint: (67.500 &lt; 75.000) Between Track (-75.1mm,-31.883mm)(-75.1mm,-25.4mm) on Top Layer And Track (-78.514mm,-32.7mm)(-74.8mm,-32.7mm) on Top Layer (Angle = 67.500)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12187.482mil|Location2.X=12206.982mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12187.482mil|Location2.X=12206.982mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True">Acute Angle Constraint: (65.248 &lt; 75.000) Between Pad R101-1(14.6mm,-6.3mm) on Top Layer And Via (15.7mm,-6.3mm) from Top Layer to Bottom Layer (Angle = 65.248)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11376.458mil|Location2.X=11395.958mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11376.458mil|Location2.X=11395.958mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True">Acute Angle Constraint: (65.248 &lt; 75.000) Between Pad R105-1(-6mm,-6.3mm) on Top Layer And Via (-4.9mm,-6.3mm) from Top Layer to Bottom Layer (Angle = 65.248)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11781.97mil|Location2.X=11801.47mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11781.97mil|Location2.X=11801.47mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True">Acute Angle Constraint: (65.248 &lt; 75.000) Between Pad R110-1(4.3mm,-6.3mm) on Top Layer And Via (5.4mm,-6.3mm) from Top Layer to Bottom Layer (Angle = 65.248)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13907.81mil|Location2.X=13927.31mil|Location1.Y=14004.978mil|Location2.Y=14024.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13907.81mil|Location2.X=13927.31mil|Location1.Y=14004.978mil|Location2.Y=14024.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R20-2(59.9mm,30mm) on Bottom Layer And Track (59.049mm,30.1mm)(59.9mm,30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13970.877mil|Location2.X=13990.377mil|Location1.Y=13989.785mil|Location2.Y=14009.285mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13970.877mil|Location2.X=13990.377mil|Location1.Y=13989.785mil|Location2.Y=14009.285mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R20-2(59.9mm,30mm) on Bottom Layer And Polygon Region (0 hole(s)) Bottom Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14183.962mil|Location2.X=14203.462mil|Location1.Y=14004.978mil|Location2.Y=14024.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14183.962mil|Location2.X=14203.462mil|Location1.Y=14004.978mil|Location2.Y=14024.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R21-2(66.914mm,30mm) on Bottom Layer And Track (66.063mm,30.1mm)(66.914mm,30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14247.03mil|Location2.X=14266.53mil|Location1.Y=13989.785mil|Location2.Y=14009.285mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14247.03mil|Location2.X=14266.53mil|Location1.Y=13989.785mil|Location2.Y=14009.285mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R21-2(66.914mm,30mm) on Bottom Layer And Polygon Region (0 hole(s)) Bottom Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14460.115mil|Location2.X=14479.615mil|Location1.Y=14004.978mil|Location2.Y=14024.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14460.115mil|Location2.X=14479.615mil|Location1.Y=14004.978mil|Location2.Y=14024.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R22-2(73.929mm,30mm) on Bottom Layer And Track (72.929mm,29.951mm)(73.077mm,30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14523.183mil|Location2.X=14542.683mil|Location1.Y=13989.785mil|Location2.Y=14009.285mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14523.183mil|Location2.X=14542.683mil|Location1.Y=13989.785mil|Location2.Y=14009.285mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R22-2(73.929mm,30mm) on Bottom Layer And Polygon Region (0 hole(s)) Bottom Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14736.268mil|Location2.X=14755.768mil|Location1.Y=14004.978mil|Location2.Y=14024.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14736.268mil|Location2.X=14755.768mil|Location1.Y=14004.978mil|Location2.Y=14024.478mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R23-2(80.943mm,30mm) on Bottom Layer And Track (79.943mm,29.951mm)(80.092mm,30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14799.336mil|Location2.X=14818.836mil|Location1.Y=13989.785mil|Location2.Y=14009.285mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14799.336mil|Location2.X=14818.836mil|Location1.Y=13989.785mil|Location2.Y=14009.285mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R23-2(80.943mm,30mm) on Bottom Layer And Polygon Region (0 hole(s)) Bottom Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14689.177mil|Location2.X=14708.677mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14689.177mil|Location2.X=14708.677mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R25-2(78.143mm,-30mm) on Bottom Layer And Track (78.994mm,-30.1mm)(79.143mm,-29.951mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14626.109mil|Location2.X=14645.609mil|Location1.Y=11660.632mil|Location2.Y=11680.132mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14626.109mil|Location2.X=14645.609mil|Location1.Y=11660.632mil|Location2.Y=11680.132mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R25-2(78.143mm,-30mm) on Bottom Layer And Polygon Region (15 hole(s)) Bottom Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14413.024mil|Location2.X=14432.524mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14413.024mil|Location2.X=14432.524mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R26-2(71.129mm,-30mm) on Bottom Layer And Track (71.98mm,-30.1mm)(72.129mm,-29.951mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14349.957mil|Location2.X=14369.457mil|Location1.Y=11660.632mil|Location2.Y=11680.132mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14349.957mil|Location2.X=14369.457mil|Location1.Y=11660.632mil|Location2.Y=11680.132mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R26-2(71.129mm,-30mm) on Bottom Layer And Polygon Region (15 hole(s)) Bottom Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14136.871mil|Location2.X=14156.371mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14136.871mil|Location2.X=14156.371mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R28-2(64.114mm,-30mm) on Bottom Layer And Track (64.966mm,-30.1mm)(65.114mm,-29.951mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14073.804mil|Location2.X=14093.304mil|Location1.Y=11660.632mil|Location2.Y=11680.132mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14073.804mil|Location2.X=14093.304mil|Location1.Y=11660.632mil|Location2.Y=11680.132mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R28-2(64.114mm,-30mm) on Bottom Layer And Polygon Region (15 hole(s)) Bottom Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13860.719mil|Location2.X=13880.219mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13860.719mil|Location2.X=13880.219mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R29-2(57.1mm,-30mm) on Bottom Layer And Track (57.951mm,-30.1mm)(58.1mm,-29.951mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13797.651mil|Location2.X=13817.151mil|Location1.Y=11660.632mil|Location2.Y=11680.132mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13797.651mil|Location2.X=13817.151mil|Location1.Y=11660.632mil|Location2.Y=11680.132mil|Absolute=True">Acute Angle Constraint: (5.626 &lt; 75.000) Between Pad R29-2(57.1mm,-30mm) on Bottom Layer And Polygon Region (15 hole(s)) Bottom Layer (Angle = 5.626)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10970.946mil|Location2.X=10990.446mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10970.946mil|Location2.X=10990.446mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True">Acute Angle Constraint: (65.248 &lt; 75.000) Between Pad R65-1(-16.3mm,-6.3mm) on Top Layer And Via (-15.2mm,-6.3mm) from Top Layer to Bottom Layer (Angle = 65.248)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11167.797mil|Location2.X=11187.297mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11167.797mil|Location2.X=11187.297mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True">Acute Angle Constraint: (65.248 &lt; 75.000) Between Pad R69-1(-11.3mm,-6.3mm) on Top Layer And Via (-10.2mm,-6.3mm) from Top Layer to Bottom Layer (Angle = 65.248)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12592.993mil|Location2.X=12612.493mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12592.993mil|Location2.X=12612.493mil|Location1.Y=12593.005mil|Location2.Y=12612.505mil|Absolute=True">Acute Angle Constraint: (65.248 &lt; 75.000) Between Pad R78-1(24.9mm,-6.3mm) on Top Layer And Via (26mm,-6.3mm) from Top Layer to Bottom Layer (Angle = 65.248)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10611.452mil|Location2.X=10630.952mil|Location1.Y=11970.878mil|Location2.Y=11990.378mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10611.452mil|Location2.X=10630.952mil|Location1.Y=11970.878mil|Location2.Y=11990.378mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Polygon Region (32 hole(s)) Top Layer And Track (-24.988mm,-21.875mm)(-24.448mm,-21.335mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13777.142mil|Location2.X=13796.642mil|Location1.Y=12977.555mil|Location2.Y=12997.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13777.142mil|Location2.X=13796.642mil|Location1.Y=12977.555mil|Location2.Y=12997.055mil|Absolute=True">Acute Angle Constraint: (67.500 &lt; 75.000) Between Polygon Region (0 hole(s)) Bottom Layer And Track (55.537mm,3.74mm)(58.36mm,3.74mm) on Bottom Layer (Angle = 67.500)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9009.071mil|Location2.X=9028.571mil|Location1.Y=12397.916mil|Location2.Y=12417.416mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9009.071mil|Location2.X=9028.571mil|Location1.Y=12397.916mil|Location2.Y=12417.416mil|Absolute=True">Acute Angle Constraint: (68.159 &lt; 75.000) Between Polygon Region (0 hole(s)) Bottom Layer And Track (-65.6mm,-10.4mm)(-64.7mm,-11.3mm) on Bottom Layer (Angle = 68.159)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9445.908mil|Location2.X=9465.408mil|Location1.Y=14081.923mil|Location2.Y=14101.423mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9445.908mil|Location2.X=9465.408mil|Location1.Y=14081.923mil|Location2.Y=14101.423mil|Absolute=True">Acute Angle Constraint: (52.499 &lt; 75.000) Between Pad C14-2(-53.8mm,31.4mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 52.499)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9233.803mil|Location2.X=9253.303mil|Location1.Y=14088.798mil|Location2.Y=14108.298mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9233.803mil|Location2.X=9253.303mil|Location1.Y=14088.798mil|Location2.Y=14108.298mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Polygon Region (0 hole(s)) Top Layer And Track (-60.6mm,31.3mm)(-58.725mm,33.175mm) on Top Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13860.718mil|Location2.X=13880.218mil|Location1.Y=14004.979mil|Location2.Y=14024.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13860.718mil|Location2.X=13880.218mil|Location1.Y=14004.979mil|Location2.Y=14024.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R20-1(57.1mm,30mm) on Bottom Layer And Track (57.1mm,30.1mm)(57.951mm,30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14136.871mil|Location2.X=14156.371mil|Location1.Y=14004.979mil|Location2.Y=14024.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14136.871mil|Location2.X=14156.371mil|Location1.Y=14004.979mil|Location2.Y=14024.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R21-1(64.114mm,30mm) on Bottom Layer And Track (64.965mm,30.1mm)(65.114mm,29.951mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14413.024mil|Location2.X=14432.524mil|Location1.Y=14004.979mil|Location2.Y=14024.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14413.024mil|Location2.X=14432.524mil|Location1.Y=14004.979mil|Location2.Y=14024.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R22-1(71.129mm,30mm) on Bottom Layer And Track (71.98mm,30.1mm)(72.129mm,29.951mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14689.176mil|Location2.X=14708.676mil|Location1.Y=14004.979mil|Location2.Y=14024.479mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14689.176mil|Location2.X=14708.676mil|Location1.Y=14004.979mil|Location2.Y=14024.479mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R23-1(78.143mm,30mm) on Bottom Layer And Track (78.994mm,30.1mm)(79.143mm,29.951mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14736.269mil|Location2.X=14755.769mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14736.269mil|Location2.X=14755.769mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R25-1(80.943mm,-30mm) on Bottom Layer And Track (79.943mm,-29.951mm)(80.092mm,-30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14460.116mil|Location2.X=14479.616mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14460.116mil|Location2.X=14479.616mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R26-1(73.929mm,-30mm) on Bottom Layer And Track (72.929mm,-29.951mm)(73.077mm,-30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14183.963mil|Location2.X=14203.463mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14183.963mil|Location2.X=14203.463mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R28-1(66.914mm,-30mm) on Bottom Layer And Track (65.914mm,-29.951mm)(66.063mm,-30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13907.81mil|Location2.X=13927.31mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13907.81mil|Location2.X=13927.31mil|Location1.Y=11645.439mil|Location2.Y=11664.939mil|Absolute=True">Acute Angle Constraint: (45.000 &lt; 75.000) Between Pad R29-1(59.9mm,-30mm) on Bottom Layer And Track (58.9mm,-29.951mm)(59.049mm,-30.1mm) on Bottom Layer (Angle = 45.000)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10453.111mil|Location2.X=10472.611mil|Location1.Y=11541.506mil|Location2.Y=11561.006mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10453.111mil|Location2.X=10472.611mil|Location1.Y=11541.506mil|Location2.Y=11561.006mil|Absolute=True">Acute Angle Constraint: (57.908 &lt; 75.000) Between Region (0 hole(s)) Bottom Layer And Track (-29mm,-32.759mm)(-21.281mm,-25.04mm) on Bottom Layer (Angle = 57.908)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10458.663mil|Location2.X=10478.163mil|Location1.Y=11541.506mil|Location2.Y=11561.006mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10458.663mil|Location2.X=10478.163mil|Location1.Y=11541.506mil|Location2.Y=11561.006mil|Absolute=True">Acute Angle Constraint: (58.495 &lt; 75.000) Between Region (0 hole(s)) Top Layer And Track (-29mm,-32.9mm)(-26.3mm,-30.2mm) on Top Layer (Angle = 58.495)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDY1Q4XBPUZFXVML3HQTU1DLUFDHTIIQ2HLGLQUCPHHRK5L14SJQ3G"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10050.112mil|Location2.X=10059.236mil|Location1.Y=13314.562mil|Location2.Y=13323.82mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10050.112mil|Location2.X=10059.236mil|Location1.Y=13314.562mil|Location2.Y=13323.82mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.164mm &lt; 0.2mm) Between Arc (-39.7mm,12.8mm) on Bottom Solder And Via (-38.3mm,12.1mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.164mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13580.746mil|Location2.X=13589.87mil|Location1.Y=11525.576mil|Location2.Y=11534.7mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13580.746mil|Location2.X=13589.87mil|Location1.Y=11525.576mil|Location2.Y=11534.7mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.2mm) Between Arc (51.8mm,-34.191mm) on Bottom Solder And Track (50.2mm,-32.4mm)(50.2mm,-31.8mm) on Bottom Solder [Bottom Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13662.099mil|Location2.X=13671.222mil|Location1.Y=11525.576mil|Location2.Y=11534.7mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13662.099mil|Location2.X=13671.222mil|Location1.Y=11525.576mil|Location2.Y=11534.7mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.102mm &lt; 0.2mm) Between Arc (51.8mm,-34.191mm) on Bottom Solder And Track (53.4mm,-32.4mm)(53.4mm,-31.8mm) on Bottom Solder [Bottom Solder] Mask Sliver [0.102mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14484.124mil|Location2.X=14493.248mil|Location1.Y=12015.094mil|Location2.Y=12024.218mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14484.124mil|Location2.X=14493.248mil|Location1.Y=12015.094mil|Location2.Y=12024.218mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.199mm &lt; 0.2mm) Between Arc (73.729mm,-21.5mm) on Bottom Solder And Via (73.7mm,-19.9mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.199mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8257.131mil|Location2.X=8266.255mil|Location1.Y=12175.307mil|Location2.Y=12184.431mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8257.131mil|Location2.X=8266.255mil|Location1.Y=12175.307mil|Location2.Y=12184.431mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.096mm &lt; 0.2mm) Between Arc (-84.7mm,-17.55mm) on Bottom Solder And Via (-84.3mm,-15.9mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.096mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8257.131mil|Location2.X=8266.255mil|Location1.Y=12175.307mil|Location2.Y=12184.431mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8257.131mil|Location2.X=8266.255mil|Location1.Y=12175.307mil|Location2.Y=12184.431mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.096mm &lt; 0.2mm) Between Arc (-84.7mm,-17.55mm) on Top Solder And Via (-84.3mm,-15.9mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.096mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8899.676mil|Location2.X=8908.8mil|Location1.Y=11398.391mil|Location2.Y=11407.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8899.676mil|Location2.X=8908.8mil|Location1.Y=11398.391mil|Location2.Y=11407.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.175mm &lt; 0.2mm) Between Pad J4-(-68.2mm,-36.8mm) on Multi-Layer And Track (-68.09mm,-35.93mm)(-68.09mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8658.917mil|Location2.X=8668.041mil|Location1.Y=11398.391mil|Location2.Y=11407.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\3-MainBoard\3-MainBoard\main.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8658.917mil|Location2.X=8668.041mil|Location1.Y=11398.391mil|Location2.Y=11407.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.175mm &lt; 0.2mm) Between Pad J4-(-74.18mm,-36.8mm) on Multi-Layer And Track (-74.29mm,-35.93mm)(-74.29mm,-35.43mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

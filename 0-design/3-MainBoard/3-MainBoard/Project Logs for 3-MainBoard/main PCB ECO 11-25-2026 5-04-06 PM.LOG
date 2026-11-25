@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND7 Pin=J38-1
+Removed Pin From Net: NetName=MCUGND Pin=J38-2
+Removed Pin From Net: NetName=DIGITIN Pin=J38-3
+Removed Pin From Net: NetName=NetD30_1 Pin=J38-4
+Added Pin To Net: NetName=MCUGND Pin=J38-1
+Added Pin To Net: NetName=GND7 Pin=J38-2
+Added Pin To Net: NetName=NetD30_1 Pin=J38-3
+Added Pin To Net: NetName=DIGITIN Pin=J38-4

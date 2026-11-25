@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND1 Pin=J22-1
+Removed Pin From Net: NetName=24vMCU Pin=J22-2
+Added Pin To Net: NetName=24vMCU Pin=J22-1
+Added Pin To Net: NetName=GND1 Pin=J22-2
