@@ -1,0 +1,56 @@
+Change Component Designator: OldDesignator= NewDesignator=C44
+Change Component Designator: OldDesignator= NewDesignator=C59
+Change Component Designator: OldDesignator= NewDesignator=C60
+Change Component Designator: OldDesignator= NewDesignator=C64
+Change Component Designator: OldDesignator= NewDesignator=C70
+Change Component Designator: OldDesignator= NewDesignator=FH1
+Change Component Designator: OldDesignator= NewDesignator=FUSE_SMD1
+Change Component Designator: OldDesignator= NewDesignator=J43
+Change Component Designator: OldDesignator= NewDesignator=J47
+Change Component Designator: OldDesignator= NewDesignator=L2
+Change Component Designator: OldDesignator= NewDesignator=L3
+Change Component Designator: OldDesignator= NewDesignator=R16
+Change Component Designator: OldDesignator= NewDesignator=R31
+Change Component Designator: OldDesignator= NewDesignator=R76
+Change Component Designator: OldDesignator= NewDesignator=R91
+Change Component Designator: OldDesignator= NewDesignator=R121
+Change Component Designator: OldDesignator= NewDesignator=R136
+Change Component Designator: OldDesignator= NewDesignator=R151
+Change Component Designator: OldDesignator= NewDesignator=R166
+Change Component Designator: OldDesignator= NewDesignator=R181
+Change Component Designator: OldDesignator= NewDesignator=R196
+Change Component Designator: OldDesignator= NewDesignator=R215
+Change Component Designator: OldDesignator= NewDesignator=R223
+Change Component Designator: OldDesignator= NewDesignator=R224
+Change Component Designator: OldDesignator= NewDesignator=R225
+Change Component Designator: OldDesignator= NewDesignator=R226
+Change Component Designator: OldDesignator= NewDesignator=R227
+Change Component Designator: OldDesignator= NewDesignator=R228
+Added Member To Class: ClassName=MCU Member=Component C44 CAP1206 22pf 50V
+Added Member To Class: ClassName=power Member=Component C59 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C60 CAP1206 10uf 50V
+Added Member To Class: ClassName=power Member=Component C64 CAP1206 10uf 50V
+Added Member To Class: ClassName=CAN Member=Component C70 CAP0805 4.7nf 50V
+Added Member To Class: ClassName=power Member=Component FH1 xf-155
+Added Member To Class: ClassName=MCU Member=Component FUSE_SMD1 FUSE1206
+Added Member To Class: ClassName=MCU Member=Component J43 XH_4
+Added Member To Class: ClassName=CAN Member=Component J47 CONN_ATXPWR_6
+Added Member To Class: ClassName=CAN Member=Component L2 ACM2520-102-2P-T002
+Added Member To Class: ClassName=CAN Member=Component L3 ACM2520-102-2P-T002
+Added Member To Class: ClassName=push-button-switch-2 Member=Component R16 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-3 Member=Component R31 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-6 Member=Component R76 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-7 Member=Component R91 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-9 Member=Component R121 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-10 Member=Component R136 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-11 Member=Component R151 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-12 Member=Component R166 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-13 Member=Component R181 FUSE 1206
+Added Member To Class: ClassName=push-button-switch-14 Member=Component R196 FUSE 1206
+Added Member To Class: ClassName=MCU Member=Component R215 RES1206 4.7K 1%
+Added Member To Class: ClassName=power Member=Component R223 RES1206 24.9k 1%
+Added Member To Class: ClassName=power Member=Component R224 RES1206 10K 1%
+Added Member To Class: ClassName=CAN Member=Component R225 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R226 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R227 RES1206 60 1%
+Added Member To Class: ClassName=CAN Member=Component R228 RES1206 60 1%

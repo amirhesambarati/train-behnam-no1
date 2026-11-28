@@ -1,12 +1,10 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Mohammadreza\Documents\GitHub\train behnam no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc
-Date     : 11/25/2026
-Time     : 9:43:36 PM
+PCB File : E:\github\train-behnam-no1\0-design\2-SignalLightAndPushbuttonSwitch\2-SignalLightAndPushbuttonSwitch\PB-PCB1.PcbDoc
+Date     : 27/11/2026
+Time     : 05:56:13 È.Ù
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
-   Violation between Clearance Constraint: (0.27mm < 0.3mm) Between Hole of Pad J46-(-57.3mm,-36.9mm) on Multi-Layer And Pad J46-B1A12(-57.19mm,-35.78mm) on Top Layer 
-   Violation between Clearance Constraint: (0.27mm < 0.3mm) Between Hole of Pad J46-(-63.28mm,-36.9mm) on Multi-Layer And Pad J46-A1B12(-63.39mm,-35.78mm) on Top Layer 
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
@@ -24,69 +22,11 @@ Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (
 Rule Violations :0
 
 Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (All)
-   Violation between Minimum Annular Ring: (No Ring) Pad Free-1(84mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)
-   Violation between Minimum Annular Ring: (No Ring) Pad Free-2(84mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)
-   Violation between Minimum Annular Ring: (No Ring) Pad Free-3(-84mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)
-   Violation between Minimum Annular Ring: (No Ring) Pad Free-4(-84mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)
-Rule Violations :4
+Rule Violations :0
 
 Processing Rule : Acute Angle Constraint (Minimum=75.000) (All)
-   Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (13.025mm,17.275mm)(14.155mm,17.275mm) on Bottom Layer And Track (14.23mm,15.15mm)(14.23mm,17.2mm) on Bottom Layer (Angle = 74.065)
-   Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (-14.77mm,15.15mm)(-14.77mm,17.2mm) on Bottom Layer And Track (-15.975mm,17.275mm)(-14.845mm,17.275mm) on Bottom Layer (Angle = 74.065)
-   Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (27.525mm,17.275mm)(28.705mm,17.275mm) on Bottom Layer And Track (28.73mm,15.15mm)(28.73mm,17.3mm) on Bottom Layer (Angle = 74.065)
-   Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (37.37mm,-17.2mm)(37.37mm,-15.05mm) on Bottom Layer And Track (37.395mm,-17.175mm)(38.575mm,-17.175mm) on Bottom Layer (Angle = 74.065)
-   Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (42.025mm,17.275mm)(43.205mm,17.275mm) on Bottom Layer And Track (43.23mm,15.15mm)(43.23mm,17.3mm) on Bottom Layer (Angle = 74.065)
-   Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (66.37mm,-17.2mm)(66.37mm,-15.05mm) on Bottom Layer And Track (66.395mm,-17.175mm)(67.575mm,-17.175mm) on Bottom Layer (Angle = 74.065)
-   Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (71.025mm,17.275mm)(72.155mm,17.275mm) on Bottom Layer And Track (72.23mm,15.15mm)(72.23mm,17.2mm) on Bottom Layer (Angle = 74.065)
-   Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (8.37mm,-17.2mm)(8.37mm,-15.05mm) on Bottom Layer And Track (8.395mm,-17.175mm)(9.575mm,-17.175mm) on Bottom Layer (Angle = 74.065)
-   Violation between Acute Angle Constraint: (73.127 < 75.000) Between Pad R200-2(-18.3mm,-10.1mm) on Bottom Layer And Track (-17.045mm,-9.995mm)(-17.045mm,-8.505mm) on Bottom Layer (Angle = 73.127)
-   Violation between Acute Angle Constraint: (63.316 < 75.000) Between Region (0 hole(s)) Bottom Layer And Via (-27.8mm,11mm) from Top Layer to Bottom Layer (Angle = 63.316)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R101-2(72.4mm,21.1mm) on Top Layer And Track (73.251mm,21.1mm)(73.4mm,20.951mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R101-2(72.4mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R11-2(-14.6mm,21.1mm) on Top Layer And Track (-14.6mm,21.1mm)(-13.749mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R11-2(-14.6mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R116-2(66.2mm,-21mm) on Top Layer And Track (65.349mm,-21mm)(66.2mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R116-2(66.2mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R131-2(51.7mm,-21mm) on Top Layer And Track (50.7mm,-20.851mm)(50.849mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R131-2(51.7mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R146-2(37.2mm,-21mm) on Top Layer And Track (36.2mm,-20.851mm)(36.349mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R146-2(37.2mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R161-2(22.7mm,-21mm) on Top Layer And Track (21.849mm,-21mm)(22.7mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R161-2(22.7mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R176-2(8.2mm,-21mm) on Top Layer And Track (7.349mm,-21mm)(8.2mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R176-2(8.2mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R191-2(-6.3mm,-21mm) on Top Layer And Track (-7.3mm,-20.851mm)(-7.151mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R191-2(-6.3mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R206-2(-20.8mm,-21mm) on Top Layer And Track (-21.8mm,-20.851mm)(-21.651mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R206-2(-20.8mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R26-2(-0.1mm,21.1mm) on Top Layer And Track (-0.1mm,21.1mm)(0.751mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R26-2(-0.1mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R41-2(14.4mm,21.1mm) on Top Layer And Track (14.4mm,21.1mm)(15.251mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R41-2(14.4mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R56-2(28.9mm,21.1mm) on Top Layer And Track (28.9mm,21.1mm)(29.751mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R56-2(28.9mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R71-2(43.4mm,21.1mm) on Top Layer And Track (43.4mm,21.1mm)(44.251mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R71-2(43.4mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R86-2(57.9mm,21.1mm) on Top Layer And Track (57.9mm,21.1mm)(58.751mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R86-2(57.9mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)
-   Violation between Acute Angle Constraint: (65.760 < 75.000) Between Track (-49.8mm,-9.7mm)(-49.8mm,-8.45mm) on Bottom Layer And Track (-50.3mm,-10.2mm)(-49.8mm,-9.7mm) on Bottom Layer (Angle = 65.760)
-   Violation between Acute Angle Constraint: (73.125 < 75.000) Between Polygon Region (0 hole(s)) Bottom Layer And Track (-54.7mm,-10.5mm)(-53.8mm,-11.4mm) on Bottom Layer (Angle = 73.125)
-   Violation between Acute Angle Constraint: (67.696 < 75.000) Between Polygon Region (0 hole(s)) Bottom Layer And Via (-77mm,-15.2mm) from Top Layer to Bottom Layer (Angle = 67.696)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R56-1(31.7mm,21.1mm) on Top Layer And Track (30.849mm,21.1mm)(31.7mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R71-1(46.2mm,21.1mm) on Top Layer And Track (45.349mm,21.1mm)(46.2mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R86-1(60.7mm,21.1mm) on Top Layer And Track (59.849mm,21.1mm)(60.7mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R11-1(-11.8mm,21.1mm) on Top Layer And Track (-12.651mm,21.1mm)(-11.8mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R101-1(75.2mm,21.1mm) on Top Layer And Track (74.2mm,20.951mm)(74.349mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R116-1(63.4mm,-21mm) on Top Layer And Track (63.4mm,-21mm)(64.251mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R131-1(48.9mm,-21mm) on Top Layer And Track (48.9mm,-21mm)(49.751mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R146-1(34.4mm,-21mm) on Top Layer And Track (34.4mm,-21mm)(35.251mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R161-1(19.9mm,-21mm) on Top Layer And Track (19.9mm,-21mm)(20.751mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R176-1(5.4mm,-21mm) on Top Layer And Track (5.4mm,-21mm)(6.251mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R191-1(-9.1mm,-21mm) on Top Layer And Track (-9.1mm,-21mm)(-8.249mm,-21mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R206-1(-23.6mm,-21mm) on Top Layer And Track (-22.749mm,-21mm)(-22.6mm,-20.851mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R26-1(2.7mm,21.1mm) on Top Layer And Track (1.849mm,21.1mm)(2.7mm,21.1mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R41-1(17.2mm,21.1mm) on Top Layer And Track (16.349mm,21.1mm)(17.2mm,21.1mm) on Top Layer (Angle = 45.000)
-Rule Violations :55
+   Violation between Acute Angle Constraint: (59.493 < 75.000) Between Polygon Region (0 hole(s)) Top Layer And Region (0 hole(s)) Top Layer (Angle = 59.493)
+Rule Violations :1
 
 Processing Rule : Hole Size Constraint (Min=0.4mm) (Max=50mm) (All)
 Rule Violations :0
@@ -95,11 +35,84 @@ Processing Rule : Hole To Hole Clearance (Gap=0.3mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
-   Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J46-(-57.3mm,-36.9mm) on Multi-Layer And Track (-57.19mm,-36.03mm)(-57.19mm,-35.53mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J46-(-63.28mm,-36.9mm) on Multi-Layer And Track (-63.39mm,-36.03mm)(-63.39mm,-35.53mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]
-Rule Violations :2
+Rule Violations :0
+
+Waived Violations Of Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+   Waived Violation between Clearance Constraint: (0.27mm < 0.3mm) Between Hole of Pad J46-(-57.3mm,-36.9mm) on Multi-Layer And Pad J46-B1A12(-57.19mm,-35.78mm) on Top Layer Waived at 27/11/2026 05:38:21 È.Ù
+   Waived Violation between Clearance Constraint: (0.27mm < 0.3mm) Between Hole of Pad J46-(-63.28mm,-36.9mm) on Multi-Layer And Pad J46-A1B12(-63.39mm,-35.78mm) on Top Layer Waived at 27/11/2026 05:39:26 È.Ù
+Waived Violations :2
+
+Waived Violations Of Rule : Minimum Annular Ring (Minimum=0.2mm) (All)
+   Waived Violation between Minimum Annular Ring: (No Ring) Pad Free-1(84mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)Waived at 27/11/2026 05:39:09 È.Ù
+   Waived Violation between Minimum Annular Ring: (No Ring) Pad Free-2(84mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)Waived at 27/11/2026 05:39:42 È.Ù
+   Waived Violation between Minimum Annular Ring: (No Ring) Pad Free-3(-84mm,16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)Waived at 27/11/2026 05:39:42 È.Ù
+   Waived Violation between Minimum Annular Ring: (No Ring) Pad Free-4(-84mm,-16.5mm) on Multi-Layer (Annular Ring missing on Top Layer)Waived at 27/11/2026 05:39:42 È.Ù
+Waived Violations :4
+
+Waived Violations Of Rule : Acute Angle Constraint (Minimum=75.000) (All)
+   Waived Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (13.025mm,17.275mm)(14.155mm,17.275mm) on Bottom Layer And Track (14.23mm,15.15mm)(14.23mm,17.2mm) on Bottom Layer (Angle = 74.065)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (-14.77mm,15.15mm)(-14.77mm,17.2mm) on Bottom Layer And Track (-15.975mm,17.275mm)(-14.845mm,17.275mm) on Bottom Layer (Angle = 74.065)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (27.525mm,17.275mm)(28.705mm,17.275mm) on Bottom Layer And Track (28.73mm,15.15mm)(28.73mm,17.3mm) on Bottom Layer (Angle = 74.065)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (37.37mm,-17.2mm)(37.37mm,-15.05mm) on Bottom Layer And Track (37.395mm,-17.175mm)(38.575mm,-17.175mm) on Bottom Layer (Angle = 74.065)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (42.025mm,17.275mm)(43.205mm,17.275mm) on Bottom Layer And Track (43.23mm,15.15mm)(43.23mm,17.3mm) on Bottom Layer (Angle = 74.065)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (66.37mm,-17.2mm)(66.37mm,-15.05mm) on Bottom Layer And Track (66.395mm,-17.175mm)(67.575mm,-17.175mm) on Bottom Layer (Angle = 74.065)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (71.025mm,17.275mm)(72.155mm,17.275mm) on Bottom Layer And Track (72.23mm,15.15mm)(72.23mm,17.2mm) on Bottom Layer (Angle = 74.065)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (74.065 < 75.000) Between Track (8.37mm,-17.2mm)(8.37mm,-15.05mm) on Bottom Layer And Track (8.395mm,-17.175mm)(9.575mm,-17.175mm) on Bottom Layer (Angle = 74.065)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (73.127 < 75.000) Between Pad R200-2(-18.3mm,-10.1mm) on Bottom Layer And Track (-17.045mm,-9.995mm)(-17.045mm,-8.505mm) on Bottom Layer (Angle = 73.127)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (63.316 < 75.000) Between Region (0 hole(s)) Bottom Layer And Via (-27.8mm,11mm) from Top Layer to Bottom Layer (Angle = 63.316)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R101-2(72.4mm,21.1mm) on Top Layer And Track (73.251mm,21.1mm)(73.4mm,20.951mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R101-2(72.4mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R11-2(-14.6mm,21.1mm) on Top Layer And Track (-14.6mm,21.1mm)(-13.749mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R11-2(-14.6mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R116-2(66.2mm,-21mm) on Top Layer And Track (65.349mm,-21mm)(66.2mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R116-2(66.2mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R131-2(51.7mm,-21mm) on Top Layer And Track (50.7mm,-20.851mm)(50.849mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R131-2(51.7mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R146-2(37.2mm,-21mm) on Top Layer And Track (36.2mm,-20.851mm)(36.349mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R146-2(37.2mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R161-2(22.7mm,-21mm) on Top Layer And Track (21.849mm,-21mm)(22.7mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R161-2(22.7mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R176-2(8.2mm,-21mm) on Top Layer And Track (7.349mm,-21mm)(8.2mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R176-2(8.2mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R191-2(-6.3mm,-21mm) on Top Layer And Track (-7.3mm,-20.851mm)(-7.151mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R191-2(-6.3mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R206-2(-20.8mm,-21mm) on Top Layer And Track (-21.8mm,-20.851mm)(-21.651mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R206-2(-20.8mm,-21mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R26-2(-0.1mm,21.1mm) on Top Layer And Track (-0.1mm,21.1mm)(0.751mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R26-2(-0.1mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R41-2(14.4mm,21.1mm) on Top Layer And Track (14.4mm,21.1mm)(15.251mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R41-2(14.4mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R56-2(28.9mm,21.1mm) on Top Layer And Track (28.9mm,21.1mm)(29.751mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R56-2(28.9mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R71-2(43.4mm,21.1mm) on Top Layer And Track (43.4mm,21.1mm)(44.251mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R71-2(43.4mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R86-2(57.9mm,21.1mm) on Top Layer And Track (57.9mm,21.1mm)(58.751mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (5.626 < 75.000) Between Pad R86-2(57.9mm,21.1mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer (Angle = 5.626)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (65.760 < 75.000) Between Track (-49.8mm,-9.7mm)(-49.8mm,-8.45mm) on Bottom Layer And Track (-50.3mm,-10.2mm)(-49.8mm,-9.7mm) on Bottom Layer (Angle = 65.760)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (73.125 < 75.000) Between Polygon Region (0 hole(s)) Bottom Layer And Track (-54.7mm,-10.5mm)(-53.8mm,-11.4mm) on Bottom Layer (Angle = 73.125)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (67.696 < 75.000) Between Polygon Region (0 hole(s)) Bottom Layer And Via (-77mm,-15.2mm) from Top Layer to Bottom Layer (Angle = 67.696)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R56-1(31.7mm,21.1mm) on Top Layer And Track (30.849mm,21.1mm)(31.7mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R71-1(46.2mm,21.1mm) on Top Layer And Track (45.349mm,21.1mm)(46.2mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R86-1(60.7mm,21.1mm) on Top Layer And Track (59.849mm,21.1mm)(60.7mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R11-1(-11.8mm,21.1mm) on Top Layer And Track (-12.651mm,21.1mm)(-11.8mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R101-1(75.2mm,21.1mm) on Top Layer And Track (74.2mm,20.951mm)(74.349mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R116-1(63.4mm,-21mm) on Top Layer And Track (63.4mm,-21mm)(64.251mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R131-1(48.9mm,-21mm) on Top Layer And Track (48.9mm,-21mm)(49.751mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R146-1(34.4mm,-21mm) on Top Layer And Track (34.4mm,-21mm)(35.251mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R161-1(19.9mm,-21mm) on Top Layer And Track (19.9mm,-21mm)(20.751mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R176-1(5.4mm,-21mm) on Top Layer And Track (5.4mm,-21mm)(6.251mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R191-1(-9.1mm,-21mm) on Top Layer And Track (-9.1mm,-21mm)(-8.249mm,-21mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R206-1(-23.6mm,-21mm) on Top Layer And Track (-22.749mm,-21mm)(-22.6mm,-20.851mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R26-1(2.7mm,21.1mm) on Top Layer And Track (1.849mm,21.1mm)(2.7mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+   Waived Violation between Acute Angle Constraint: (45.000 < 75.000) Between Pad R41-1(17.2mm,21.1mm) on Top Layer And Track (16.349mm,21.1mm)(17.2mm,21.1mm) on Top Layer (Angle = 45.000)Waived at 27/11/2026 05:40:04 È.Ù
+Waived Violations :55
+
+Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J46-(-57.3mm,-36.9mm) on Multi-Layer And Track (-57.19mm,-36.03mm)(-57.19mm,-35.53mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]Waived at 27/11/2026 05:40:22 È.Ù
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.175mm < 0.2mm) Between Pad J46-(-63.28mm,-36.9mm) on Multi-Layer And Track (-63.39mm,-36.03mm)(-63.39mm,-35.53mm) on Top Solder [Top Solder] Mask Sliver [0.175mm]Waived at 27/11/2026 05:40:22 È.Ù
+Waived Violations :2
 
 
-Violations Detected : 63
-Waived Violations : 0
+Violations Detected : 1
+Waived Violations : 63
 Time Elapsed        : 00:00:01
